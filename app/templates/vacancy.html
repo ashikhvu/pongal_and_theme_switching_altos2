@@ -85,6 +85,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
       }
     </style>
+
+    <style>
+      .happy_pongal{
+        width: 20rem;
+        margin-left: 15rem ;
+        margin-top: 10rem;
+      }
+      @media screen and (max-width:932px) {
+        .display_pong1{
+          display: none;
+        }
+        .display_pong2{
+          display: block;
+        }
+      }
+      @media screen and (min-width:933px) {
+        .display_pong1{
+          display: block;
+        }
+        .display_pong2{
+          display: none;
+        }
+      }
+    </style>
   </head>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9279EQWMW1"></script>
@@ -403,6 +427,14 @@ font-size: 0.91.5em;
          
            
           </div>
+        </div>
+
+        <div class="display_pong1">
+          <img class="happy_pongal" draggable="false" src="{% static 'pongal/decor/pongal_about1.png' %}" alt="">
+        </div>
+
+        <div class="text-center display_pong2">
+          <img class="happy_pongal2" draggable="false" src="{% static 'pongal/decor/pongal_about1.png' %}" alt="">
         </div>
         
       </div>
