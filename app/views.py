@@ -31,7 +31,12 @@ def home(request):
 
 def text_page(request):
     testimo=Testimonial.objects.all()
-    return render(request,'Textpage.html',{'testimo':testimo})
+    if ThemeModel.objects.filter().exists():
+        current_theme = ThemeModel.objects.last().theme_name
+    else:
+        current_theme = ''
+    return render(request,'Textpage.html',{'testimo':testimo,
+                                           'current_theme':current_theme})
 
 def vacancy(request):
     today = datetime.today()
@@ -955,21 +960,43 @@ def whatsappmarkettools(request):
 # ----------------------------------------- ASHIKH VU (start) -----------------------------------
 
 def change_theme(request,theme):
-    if(theme == 'default'):
-        new_theme = ThemeModel(theme_name='default')
-        new_theme.save()
-    elif(theme == 'xmas'):
-        new_theme = ThemeModel(theme_name='xmas')
-        new_theme.save()
-    elif(theme == 'onam'):
-        new_theme = ThemeModel(theme_name='onam')
-        new_theme.save()
-    elif(theme == 'diwali'):
-        new_theme = ThemeModel(theme_name='diwali')
-        new_theme.save()
-    elif(theme == 'pongal'):
-        new_theme = ThemeModel(theme_name='pongal')
-        new_theme.save()
+    if ThemeModel.objects.all().exists():
+        if(theme == 'default'):
+            new_theme = ThemeModel.objects.first()
+            new_theme.theme_name = 'default'
+            new_theme.save()
+        elif(theme == 'xmas'):
+            new_theme = ThemeModel.objects.first()
+            new_theme.theme_name = 'xmas'
+            new_theme.save()
+        elif(theme == 'onam'):
+            new_theme = ThemeModel.objects.first()
+            new_theme.theme_name = 'onam'
+            new_theme.save()
+        elif(theme == 'diwali'):
+            new_theme = ThemeModel.objects.first()
+            new_theme.theme_name = 'diwali'
+            new_theme.save()
+        elif(theme == 'pongal'):
+            new_theme = ThemeModel.objects.first()
+            new_theme.theme_name = 'pongal'
+            new_theme.save()
+    else:
+        if(theme == 'default'):
+            new_theme = ThemeModel(theme_name='default')
+            new_theme.save()
+        elif(theme == 'xmas'):
+            new_theme = ThemeModel(theme_name='xmas')
+            new_theme.save()
+        elif(theme == 'onam'):
+            new_theme = ThemeModel(theme_name='onam')
+            new_theme.save()
+        elif(theme == 'diwali'):
+            new_theme = ThemeModel(theme_name='diwali')
+            new_theme.save()
+        elif(theme == 'pongal'):
+            new_theme = ThemeModel(theme_name='pongal')
+            new_theme.save()
     return redirect('dashboard')
 
 from django.http import JsonResponse
