@@ -42,10 +42,18 @@ def vacancy(request):
     today = datetime.today()
     cour=courses.objects.all()
     vacan=Vacancys.objects.filter(last_date__gt=today).order_by('-id') 
-    return render(request, 'vacancy.html',{'vacan':vacan,'cour':cour})
+    if ThemeModel.objects.filter().exists():
+        current_theme = ThemeModel.objects.last().theme_name
+    else:
+        current_theme = ''
+    return render(request, 'vacancy.html',{'vacan':vacan,'cour':cour,"current_theme":current_theme})
 
 def contact(request):
-    return render(request, 'contact.html')
+    if ThemeModel.objects.filter().exists():
+        current_theme = ThemeModel.objects.last().theme_name
+    else:
+        current_theme = ''
+    return render(request, 'contact.html',{'current_theme':current_theme})
     
 def course(request):
     return render(request, 'course.html')
@@ -54,13 +62,25 @@ def signin(request):
     return render(request, 'signin.html')
 
 def aboutus(request):
-    return render(request, 'aboutus.html')
+    if ThemeModel.objects.filter().exists():
+        current_theme = ThemeModel.objects.last().theme_name
+    else:
+        current_theme = ''
+    return render(request, 'aboutus.html',{"current_theme":current_theme})
 
 def service(request):
-    return render(request, 'service.html')
+    if ThemeModel.objects.filter().exists():
+        current_theme = ThemeModel.objects.last().theme_name
+    else:
+        current_theme = ''
+    return render(request, 'service.html',{"current_theme":current_theme})
 
 def core(request):
-    return render(request, 'core.html')
+    if ThemeModel.objects.filter().exists():
+        current_theme = ThemeModel.objects.last().theme_name
+    else:
+        current_theme = ''
+    return render(request, 'core.html',{"current_theme":current_theme})
 
 def events(request):
     allnews=Newsupdate.objects.all()
@@ -68,7 +88,11 @@ def events(request):
     allimage=Gallery.objects.all()
     allimages=Gallery.objects.all()[4:]
     pos=Poster.objects.all().order_by('-id')
-    return render(request, 'events.html',{'allevents':allevents,'allnews':allnews,'allimage':allimage,'allimages':allimages,'pos':pos})
+    if ThemeModel.objects.filter().exists():
+        current_theme = ThemeModel.objects.last().theme_name
+    else:
+        current_theme = ''
+    return render(request, 'events.html',{'allevents':allevents,'allnews':allnews,'allimage':allimage,'allimages':allimages,'pos':pos,"current_theme":current_theme})
 
 def event_details(request,pk):
     allevents=Event.objects.get(id=pk)
