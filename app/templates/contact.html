@@ -101,7 +101,28 @@
    }
 </style>
 
-
+<style>
+  .pongal_text_theme{
+      background-image: url('/static/pongal/bg/bg_fire.png');
+      background-size: contain;
+      background-repeat: repeat;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    .pongal_text_theme1{
+      background-image: url('/static/pongal/bg/bg_fire1.png');
+      background-size: contain;
+      background-repeat: repeat;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    #pongal_gang{
+      width: 40rem;
+    }
+    .pongal_gang_top{
+      margin-top: -7.6rem;
+    }
+</style>
 
 
 <div class="container-fluid">
@@ -120,7 +141,17 @@
       <div class="section-title d-flex justify-content-start">
         <div class="contact-head">
           <h2>Contact</h2>
+          {% if current_theme == 'pongal' %}
+          <p class="pongal_text_theme" style="color: transparent;">Contact Us</p>
+          {% else %}
           <p style="color: rgb(39, 112, 141);">Contact Us</p>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="position-relative">
+        <div class="position-absolute top-0 end-0 pongal_gang_top">
+          <img id="pongal_gang" src="{% static 'pongal/decor/company_suggestion/as-removebg-preview.png' %}" alt="">
         </div>
       </div>
 

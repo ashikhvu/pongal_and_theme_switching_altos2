@@ -1044,8 +1044,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <img draggable="false"id="pongal_temple" src="{% static 'pongal/decor/pongal_home4.png' %}" alt="">
         </div>
       </div>
-      {% endif %}
 
+      <div class="position-relative" style="z-index: 1;">
+        <div class="position-absolute end-0 top-100 happy_pongal_top" style="margin-top: 10rem;margin-right: 10rem;">
+          <img draggable="false"id="happy_pongal" style="width: 15rem;" src="{% static 'pongal/decor/company_suggestion/z-removebg-preview.png' %}" alt="">
+        </div>
+      </div>
+      {% endif %}
+      
       <section id="readmore1">
         <div class="content">
           {% if current_theme == 'pongal' %}
@@ -1155,6 +1161,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="row container">
           <div class="col-12">
             {% if current_theme == 'pongal' %}
+            <div class="position-relative" style="z-index: 10;">
+              <div class="position-absolute start-50 translate-middle-x rice_grass_top" style="margin-top: -1rem;margin-left: -11rem;"> 
+                <img draggable="false"id="rice_grass" style="width: 13rem;" src="{% static 'pongal/decor/rice_grass.png' %}" alt="">
+              </div>
+            </div>
             <h4 class="pongal_text_theme" style="color: transparent;">//Why Choose Us</h4>
             {% else %}
             <h4 style="color: rgb(243, 243, 243)">//Why Choose Us</h4>

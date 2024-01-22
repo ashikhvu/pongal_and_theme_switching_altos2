@@ -139,6 +139,91 @@
    
 </style>
 
+<style>
+  .corner_width{
+    width: 4.5rem;
+  }
+  .top_right_top{
+    margin-right: -2rem;
+    margin-top: -2rem;
+  }
+  .top_left_top{
+    margin-left: -2rem;
+    margin-top: -2rem;
+  }
+  .bottom_left_top{
+    margin-left: -2rem;
+    margin-bottom: -2rem;
+  }
+  .bottom_right_top{
+    margin-right: -2rem;
+    margin-bottom: -2rem;
+  }
+  @media screen and (min-width:593px) and (max-width:991px) {
+    .corner_width{
+      width: 2.5rem;
+    }
+    .top_right_top{
+      margin-right: -2rem;
+      margin-top: -2rem;
+    }
+    .top_left_top{
+      margin-left: -2rem;
+      margin-top: -2rem;
+    }
+    .bottom_left_top{
+      margin-left: -2rem;
+      margin-bottom: -2rem;
+    }
+    .bottom_right_top{
+      margin-right: -2rem;
+      margin-bottom: -2rem;
+    }
+    .mob_margin_top{
+      margin-top: 4rem;
+    }
+  }
+
+  @media screen and (max-width:592px) {
+    .corner_width{
+      width: 2rem;
+    }
+    .top_right_top{
+      margin-right: -0.5rem;
+      margin-top: -0.5rem;
+    }
+    .top_left_top{
+      margin-left: -0.5rem;
+      margin-top: -0.5rem;
+    }
+    .bottom_left_top{
+      margin-left: -0.5rem;
+      margin-bottom: -0.5rem;
+    }
+    .bottom_right_top{
+      margin-right: -0.5rem;
+      margin-bottom: -0.5rem;
+    }
+    .mob_margin_top{
+      margin-top: 4rem;
+    }
+  }
+  .pongal_text_theme{
+      background-image: url('/static/pongal/bg/bg_fire.png');
+      background-size: contain;
+      background-repeat: repeat;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    .pongal_text_theme1{
+      background-image: url('/static/pongal/bg/bg_fire1.png');
+      background-size: contain;
+      background-repeat: repeat;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+</style>
+
 
   <main id="main">
    
@@ -147,43 +232,105 @@
           <div class="container" >
             <div class="row">
               <div class="col-lg-5 col-sm-12 col-md-8">
-                <h4>About Us</h4>
+                <h4 class="pongal_text_theme" style="color: transparent;">About Us</h4>
                
 
-                  <p class="fst-normal" data-aos="fade-left"
+                  <div class="position-relative">
+                  <p class="fst-normal mob_margin_top" data-aos="fade-left"
                   data-aos-duration="2000">
                   As a leading web development company in Kochi, ALTOS Technologies 
                   provides top-notch consulting and strategy services to enhance the 
                   digital transformation of enterprises of all sizes, both internally 
                   and in terms of customer experience.
                   </p>
-                 
+                  
+                  <div class="position-absolute top-0 end-0 top_right_top">
+                    <img draggable="false" class="corner_width" src="{% static 'pongal/frame/bamboo_frame/pongal_bamboo_frame_top_right.png' %}" alt="">
+                  </div>
+
+                  <div class="position-absolute top-0 start-0 top_left_top">
+                    <img draggable="false" class="corner_width" src="{% static 'pongal/frame/bamboo_frame/pongal_bamboo_frame_top_left.png' %}" alt="">
+                  </div>
+
+                  <div class="position-absolute bottom-0 start-0 bottom_left_top">
+                    <img draggable="false" class="corner_width" src="{% static 'pongal/frame/bamboo_frame/pongal_bamboo_frame_bottom_left.png' %}" alt="">
+                  </div>
+
+                  <div class="position-absolute bottom-0 end-0 bottom_right_top">
+                    <img draggable="false" class="corner_width" src="{% static 'pongal/frame/bamboo_frame/pongal_bamboo_frame_bottom_right.png' %}" alt="">
+                  </div>
+                 </div>
                  
               </div>
               <div class="col-lg-5 col-sm-12 col-md-8"></div>
               <div class="col-lg-7 col-sm-12 col-md-8"></div>
               <div class="col-lg-4 col-sm-12 col-md-8">
-                <p class="fst-normal" data-aos="fade-up"
-                data-aos-duration="2000">
-                Our expertise lies in website and software development, 
-                where we have gained extensive experience by delivering a 
-                wide range of projects, including websites, web applications, 
-                mobile applications, 3D modeling services, and digital marketing 
-                services, to clients across different industries and of varying sizes.
-                
-                </p>
+            
+                <div class="position-relative">
+
+                  <p class="fst-normal mob_margin_top" data-aos="fade-up"
+                  data-aos-duration="2000">
+                  Our expertise lies in website and software development, 
+                  where we have gained extensive experience by delivering a 
+                  wide range of projects, including websites, web applications, 
+                  mobile applications, 3D modeling services, and digital marketing 
+                  services, to clients across different industries and of varying sizes.
+                  
+                  </p>
+
+                  <div class="position-absolute top-0 end-0 top_right_top">
+                    <img draggable="false" class="corner_width" src="{% static 'pongal/frame/bamboo_frame/pongal_bamboo_frame_top_right.png' %}" alt="">
+                  </div>
+
+                  <div class="position-absolute top-0 start-0 top_left_top">
+                    <img draggable="false" class="corner_width" src="{% static 'pongal/frame/bamboo_frame/pongal_bamboo_frame_top_left.png' %}" alt="">
+                  </div>
+
+                  <div class="position-absolute bottom-0 start-0 bottom_left_top">
+                    <img draggable="false" class="corner_width" src="{% static 'pongal/frame/bamboo_frame/pongal_bamboo_frame_bottom_left.png' %}" alt="">
+                  </div>
+
+                  <div class="position-absolute bottom-0 end-0 bottom_right_top">
+                    <img draggable="false" class="corner_width" src="{% static 'pongal/frame/bamboo_frame/pongal_bamboo_frame_bottom_right.png' %}" alt="">
+                  </div>
+
+            
+               
+              </div>
+
               </div>
               <div class="col-lg-2 col-sm-12 col-md-8"></div>
               <div class="col-lg-4 col-sm-12 col-md-8">
-                <p class="fst-normal" data-aos="fade-right"
-                data-aos-duration="2000">
-                At ALTOS Technologies, we understand the critical role that user 
-                experience plays in the success of your website or software. That's 
-                why we put a strong emphasis on designing and developing products 
-                that are user-friendly, intuitive, and enjoyable to use, ensuring 
-                your customers or employees have a seamless experience.
+                
+                <div class="position-relative">
+                  <p class="fst-normal mob_margin_top" data-aos="fade-right"
+                    data-aos-duration="2000">
+                    At ALTOS Technologies, we understand the critical role that user 
+                    experience plays in the success of your website or software. That's 
+                    why we put a strong emphasis on designing and developing products 
+                    that are user-friendly, intuitive, and enjoyable to use, ensuring 
+                    your customers or employees have a seamless experience.
 
-                </p>
+                  </p>
+
+                  <div class="position-absolute top-0 end-0 top_right_top">
+                    <img draggable="false" class="corner_width" src="{% static 'pongal/frame/bamboo_frame/pongal_bamboo_frame_top_right.png' %}" alt="">
+                  </div>
+
+                  <div class="position-absolute top-0 start-0 top_left_top">
+                    <img draggable="false" class="corner_width" src="{% static 'pongal/frame/bamboo_frame/pongal_bamboo_frame_top_left.png' %}" alt="">
+                  </div>
+
+                  <div class="position-absolute bottom-0 start-0 bottom_left_top">
+                    <img draggable="false" class="corner_width" src="{% static 'pongal/frame/bamboo_frame/pongal_bamboo_frame_bottom_left.png' %}" alt="">
+                  </div>
+
+                  <div class="position-absolute bottom-0 end-0 bottom_right_top">
+                    <img draggable="false" class="corner_width" src="{% static 'pongal/frame/bamboo_frame/pongal_bamboo_frame_bottom_right.png' %}" alt="">
+                  </div>
+
+            </div>
+           
            
               </div>
             </div>

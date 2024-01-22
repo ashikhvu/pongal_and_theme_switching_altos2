@@ -118,6 +118,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       opacity: 0.75;
       width: 15vw;
     }
+    .pongal_text_theme{
+      background-image: url('/static/pongal/bg/bg_fire.png');
+      background-size: contain;
+      background-repeat: repeat;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    .pongal_text_theme1{
+      background-image: url('/static/pongal/bg/bg_fire1.png');
+      background-size: contain;
+      background-repeat: repeat;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
   </style>
 
   </head>
@@ -453,7 +467,11 @@ font-size: 0.91.5em;
         <div class="tarining-content">
           <div class="content-card">
             <div class="title text-start">
+              {% if current_theme == 'pongal' %}
+              <h2 class="mb-4 mt-3 pongal_text_theme" style="color: transparent;">Join the Altos Technologies<span style="font-size: 0.85em;"> Team and Build a Better Tomorrow</span> </h2>
+              {% else %}
               <h2 class="mb-4 mt-3" style="color: #eceff0;">Join the Altos Technologies<span style="font-size: 0.85em;"> Team and Build a Better Tomorrow</span> </h2>
+              {% endif %}
             </div>
             <p>
               <b>At Altos Technologies,</b> &nbsp;
@@ -511,8 +529,11 @@ font-size: 0.91.5em;
   <section id="vacancy">
     <div class="container">
 
-     
+      {% if current_theme == 'pongal' %}
+      <h2 class="mt-2 mb-5 pongal_text_theme" style="color: transparent;">Our Latest Openings</h2>
+      {% else %}
       <h2 class="mt-2 mb-5" style="color: #ffffff;">Our Latest Openings</h2>
+      {% endif %}
       <div id="container">   
         <div id="card-container" class="row">
           {% for i in vacan %}
@@ -1231,7 +1252,213 @@ position:relative
 {% endfor %}
 <!-- Central Modal Medium Success-->
 
+<!-- Blog style-->
 
+<style>
+  .blog-section
+  {
+    background-color: #ffffff;
+  }
+  .blog-container
+  {
+    padding-top: 0.975rem;
+  }
+  .blog-head
+  {
+    font-weight: 900;
+    color: #1b5895d9;
+    padding-bottom: 1rem;
+    
+  }
+  .blog-head h2, .blog-head h4{
+    font-weight:900;
+  }
+  .blog-subhead
+  {
+    font-weight:900;
+    padding-bottom: 1rem;
+    color: #1b5895d9;
+  }
+  .blog-subhead h4{
+    font-weight:900;
+  }
+  .blog-content
+  {
+    margin-top: 0.675rem;
+  }
+  .blog-content .content-box p{
+    color: #000000f1;
+    font-size: 0.945rem;
+    line-height: 1.6rem;
+  }
+  .list-box
+  {
+    display: flex;
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .list-box ul li{
+    padding-bottom: 0.565rem;
+    letter-spacing: 0.03rem;
+  }
+  .list-box ul li a{
+    color: #045573;
+    font-weight: 600;
+  }
+  .sp-lineBox
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    
+  }
+  .sp-line
+  {
+    height: 15px;
+    border-bottom: 2px solid #25ccc1;
+   
+  }
+  .line1
+  {
+    width: 20%;
+  }
+  .line2
+  {
+    width: 15%;
+  }
+  .line3
+  {
+    width: 10%;
+  }
+  @media (max-width:500px)
+  {
+    .list-box
+    {
+      flex-direction: column;
+    }
+  }
+
+</style>
+
+<!-- End Blog Style-->
+
+<!--- Blog Section -->
+
+<section class="blog-section">
+  <div class="container blog-container">
+    <div class="blog-head">
+      <h2>What is Altos Technologies and what does it provide </h2>
+    </div>
+    <div class="blog-content">
+      <div class="content-box">
+        <p>
+          Welcome to the world of Altos Technologies, a pioneering and highly regarded software development and digital marketing company situated in the vibrant hub of Infopark, Kochi. Renowned as the best software company in Kerala and a top-rated digital marketing company in Kochi, Altos Technologies has carved its niche by delivering excellence across a spectrum of digital services.
+        </p>
+      </div>
+      <div class="content-box">
+        <p>
+          With a rich legacy of completing over a hundred successful projects worldwide, Altos Technologies has established itself as a frontrunner in providing cutting-edge solutions to meet diverse technological needs. Whether it's crafting dynamic websites, developing innovative software, or orchestrating result-oriented digital marketing strategies, Altos Technologies is synonymous with reliability, innovation, and customer satisfaction.
+        </p>
+      </div>
+      <div class="content-box">
+        <p>
+          Nestled in the heart of Kerala's technological landscape, Altos Technologies stands as a beacon of expertise, offering a suite of services that encompass website development, software creation, mobile application development, 3D modeling, and a comprehensive range of digital marketing services. Furthermore, Altos Technologies takes pride in its unique offering of a six-month on-the-job training program, guaranteeing placement and nurturing the talents of future professionals.
+        </p>
+      </div>
+      <div class="content-box">
+        <p>
+          At the core of Altos Technologies lies a set of distinctive traits that set it apart in the industry. The company boasts a team of experienced professionals dedicated to delivering exceptional results. Their commitment to unique designs, punctual project deliveries, tailored services, prompt responses, and unwavering client support remains unparalleled.
+        </p>
+      </div>
+      <div class="content-box">
+        <p>
+          In this blog post, we'll delve deeper into the extensive array of services provided by Altos Technologies, exploring their expertise in software development, their stronghold in digital marketing strategies, and the remarkable software solutions they've developed to streamline various business operations. 
+          </p>
+      </div>
+
+      <div class="sp-lineBox">
+        <div class="sp-line line1"></div>
+        <div class="sp-line line2"></div>
+        <div class="sp-line line3"></div>
+      </div>
+
+
+      <div class="list-box">
+        <div>
+          <div class="blog-head">
+            <h4>Services Offered by Altos Technologies</h4>
+          </div>
+    
+          <ul>
+            
+            <li><a href="{% url 'service' %}">Website Development:</a> Crafting dynamic websites that stand out.</li>
+            <li> <a href="{% url 'service' %}">Software Development:</a> Delivering innovative and robust software solutions.</li>
+            <li><a href="{% url 'service' %}">Mobile Application Development:</a> Creating impactful mobile apps.</li>
+            <li><a href="{% url 'service' %}">3D Modeling Services:</a> Expertise in creating 3D models.</li>
+            <li> <a href="{% url 'service' %}">Digital Marketing Services:</a>  Tailored strategies for online success.</li>
+            <li> <a href="{% url 'vacancy' %}">Guaranteed Placement</a> with 6-month On-the-Job Training. </li>
+  
+          </ul>
+  
+          <div class="content-box">
+            <p>
+            At Altos Technologies, our suite of products is designed to revolutionize the way businesses operate and thrive in the digital era. We pride ourselves on delivering cutting-edge software solutions tailored to modern enterprises' diverse needs.
+            </p>
+          </div>
+        </div>
+  
+       
+        <div>
+          <div class="blog-subhead">
+            <h4 class=""> Products Offered by Altos Technologies</h4>
+          </div>
+  
+          <ul>
+            
+            <li><a href="{% url 'core' %}">ERP and CRM Systems</a></li>
+            <li><a href="{% url 'core' %}">Smart Core Software for Task and Project Management</a> </li>
+            <li><a href="{% url 'core' %}">HRMS and Accounting Software</a> </li>
+            <li><a href="{% url 'core' %}">Tailored Software Solutions</a> </li>
+            
+          </ul>
+          <div class="content-box">
+            <p>
+              In addition to our flagship products, Altos Technologies excels in developing tailored software solutions. Whether it's customizing existing software or creating entirely new solutions, our team leverages expertise to address specific business needs across various industries.
+            </p>
+          </div>
+    
+  
+        </div>
+      </div>
+
+      
+    
+      <div class="blog-head ">
+        <h4 >What makes Altos Technologies unique </h4>
+      </div>
+      
+      <div class="content-box">
+        <p>
+          Altos Technologies stands out in the industry due to its exceptional qualities and distinctive approach. Their uniqueness lies in their team of seasoned professionals who bring extensive expertise and creativity to every project. They prioritize delivering unique and custom-designed solutions, ensuring that each client receives personalized services that cater specifically to their requirements.
+        </p>
+        <div class="content-box">
+          <p>
+            The company's hallmark is its commitment to on-time delivery without compromising quality. Altos Technologies prides itself on its ability to provide prompt responses and dedicated client support, fostering strong relationships built on trust and reliability. This dedication to customer satisfaction sets them apart from others in the field.
+          </p>
+          <div class="content-box">
+            <p>
+              Moreover, Altos Technologies goes beyond conventional services by offering a 6-month on-the-job training program with guaranteed placement. This initiative reflects their commitment to nurturing talent and contributing to the growth of the industry.
+            </p>
+          </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Blog Section End -->
 
 <footer id="footer">
   <div class="footer-top">

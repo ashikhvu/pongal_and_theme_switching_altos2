@@ -260,12 +260,78 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </style>
   
   <style>
+    .pongal_text_theme{
+      background-image: url('/static/pongal/bg/bg_fire.png');
+      background-size: contain;
+      background-repeat: repeat;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    .pongal_text_theme1{
+      background-image: url('/static/pongal/bg/bg_fire1.png');
+      background-size: contain;
+      background-repeat: repeat;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
     .top_decor_top{
       margin-top: -1.5rem;
     }
     .top_decor{
       opacity: 0.75;
       width: 15vw;
+    }
+    #pongal_home2{
+      width: 12rem;
+    }
+    .pongal_home2_top{
+      margin-top: -10.2rem;
+      margin-right: 10rem;
+    }
+    @media screen and (max-width:1399px) {
+      #pongal_home2{
+        width: 20rem;
+      }
+      .pongal_home2_top{
+        margin-top: -7.2rem;
+        margin-right: 4.8rem;
+      }
+    }
+    @media screen and (max-width:1199px) {
+      #pongal_home2{
+        width: 15rem;
+      }
+      .pongal_home2_top{
+        margin-top: -5.8rem;
+        margin-right: 15rem;
+      }
+    }
+    @media screen and (max-width:991px) {
+      #pongal_home2{
+        width: 15rem;
+      }
+      .pongal_home2_top{
+        margin-top: -5.8rem;
+        margin-right: 6.8rem;
+      }
+    }
+    @media screen and (max-width:767px) {
+      #pongal_home2{
+        width: 10rem;
+      }
+      .pongal_home2_top{
+        margin-top: -3.8rem;
+        margin-right: 1.5rem;
+      }
+    }
+    @media screen and (max-width:420px) {
+      #pongal_home2{
+        width: 7rem;
+      }
+      .pongal_home2_top{
+        margin-top: -2.5rem;
+        margin-right: 1.5rem;
+      }
     }
   </style>
       
@@ -507,7 +573,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="section-title">
           <h2>Events</h2>
+          <!--  -->
+          {% if current_theme == 'pongal' %}
+          <p class="pongal_text_theme" style="color: transparent;">Check our Events</p>
+          {% else %}
           <p>Check our Events</p>
+          {% endif %}
+        </div>
+
+        <div class="position-relative">
+          <div class="position-absolute end-0 pongal_home2_top">
+            <img id="pongal_home2" src="{% static 'pongal/decor/pongal_home2.png' %}" alt="">
+          </div>
         </div>
 
         <div class="container events-box">
@@ -605,7 +682,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
         <div class="section-title">
           <h2>Gallery</h2>
+          {% if current_theme == 'pongal' %}
+          <p class="pongal_text_theme" style="color: transparent;">Check our Gallery</p>
+          {% else %}
           <p>Check our Gallery</p>
+          {% endif %}
         </div>
 
         <div class="galleryBox">
@@ -613,6 +694,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="card imge__card">
             {% if imgs.gallery_img%}
             <img src="{{imgs.gallery_img.url}}" alt="Best software company in kerala">
+
+            <div class="position-relative">
+              <div class="position-absolute bottom-0 start-0" style="margin-left: 1.2rem;">
+                <img draggable="false" style="width: 15rem;" src="{% static 'pongal/frame/frame2.png' %}" alt="">
+              </div>
+            </div>
+            
             {% endif %}
           </div>
           {% endfor %}
