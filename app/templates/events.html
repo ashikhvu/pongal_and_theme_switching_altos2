@@ -616,6 +616,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="card">
                
                   {% if i.ps_img %}
+
+                  <div class="position-relative">
+                    <div class="position-absolute top-0" style="margin-top:0rem;">
+                      <img style="width: 15rem;" src="{% static 'pongal/frame/top_right_corner_grass.png' %}" alt="">
+                    </div>
+                  </div>
+
                   <div class="poster-img">
                     <a href="{{i.ps_img.url}}" download="{{i.ps_img.url}}">
                       <img src="{{i.ps_img.url}}">
