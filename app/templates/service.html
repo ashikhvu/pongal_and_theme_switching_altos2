@@ -85,6 +85,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     opacity: 0.75;
     width: 15vw;
   }
+  .pongal_text_theme{
+    background-image: url('/static/pongal/bg/bg_fire.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .pongal_text_theme1{
+    background-image: url('/static/pongal/bg/bg_fire1.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>.hover_anchor {
+    color: #189aa6;
+  }
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>.hover_anchor_pongal {
+    background-image: url('/static/pongal/bg/bg_fire.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 </style>
 
 </head>
@@ -163,14 +194,84 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
-        <li><a class="nav-link scrollto hom " href="{% url 'text_page' %}">Home</a></li>
-        <li><a class="nav-link scrollto abot" href="{% url 'aboutus' %}">About us</a></li>
-        <li><a class="nav-link scrollto serv" href="{% url 'service' %}">Services</a></li>
-        <li><a class="nav-link scrollto  cor " href="{% url 'core' %}">Product</a></li>
-        <li><a class="nav-link scrollto  cors " href="{% url 'vacancy' %}">Career</a></li>
+        <li>
+          <a 
+          {% if current_theme == 'pongal' %} 
+          class="nav-link scrollto hom hover_anchor_pongal " 
+          {% else %} 
+          class="nav-link scrollto hom" 
+          {% endif %} 
+          href="{% url 'text_page' %}">
+          Home
+        </a>
+        </li>
+        <li>
+          <a 
+              {% if current_theme == 'pongal' %} 
+                class="nav-link scrollto abot hover_anchor_pongal" 
+              {% else %} 
+                class="nav-link scrollto abot hover_anchor" 
+              {% endif %} 
+              href="{% url 'aboutus' %}">
+              About us
+          </a>
+        </li>
+        <li>
+          <a 
+          {% if current_theme == 'pongal' %}
+          class="nav-link scrollto serv pongal_text_theme1" style="color: transparent;"
+          {% else %}
+          class="nav-link scrollto serv hover_anchor" 
+          {% endif %}
+          href="{% url 'service' %}">
+          Services
+        </a>
+        </li>
+        <li>
+          <a 
+          {% if current_theme == 'pongal' %}
+          class="nav-link scrollto cor hover_anchor_pongal" 
+          {% else %}
+          class="nav-link scrollto cor hover_anchor" 
+          {% endif %}
+          href="{% url 'core' %}"
+            >Product</a
+          >
+        </li>
+        <li>
+          <a 
+          {% if current_theme == 'pongal' %}
+          class="nav-link scrollto cors hover_anchor_pongal" 
+          {% else %}
+          class="nav-link scrollto cors hover_anchor" 
+          {% endif %}
+          href="{% url 'vacancy' %}">
+          Career
+          </a>
+        </li>
 
-        <li><a class="nav-link scrollto event" href="{% url 'events' %}">Events</a></li>
-        <li><a class="nav-link scrollto cont" href="{% url 'contact' %}">Contact</a></li>
+        <li>
+          <a 
+          {% if current_theme == 'pongal' %}
+          class="nav-link scrollto event hover_anchor_pongal"
+          {% else %}
+          class="nav-link scrollto event hover_anchor" 
+          {% endif %}
+          href="{% url 'events' %}">
+            Events
+          </a>
+        </li>
+        <li>
+          <a 
+          {% if current_theme == 'pongal' %}
+          class="nav-link scrollto cont hover_anchor_pongal" 
+          {% else %}
+          class="nav-link scrollto cont hover_anchor" 
+          {% endif %}
+          href="{% url 'contact' %}">
+            Contact
+          </a>
+        </li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
@@ -351,7 +452,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <section id="services_list">
     <div class="container" id="containet-top-head">
       <div class="section-title">
+        {% if current_theme == 'pongal' %}
+        <p class="pongal_text_theme" style="color: transparent;">Check our Services</p>
+        {% else %}
         <p>Check our <span style="color: rgb(39, 112, 141);">Services</span></p>
+        {% endif %}
 
         <!-- <p style="color: #ffff;">At Altos Technologies, we offer a comprehensive suite of 
           <span style="color: #0fa49b;">digital marketing and IT services
@@ -369,6 +474,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           <div class="box-service" style="height: 450px;">
             <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
   
               <div class="icon"> <ion-icon name="search" style="color: #ffb700"></ion-icon></div>
               <h4 style="color: #ffb700">SEO Optimization</h4>
@@ -377,26 +494,48 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 Related To Your Business In Google, Bing, And Other Search Engines.
               </p>
             </div>
-            <div class="request-box">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+            
+            <div class="position-relative">
+              <div class="position-absolute start-50 translate-middle-x">
+                <div class="request-box">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="box-service" style="height: 450px;">
             <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
+              
               <div class="icon"> <i class="bx bx-tachometer" style="color: #ffb700"></i></div>
               <h4 style="color: #ffb700">Content Marketing</span> </h4>
               <p> Content marketing is a marketing strategy used to attract, engage, and retain an audience
                 by creating and sharing relevant articles, videos, podcasts, and other media.
               </p>
             </div>
-            <div class="request-box">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+            <div class="position-relative">
+              <div class="position-absolute start-50 translate-middle-x">
+                <div class="request-box">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="box-service" style="height: 450px;">
             <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
               <div class="icon"><ion-icon name="phone-portrait" style="color: #ffb700"></ion-icon></div>
   
               <h4 style="color: #ffb700">App store Optimization</span></h4>
@@ -404,13 +543,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 an app store's search results. The higher your app ranks , the more visible it is to potential customers.
               </p>
             </div>
-            <div class="request-box">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+            <div class="position-relative">
+              <div class="position-absolute start-50 translate-middle-x">
+                <div class="request-box">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+                </div>
+              </div>
             </div>
           </div>
   
           <div class="box-service" style="height: 450px;">
             <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
               <div class="icon"> <ion-icon name="archive" style="color: #ffb700"></ion-icon></div>
   
               <h4 style="color: #ffb700">Email Marketing</h4>
@@ -418,39 +567,69 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 customers on your email list aware of new products, discounts, and other services.
               </p>
             </div>
-            <div class="request-box">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+            <div class="position-relative">
+              <div class="position-absolute start-50 translate-middle-x">
+                <div class="request-box">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+                </div>
+              </div>
             </div>
           </div>
   
           <div class="box-service" style="height: 450px;">
             <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
               <div class="icon"> <ion-icon name="chatbox-outline" style="color: #ffb700"></ion-icon></div>
               <h4 style="color: #ffb700">SMS Marketing</span> </h4>
               <p>SMS is one of the most convenient channels for communicating
                 with your customers, and one of the most preferred mediums by customers themselves.
               </p>
             </div>
-            <div class="request-box">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+            <div class="position-relative">
+              <div class="position-absolute start-50 translate-middle-x">
+                <div class="request-box">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+                </div>
+              </div>
             </div>
           </div>
   
           <div class="box-service" style="height: 450px;">
             <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
               <div class="icon"> <ion-icon name="chatbubbles-outline" style="color: #ffb700"></ion-icon></div>
               <h4 style="color: #ffb700">WhatsApp Marketing</h4>
               <p> You can use it to send reminders about abandoned shopping carts,
                 share special offers and coupons, or even answer customer questions in real time.
               </p>
             </div>
-            <div class="request-box">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+            <div class="position-relative">
+              <div class="position-absolute start-50 translate-middle-x">
+                <div class="request-box">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+                </div>
+              </div>
             </div>
           </div>
   
           <div class="box-service" style="height: 450px;">
             <div class="box-contents" style="height: 380px;">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
               <div class="icon">
                 <ion-icon name="share-social-outline" style="color: #ffb700"></ion-icon>
               </div>
@@ -460,13 +639,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 advertising campaigns, and analyzing data to track your progress and make data-driven decisions.
               </p>
             </div>
-            <div class="request-box">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+            <div class="position-relative">
+              <div class="position-absolute start-50 translate-middle-x">
+                <div class="request-box">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="box-service" style="height: 450px;">
             <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
               <div class="icon">
                 <ion-icon name="logo-linkedin" style="color: #ffb700"></ion-icon>
               </div>
@@ -475,13 +664,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 It can be used as a marketing tool too as it allows you to easily segment your target audience.
               </p>
             </div>
-            <div class="request-box">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+            <div class="position-relative">
+              <div class="position-absolute start-50 translate-middle-x">
+                <div class="request-box">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+                </div>
+              </div>
             </div>
           </div>
           
           <div class="box-service" style="height: 450px;">
             <div class="box-contents" style="height: 380px;">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
               <div class="icon">
                 <ion-icon name="logo-youtube" style="color:#ffb700"></ion-icon>
               </div>
@@ -491,13 +690,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 help you utilize this powerful platform for businesses to reach the targeted audience.
               </p>
             </div>
-            <div class="request-box">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+            <div class="position-relative">
+              <div class="position-absolute start-50 translate-middle-x">
+                <div class="request-box">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="box-service" style="height: 450px;">
             <div class="box-contents" style="height: 380px;">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
               <div class="icon">
                 <ion-icon name="archive" style="color: #ffb700"></ion-icon>
               </div>
@@ -509,13 +718,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
               </p>
             </div>
-            <div class="request-box">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+            <div class="position-relative">
+              <div class="position-absolute start-50 translate-middle-x">
+                <div class="request-box">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+                </div>
+              </div>
             </div>
           </div>
   
           <div class="box-service" style="height: 450px;">
             <div class="box-contents" style="height: 380px;">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
               <div class="icon">
                 <ion-icon name="grid" style="color:#ffb700"></ion-icon>
               </div>
@@ -527,9 +746,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
               </p>
             </div>
-            <div class="request-box">
-              <a href="{% url 'whatsappmarkettools' %}" >Know More </a>
+
+            <div class="position-relative">
+              <div class="position-absolute start-50 translate-middle-x">
+                <div class="request-box">
+                  <a href="{% url 'whatsappmarkettools' %}" >Know More </a>
+                </div>
+              </div>
             </div>
+
+            
           </div>
 
         </div>
@@ -539,6 +765,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <!-- <div class="box-service">
           <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
 
             <div class="icon"> <ion-icon name="search" style="color: #ffb700"></ion-icon></div>
             <h4 style="color: #ffb700">SEO Optimization</h4>
@@ -554,6 +786,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <!-- <div class="box-service">
           <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
             <div class="icon"> <i class="bx bx-tachometer" style="color: #ffb700"></i></div>
             <h4 style="color: #ffb700">Content Marketing</span> </h4>
             <p> Content marketing is a marketing strategy used to attract, engage, and retain an audience
@@ -567,6 +805,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <!-- <div class="box-service">
           <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
             <div class="icon"> <ion-icon name="desktop" style="color: #ffb700"></ion-icon></div>
             <h4 style="color: #ffb700">Digital Marketing</h4>
             <p> Also called online marketing, is the promotion of brands to connect with potential
@@ -580,6 +824,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <!-- <div class="box-service">
           <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
             <div class="icon"><ion-icon name="phone-portrait" style="color: #ffb700"></ion-icon></div>
 
             <h4 style="color: #ffb700">App store Optimization</span></h4>
@@ -594,6 +844,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="box-service">
           <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
             <div class="icon"> <ion-icon name="archive" style="color: #ffb700"></ion-icon></div>
 
             <h4 style="color: #ffb700">Email Marketing</h4>
@@ -608,6 +864,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="box-service">
           <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
             <div class="icon"> <ion-icon name="chatbox-outline" style="color: #ffb700"></ion-icon></div>
             <h4 style="color: #ffb700">SMS Marketing</span> </h4>
             <p>SMS is one of the most convenient channels for communicating
@@ -621,6 +883,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="box-service">
           <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
             <div class="icon"> <ion-icon name="chatbubbles-outline" style="color: #ffb700"></ion-icon></div>
             <h4 style="color: #ffb700">WhatsApp Marketing</h4>
             <p> You can use it to send reminders about abandoned shopping carts,
@@ -634,6 +902,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="box-service">
           <div class="box-contents">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
             <div class="icon">
               <ion-icon name="logo-linkedin" style="color: #ffb700"></ion-icon>
             </div>
@@ -681,6 +955,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="box-service" style="height: 450px;">
           <div class="box-contents" style="height: 380px;">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
             <div class="icon">
               <ion-icon name="grid" style="color:#ffb700"></ion-icon>
             </div>
@@ -690,13 +970,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               entry, and back-office operations.
             </p>
           </div>
-          <div class="request-box">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+          <div class="position-relative">
+            <div class="position-absolute start-50 translate-middle-x">
+              <div class="request-box">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="box-service" style="height: 450px;">
           <div class="box-contents" style="height: 380px;">
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+              </div>
+            </div>
+
             <div class="icon">
               <ion-icon name="grid" style="color:#ffb700"></ion-icon>
             </div>
@@ -708,13 +998,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             </p>
           </div>
-          <div class="request-box">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+         <div class="position-relative">
+            <div class="position-absolute start-50 translate-middle-x">
+              <div class="request-box">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="box-service" style="height: 450px;">
           <div class="box-contents" style="height: 380px;">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
             <div class="icon">
               <ion-icon name="grid" style="color:#ffb700"></ion-icon>
             </div>
@@ -727,13 +1027,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             </p>
           </div>
-          <div class="request-box">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+         <div class="position-relative">
+            <div class="position-absolute start-50 translate-middle-x">
+              <div class="request-box">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="box-service" style="height: 450px;">
           <div class="box-contents" style="height: 380px;">
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+              </div>
+            </div>
+
             <div class="icon">
               <ion-icon name="cloud-done-outline" style="color:#ffb700"></ion-icon>
             </div>
@@ -746,14 +1056,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             </p>
           </div>
-          <div class="request-box">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+         <div class="position-relative">
+            <div class="position-absolute start-50 translate-middle-x">
+              <div class="request-box">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+              </div>
+            </div>
           </div>
         </div>
 
 
         <div class="box-service" style="height: 450px;">
           <div class="box-contents" style="height: 380px;">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
             <div class="icon">
               <ion-icon name="analytics-outline" style="color:#ffb700"></ion-icon>
 
@@ -766,14 +1086,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             </p>
           </div>
-          <div class="request-box">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+         <div class="position-relative">
+            <div class="position-absolute start-50 translate-middle-x">
+              <div class="request-box">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+              </div>
+            </div>
           </div>
         </div>
 
 
         <div class="box-service" style="height: 450px;">
           <div class="box-contents" style="height: 380px;">
+
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                  <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
             <div class="icon">
               <ion-icon name="logo-web-component" style="color:#ffb700"></ion-icon>
             </div>
@@ -785,8 +1115,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             </p>
           </div>
-          <div class="request-box">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+         <div class="position-relative">
+            <div class="position-absolute start-50 translate-middle-x">
+              <div class="request-box">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -803,8 +1137,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             </p>
           </div>
-          <div class="request-box">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+         <div class="position-relative">
+            <div class="position-absolute start-50 translate-middle-x">
+              <div class="request-box">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#enquery-form">Know More </a>
+              </div>
+            </div>
           </div>
         </div>
 
