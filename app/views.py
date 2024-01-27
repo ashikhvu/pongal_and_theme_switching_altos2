@@ -979,7 +979,11 @@ def delete_apply(request,pk):
 
 
 def whatsappmarkettools(request):
-    return render(request, 'whatsappmarkettools.html')
+    if ThemeModel.objects.filter().exists():
+        current_theme = ThemeModel.objects.last().theme_name
+    else:
+        current_theme = ''
+    return render(request, 'whatsappmarkettools.html',{"current_theme":current_theme})
 
 # ----------------------------------------- ASHIKH VU (start) -----------------------------------
 

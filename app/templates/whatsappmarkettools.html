@@ -76,6 +76,66 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   }
 </style>
+  
+<style>
+  .pongal_text_theme{
+    background-image: url('/static/pongal/bg/bg_fire.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .pongal_text_theme1{
+    background-image: url('/static/pongal/bg/bg_fire1.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>.hover_anchor {
+    color: #189aa6;
+  }
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>.hover_anchor_pongal {
+    background-image: url('/static/pongal/bg/bg_fire.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .top_decor_top{
+      margin-top: -1.5rem;
+    }
+  .color-button1{
+    font-size: 1em;
+    
+    background: url('/static/pongal/bg/bg_banana.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 100px;
+    width: 35vh;
+  }
+
+  @media (max-width: 768px) {
+    .color-button1 {
+      margin: 20px 20px;
+    }
+  }
+</style>
+
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RLTXDEGMP"></script>
@@ -87,7 +147,57 @@ gtag('js', new Date());
 gtag('config', 'G-3RLTXDEGMP');
 </script>
 <!-- ======= Header ======= -->
-<header id="header" class="fixed-top green-blue">
+<header id="header" class="fixed-top green-blue pb-0" style="padding-top: 1.5rem;background-color: rgba(0, 0, 0, 0.425);">
+
+  {% if current_theme == 'pongal' %}
+    <div class="position-relative" style="z-index: 998;">
+      <div class="position-absolute start-0 top-0 top_decor_top">
+        <div class="d-flex">
+          <img draggable="false"style="width: 30rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
 <div class="container d-flex align-items-center justify-content-lg-between">
 
   <h1 class="logo me-auto me-lg-0">
@@ -103,14 +213,84 @@ gtag('config', 'G-3RLTXDEGMP');
 
   <nav id="navbar" class="navbar order-last order-lg-0">
     <ul>
-      <li><a class="nav-link scrollto hom " href="{% url 'text_page' %}">Home</a></li>
-      <li><a class="nav-link scrollto abot" href="{% url 'aboutus' %}">About us</a></li>
-      <li><a class="nav-link scrollto serv" href="{% url 'service' %}">Services</a></li>
-      <li><a class="nav-link scrollto  cor " href="{% url 'core' %}">Product</a></li>
-      <li><a class="nav-link scrollto  cors " href="{% url 'vacancy' %}">Career</a></li>
+      <li>
+        <a 
+        {% if current_theme == 'pongal' %} 
+        class="nav-link scrollto hom hover_anchor_pongal" 
+        {% else %} 
+        class="nav-link scrollto hom" 
+        {% endif %} 
+        href="{% url 'text_page' %}">
+        Home
+      </a>
+      </li>
+      <li>
+        <a 
+            {% if current_theme == 'pongal' %} 
+              class="nav-link scrollto abot hover_anchor_pongal" 
+            {% else %} 
+              class="nav-link scrollto abot hover_anchor" 
+            {% endif %} 
+            href="{% url 'aboutus' %}">
+            About us
+        </a>
+      </li>
+      <li>
+        <a 
+        {% if current_theme == 'pongal' %}
+        class="nav-link scrollto serv pongal_text_theme1" style="color: transparent;" 
+        {% else %}
+        class="nav-link scrollto serv hover_anchor" 
+        {% endif %}
+        href="{% url 'service' %}">
+        Services
+      </a>
+      </li>
+      <li>
+        <a 
+        {% if current_theme == 'pongal' %}
+        class="nav-link scrollto cor hover_anchor_pongal" 
+        {% else %}
+        class="nav-link scrollto cor hover_anchor" 
+        {% endif %}
+        href="{% url 'core' %}"
+          >Product</a
+        >
+      </li>
+      <li>
+        <a 
+        {% if current_theme == 'pongal' %}
+        class="nav-link scrollto cors hover_anchor_pongal" 
+        {% else %}
+        class="nav-link scrollto cors hover_anchor" 
+        {% endif %}
+        href="{% url 'vacancy' %}">
+        Career
+        </a>
+      </li>
 
-      <li><a class="nav-link scrollto event" href="{% url 'events' %}">Events</a></li>
-      <li><a class="nav-link scrollto cont" href="{% url 'contact' %}">Contact</a></li>
+      <li>
+        <a 
+        {% if current_theme == 'pongal' %}
+        class="nav-link scrollto event hover_anchor_pongal" 
+        {% else %}
+        class="nav-link scrollto event hover_anchor" 
+        {% endif %}
+        href="{% url 'events' %}">
+          Events
+        </a>
+      </li>
+      <li>
+        <a 
+        {% if current_theme == 'pongal' %}
+        class="nav-link scrollto cont hover_anchor_pongal" 
+        {% else %}
+        class="nav-link scrollto cont hover_anchor" 
+        {% endif %}
+        href="{% url 'contact' %}">
+          Contact
+        </a>
+      </li>
     </ul>
     <i class="bi bi-list mobile-nav-toggle"></i>
   </nav><!-- .navbar -->
@@ -482,16 +662,27 @@ window.addEventListener('resize', handleResize);
     <div id="containet-top-head">
       <br><br><br>
       <div class="section-title">
+        {% if current_theme == 'pongal' %}
+        <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span class="pongal_text_theme" style="font-size: 5vh;color: transparent;">Improve Your Audience with</span> <br> <span style="font-size: 10vh; color:rgb(62, 199, 206)"> ALT Whatsapp Module </span></p>
+        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none pongal_text_theme" style="color: transparent;">Improve Your Audience with</span> <br> <span style="color:rgb(62, 199, 206)"> ALT Whatsapp Module </span></p>
+        {% else %}
         <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span style="font-size: 5vh;">Improve Your Audience with</span> <br> <span style="font-size: 10vh; color:rgb(62, 199, 206)"> ALT Whatsapp Module </span></p>
         <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none" >Improve Your Audience with</span> <br> <span style="color:rgb(62, 199, 206)"> ALT Whatsapp Module </span></p>
+        {% endif %}
         <br><br>
         <div data-aos="fade-up" data-aos-duration="750" >
           <span class="text-white" style="font-size: large;">Get the Best ALT Whatsapp Module for Your Business Today</span>
         </div>
         <br><br>
 
+        {% if current_theme == 'pongal' %}
+        <a role="button" href="#" class="color-button1 text-white" data-aos="fade-up" data-aos-duration="750">Request Product Demo</a>
+        <a role="button" href="#" class="color-button1 text-white"  data-aos="fade-up" data-aos-duration="750">Get Started</a>
+        {% else %}
         <a role="button" href="#" class="color-button text-white" data-aos="fade-up" data-aos-duration="750">Request Product Demo</a>
         <a role="button" href="#" class="color-button text-white"  data-aos="fade-up" data-aos-duration="750">Get Started</a>
+        {% endif %}
+
       </div>
       
       <br><br>
@@ -512,12 +703,20 @@ window.addEventListener('resize', handleResize);
         <div class="container mt-5">
           <div class="row  g-3 content-boxs-parent border-0 rounded-4">
             <div class="section-title ">  
+              {% if current_theme == 'pongal' %}
+              <p class="pongal_text_theme" style="color: transparent;">Any best points to highlight <br> about module</p>
+              {% else %}
               <p>Any best points to highlight <br> about module</p>
+              {% endif %}
             </div>
             <div class="col-lg-6 col-sm-12 col-md-6 px-3 mt-5">
               <div class="content-boxs border-0 rounded-4 background_img1">
                 <div class="img-box-tech image-hidden">
+                  {% if current_theme == 'pongal' %}
+                  <img src="/static/pongal/img/erp.png" alt="ERP" />
+                  {% else %}
                   <img src="/static/img/team/erp.png" alt="ERP" />
+                  {% endif %}
                 </div>
                 <p class="text-light" style="font-size: larger; text-align: justify;">
                   Our ALT Whatsapp Module are made of high-quality materials to ensure durability and reliability. 
@@ -527,7 +726,11 @@ window.addEventListener('resize', handleResize);
             </div>
             <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center mt-5">
               <div class="img-box-tech image-visible" style="height: 75%; margin-top: -10vh;">
+                {% if current_theme == 'pongal' %}
+                <img src="/static/pongal/img/erp.png" alt="ERP" />
+                {% else %}
                 <img src="/static/img/team/erp.png" alt="ERP" />
+                {% endif %}
               </div>
             </div>
           </div>
@@ -539,13 +742,21 @@ window.addEventListener('resize', handleResize);
           <div class="row  g-3 content-boxs-parent border-0 rounded-4">
             <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center">
               <div class="img-box-tech image-visible" style="height: 75%; margin-top: -10vh;">
+                {% if current_theme == 'pongal' %}
+                <img src="/static/pongal/img/crm.png" alt="CRM" />
+                {% else %}
                 <img src="/static/img/team/crm.png" alt="CRM" />
+                {% endif %}
               </div>
             </div>
             <div class="col-lg-6 col-sm-12 col-md-6 px-3">
               <div class="content-boxs border-0 rounded-4">
                 <div class="img-box-tech image-hidden" >
-                  <img src="/static/img/team/crm.png" alt="CRM"/>
+                  {% if current_theme == 'pongal' %}
+                  <img src="/static/pongal/img/crm.png" alt="CRM" />
+                  {% else %}
+                  <img src="/static/img/team/crm.png" alt="CRM" />
+                  {% endif %}
                 </div>
                 <p class="text-white" style="font-size: larger; text-align: justify;">
                   We understand the importance of timely delivery of products to our clients. 
@@ -626,8 +837,13 @@ window.addEventListener('resize', handleResize);
         <br><br><br><br><br><br><br>
         <div class="row">
           <div class="col-12">
+            {% if current_theme == 'pongal' %}
+            <p class=" more-head text- d-none d-sm-none pongal_text_theme"  style="font-size: 1.7em;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
+            <p  class=" more-head text- d-lg-block pongal_text_theme"  style="font-size: 3rem;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
+            {% else %}
             <p class=" more-head text-white d-none d-sm-none"  style="font-size: 1.7em;"><b>Revolutionizing Business Marketing </b></p>
             <p  class=" more-head text-white d-lg-block"  style="font-size: 3rem;"><b>Revolutionizing Business Marketing </b></p>
+            {% endif %}
             <div class="row">
               <div class="col-md-3"></div>
               <div class="col-md-6">
@@ -646,10 +862,22 @@ window.addEventListener('resize', handleResize);
 
       <div class="container service-box">
         <div class="dig-mark-container">
-          <p class="text-white mb-3" id="price-head"><b>Plan and Pricing</b></p>
+          {% if current_theme == 'pongal' %}
+          <p class="text- mb-3 pongal_text_theme1" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
+          {% else %}
+          <p class="text-white mb-3 pongal_text_theme" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
+          {% endif %}
           <div class="container" id="sub-content"></div>
           <br><br>
+          
           <div class="box-service" style="margin-bottom: 3vh; padding: 1em 1.7em; width: 270px;" >
+
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                <img style="width: 21.6rem;height: 25.5rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+              </div>
+            </div>
+            
             <div class="box-contents" style="height: 50%;">
               <h4 style="color:rgb(62, 199, 206)">1</span> </h4>
               <p style="text-align: justify;"> Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. 
@@ -659,6 +887,13 @@ window.addEventListener('resize', handleResize);
           </div>
 
           <div class="box-service" style="margin-bottom: 3vh; padding: 1em 1.7em; width: 270px;">
+
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                <img style="width: 21.6rem;height: 25.5rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+              </div>
+            </div>
+
             <div class="box-contents" style="height: 50%;">
               <h4 style="color:rgb(62, 199, 206)">2 </span> </h4>
               <p style="text-align: justify;">
@@ -669,6 +904,13 @@ window.addEventListener('resize', handleResize);
           </div>
 
           <div class="box-service" style="margin-bottom: 3vh; padding: 1em 1.7em; width: 270px;" >
+
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
+                <img style="width: 21.6rem;height: 25.5rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+              </div>
+            </div>
+
             <div class="box-contents" style="height: 50%;" >
               <h4 style="color:rgb(62, 199, 206)">3</span> </h4>
               <p style="text-align: justify;">
