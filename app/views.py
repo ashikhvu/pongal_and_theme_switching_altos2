@@ -13,7 +13,11 @@ def handler404(request, exception):
 # Create your views here.
 
 def landingPage(request):
-    return render(request, 'landingpage.html')
+    if ThemeModel.objects.filter().exists():
+        current_theme = ThemeModel.objects.last().theme_name
+    else:
+        current_theme = ''
+    return render(request, 'landingpage.html',{'current_theme':current_theme})
 
 def ex(request):
     return render(request, 'ex.html')

@@ -108,9 +108,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           display: none;
         }
       }
-    </style>
-
-  <style>
     .top_decor_top{
       margin-top: -1.5rem;
     }
@@ -131,6 +128,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background-repeat: repeat;
       background-clip: text;
       -webkit-background-clip: text;
+    }
+    .navbar a:hover,
+    .navbar .active,
+    .navbar .active:focus,
+    .navbar li:hover>.hover_anchor {
+      color: #189aa6;
+    }
+    .navbar a:hover,
+    .navbar .active,
+    .navbar .active:focus,
+    .navbar li:hover>.hover_anchor_pongal {
+      background-image: url('/static/pongal/bg/bg_fire.png');
+      background-size: contain;
+      background-repeat: repeat;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
   </style>
 
@@ -213,14 +227,84 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
-            <li><a class="nav-link scrollto hom " href="{% url 'text_page' %}">Home</a></li>
-            <li><a class="nav-link scrollto abot" href="{% url 'aboutus' %}">About us</a></li>
-            <li><a class="nav-link scrollto serv" href="{% url 'service' %}">Services</a></li>
-            <li><a class="nav-link scrollto  cor " href="{% url 'core' %}">Product</a></li>
-            <li><a class="nav-link scrollto  cors " href="{% url 'vacancy' %}">Career</a></li>
-            
-            <li><a class="nav-link scrollto event" href="{% url 'events' %}">Events</a></li>
-            <li><a class="nav-link scrollto cont" href="{% url 'contact' %}">Contact</a></li>
+            <li>
+              <a 
+              {% if current_theme == 'pongal' %} 
+              class="nav-link scrollto hom hover_anchor_pongal" 
+              {% else %} 
+              class="nav-link scrollto hom" 
+              {% endif %} 
+              href="{% url 'text_page' %}">
+              Home
+            </a>
+            </li>
+            <li>
+              <a 
+                  {% if current_theme == 'pongal' %} 
+                    class="nav-link scrollto abot hover_anchor_pongal" 
+                  {% else %} 
+                    class="nav-link scrollto abot hover_anchor" 
+                  {% endif %} 
+                  href="{% url 'aboutus' %}">
+                  About us
+              </a>
+            </li>
+            <li>
+              <a 
+              {% if current_theme == 'pongal' %}
+              class="nav-link scrollto serv hover_anchor_pongal"
+              {% else %}
+              class="nav-link scrollto serv hover_anchor" 
+              {% endif %}
+              href="{% url 'service' %}">
+              Services
+            </a>
+            </li>
+            <li>
+              <a 
+              {% if current_theme == 'pongal' %}
+              class="nav-link scrollto cor hover_anchor_pongal" 
+              {% else %}
+              class="nav-link scrollto cor hover_anchor" 
+              {% endif %}
+              href="{% url 'core' %}"
+                >Product</a
+              >
+            </li>
+            <li>
+              <a 
+              {% if current_theme == 'pongal' %}
+              class="nav-link scrollto cors hover_anchor_pongal pongal_text_theme1" style="color: transparent;" 
+              {% else %}
+              class="nav-link scrollto cors hover_anchor" 
+              {% endif %}
+              href="{% url 'vacancy' %}">
+              Career
+              </a>
+            </li>
+
+            <li>
+              <a 
+              {% if current_theme == 'pongal' %}
+              class="nav-link scrollto event hover_anchor_pongal" 
+              {% else %}
+              class="nav-link scrollto event hover_anchor" 
+              {% endif %}
+              href="{% url 'events' %}">
+                Events
+              </a>
+            </li>
+            <li>
+              <a 
+              {% if current_theme == 'pongal' %}
+              class="nav-link scrollto cont hover_anchor_pongal" 
+              {% else %}
+              class="nav-link scrollto cont hover_anchor" 
+              {% endif %}
+              href="{% url 'contact' %}">
+                Contact
+              </a>
+            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->

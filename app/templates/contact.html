@@ -11,11 +11,6 @@
     background: url("static/img/bg1.gif") top center;
        background-size:fill;
   }
-  #navbar .cont{
-    color: #189aa6;
-    font-weight: 800;
- 
-  }
     
 
    #navbar ul li .re:hover{
@@ -123,6 +118,31 @@
       margin-top: -7.6rem;
     }
 </style>
+
+{% if current_theme == 'pongal' %}
+<style>
+
+#navbar .cont{
+  background-image: url('/static/pongal/bg/bg_fire.png');
+  background-size: contain;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+font-weight: 800;
+}
+</style>
+{% else %}
+<style>
+
+
+#navbar .cont{
+    color: #189aa6;
+    font-weight: 800;
+ 
+  }
+</style>
+{% endif %}
 
 
 <div class="container-fluid">

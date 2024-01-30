@@ -7,11 +7,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=EB+Garamond&family=Heebo:wght@600;700&family=Josefin+Sans:wght@300;500&family=Montserrat:wght@100;200;300;400&family=Mulish:wght@200&family=Poppins:wght@200;300&family=Raleway:wght@200&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Mono:wght@100;300&family=Sofia+Sans:wght@100;200&family=Source+Sans+Pro:wght@200;300;600&family=Work+Sans:wght@200&display=swap');
 </style>
 <style>
-  #navbar .abot{
-    color: #189aa6;
-    font-weight: 800;
- 
-  }
   .container-fluid
   {
       margin: 0;
@@ -209,21 +204,43 @@
     }
   }
   .pongal_text_theme{
-      background-image: url('/static/pongal/bg/bg_fire.png');
-      background-size: contain;
-      background-repeat: repeat;
-      background-clip: text;
-      -webkit-background-clip: text;
-    }
-    .pongal_text_theme1{
-      background-image: url('/static/pongal/bg/bg_fire1.png');
-      background-size: contain;
-      background-repeat: repeat;
-      background-clip: text;
-      -webkit-background-clip: text;
-    }
+    background-image: url('/static/pongal/bg/bg_fire.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .pongal_text_theme1{
+    background-image: url('/static/pongal/bg/bg_fire1.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
 </style>
 
+{% if current_theme == 'pongal' %}
+<style>
+
+#navbar .abot{
+  background-image: url('/static/pongal/bg/bg_fire.png');
+  background-size: contain;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+font-weight: 800;
+}
+</style>
+{% else %}
+<style>
+
+#navbar .abot{
+  color: #189aa6;
+  font-weight: 800;
+}
+</style>
+{% endif %}
 
   <main id="main">
    

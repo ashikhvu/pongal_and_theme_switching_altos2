@@ -135,6 +135,124 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         position: relative;
       }
     </style>
+
+<style>
+  #pongal_home1{
+    width: 22rem;
+  }
+  .pongal_home1_top{
+    margin-top: -2rem;
+    margin-left: 2rem;
+  }
+  #pongal_girl{
+    width: 22rem;
+    transform: scaleX(1);
+  }
+  .pongal_girl_top{
+    margin-right: -4rem;
+    margin-top: -5rem;
+  }
+  #pongal_temple{
+    width: 18rem;
+  }
+  .pongal_temple_top{
+    margin-right: 5rem;
+    margin-top: 18rem;
+  }
+  .top_decor_top{
+    margin-top: -1.5rem;
+  }
+  .top_decor{
+    opacity: 0.75;
+    width: 15vw;
+  }
+  #pongal_footer_decor{
+    width: 30rem;
+  }
+  .pongal_footer_decor_top{
+    margin-top: -17rem;
+  }
+  #pongal_gif1{
+    width: 10rem;
+  }
+  .pongal_gif1_top{
+    margin-left: -24rem;
+    margin-top: 0.75rem;
+  }
+  .pongal_text_theme{
+    background-image: url('/static/pongal/bg/bg_fire.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .pongal_text_theme1{
+    background-image: url('/static/pongal/bg/bg_fire1.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  #container_text .request-box .circle1 {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    height: 2.5rem;
+    
+    background: url('/static/pongal/bg/bg_banana.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 1.625rem;
+    transition: all 0.4s ease-in-out;
+  }
+  #container_text .request-box .req-btn:hover .circle1 {
+    width: 100%;
+  }
+  
+  #container_text .request-box .circle1 .icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>.hover_anchor {
+    color: #189aa6;
+  }
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>.hover_anchor_pongal {
+    background-image: url('/static/pongal/bg/bg_fire.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  #fade_effect{
+    transition: all 0.2s linear;
+  }
+  #pongal_fade_effect{
+    transition: all 0.2s linear;
+  }
+  .card_pongal{
+        background: url('/static/pongal/bg/blur_bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        height: 48vh;
+        margin: 1em;
+        padding: 0.4em 1.2em 1em;
+
+      }
+</style>
+
   </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RLTXDEGMP"></script>
@@ -147,10 +265,59 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
   <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top green-blue">
-      <div
-        class="container d-flex align-items-center justify-content-lg-between"
-      >
+    <header id="header" class="fixed-top green-blue pb-0" style="padding-top: 1.5rem;background-color: rgba(0, 0, 0, 0.425);">
+
+      {% if current_theme == 'pongal' %}
+      <div class="position-relative" style="z-index: 998;">
+        <div class="position-absolute start-0 top-0 top_decor_top">
+          <div class="d-flex">
+            <img draggable="false"style="width: 30rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'pongal/decor/pongal_footer_decor.png' %}" alt="">
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+      <div class="container d-flex align-items-center justify-content-lg-between">
+
         <h1 class="logo me-auto me-lg-0">
           <a href="{% url 'text_page' %}">
             <img src="{% static 'img/lg1.gif' %}" class="" alt="Logo Gif" />
@@ -160,40 +327,82 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
             <li>
-              <a class="nav-link scrollto hom" href="{% url 'text_page' %}"
-                >Home</a
-              >
+              <a 
+              {% if current_theme == 'pongal' %} 
+              class="nav-link scrollto hom hover_anchor_pongal"
+              {% else %} 
+              class="nav-link scrollto hom" 
+              {% endif %} 
+              href="{% url 'text_page' %}">
+              Home
+            </a>
             </li>
             <li>
-              <a class="nav-link scrollto abot" href="{% url 'aboutus' %}"
-                >About us</a
-              >
+              <a 
+              {% if current_theme == 'pongal' %} 
+                class="nav-link scrollto abot hover_anchor_pongal" 
+              {% else %} 
+                class="nav-link scrollto abot hover_anchor" 
+              {% endif %} 
+              href="{% url 'aboutus' %}">
+              About us
+              </a>
             </li>
             <li>
-              <a class="nav-link scrollto serv" href="{% url 'service' %}"
-                >Services</a
-              >
+              <a 
+              {% if current_theme == 'pongal' %}
+              class="nav-link scrollto serv hover_anchor_pongal"
+              {% else %}
+              class="nav-link scrollto serv hover_anchor" 
+              {% endif %}
+              href="{% url 'service' %}">
+              Services
+            </a>
             </li>
             <li>
-              <a class="nav-link scrollto cor" href="{% url 'core' %}"
+              <a 
+              {% if current_theme == 'pongal' %}
+              class="nav-link scrollto cor hover_anchor_pongal" 
+              {% else %}
+              class="nav-link scrollto cor hover_anchor" 
+              {% endif %}
+              href="{% url 'core' %}"
                 >Product</a
               >
             </li>
             <li>
-              <a class="nav-link scrollto cors" href="{% url 'vacancy' %}"
-                >Career</a
-              >
+              <a 
+              {% if current_theme == 'pongal' %}
+              class="nav-link scrollto cors hover_anchor_pongal" 
+              {% else %}
+              class="nav-link scrollto cors hover_anchor" 
+              {% endif %}
+              href="{% url 'vacancy' %}">
+              Career
+              </a>
             </li>
 
             <li>
-              <a class="nav-link scrollto event" href="{% url 'events' %}"
-                >Events</a
-              >
+              <a 
+              {% if current_theme == 'pongal' %}
+              class="nav-link scrollto event hover_anchor_pongal" 
+              {% else %}
+              class="nav-link scrollto event hover_anchor" 
+              {% endif %}
+              href="{% url 'events' %}">
+                Events
+              </a>
             </li>
             <li>
-              <a class="nav-link scrollto cont" href="{% url 'contact' %}"
-                >Contact</a
-              >
+              <a 
+              {% if current_theme == 'pongal' %}
+              class="nav-link scrollto cont hover_anchor_pongal" 
+              {% else %}
+              class="nav-link scrollto cont hover_anchor" 
+              {% endif %}
+              href="{% url 'contact' %}">
+                Contact
+              </a>
             </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
@@ -978,8 +1187,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </style>
 
     <div class="container-fluid" id="container_text">
+
+      {% if current_theme == 'pongal' %}
+      <div class="position-relative" style="z-index: 1;">
+        <div class="position-absolute end-0 top-100 happy_pongal_top" style="margin-top: 10rem;margin-right: 10rem;">
+          <img draggable="false"id="happy_pongal" style="width: 15rem;" src="{% static 'pongal/decor/company_suggestion/z-removebg-preview.png' %}" alt="">
+        </div>
+      </div>
+      {% endif %}
+      
       <section id="readmore1">
         <div class="content pt-2">
+          
+          {% if current_theme == 'pongal' %}
+          <h3 class="mb-4 head-main pongal_text_theme" style="color: transparent;"><b>ALTOS Technologies</b></h3>
+          <h3 class="mb-4 head-sub">
+            We Deal With The Aspects Of
+            <span class="pongal_text_theme" style="color: transparent;"
+              >Professional IT</span><span class="pongal_text_theme" style="color: transparent;"> Solutions</span>
+          </h3>
+          {% else %}
           <h1 class="mb-4 head-main" style="color: rgb(22, 125, 165)"><b>ALTOS TECHNOLOGIES</b></h1>
           <h3 class="mb-4 head-sub">
             We Deal With The Aspects Of
@@ -987,6 +1214,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               >Professional IT Solutions</span
             >
           </h3>
+          {% endif %}
+
           <p class="fst-normal">
             Elevate your business with Altos Technologies. As a software
             development company in India, we craft custom websites and software
@@ -1033,6 +1262,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
        </style>
 
+      {% if current_theme == 'pongal' %}
+      <div class="position-relative" style="z-index: 1;">
+        <div class="position-absolute end-0 top-100 pongal_temple_top">
+          <img draggable="false"id="pongal_temple" src="{% static 'pongal/decor/pongal_home4.png' %}" alt="">
+        </div>
+      </div>
+      {% endif %}
+
        <section id="aboutus-section-2" class="" style="margin-top: -1rem;">
         <div class="row aboutus-content container" style="background-color: transparent;">
           <div class="col-12 ">
@@ -1041,7 +1278,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 Altos Technologies Success Story of 2023 
             </h5>
             <div class='ResponsiveYTPlayer'>
-              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/d_QhmWvn-E0?si=3MDfmDdNzWTp3jw3&amp;controls=1&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/d_QhmWvn-E0?si=3MDfmDdNzWTp3jw3&amp;controls=1&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               
             </div>
 
@@ -1052,10 +1289,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
        <!-- =================End Vedio Section ========================-->
 
+       {% if current_theme == 'pongal' %}
+       <div class="position-relative">
+         <div class="position-absolute pongal_home1_top"> 
+           <img draggable="false"id="pongal_home1" src="{% static 'pongal/decor/pongal_home1.png' %}" alt="">
+         </div>
+       </div>
+       {% endif %}
+
       <section id="why-choose-us" class="">
         <div class="row container">
           <div class="col-12">
+            <br><br><p></p><p></p>
+            {% if current_theme == 'pongal' %}
+            <div class="position-relative" style="z-index: 10;">
+              <div class="position-absolute start-50 translate-middle-x rice_grass_top" style="margin-top: -7.2rem;margin-left: -11rem;"> 
+                <img draggable="false"id="rice_grass" style="width: 13rem;" src="{% static 'pongal/decor/rice_grass.png' %}" alt="">
+              </div>
+            </div>
+            <h4 class="section-head pongal_text_theme" style="color: transparent;">//Why Choose Us</h4>
+            {% else %}
             <h4 class="section-head" style="color: rgb(243, 243, 243)">//Why Choose Us</h4>
+            {% endif %}
             <!-- <h3 style="color: #ffff">
               Some Of The Reason For Choosing
               <span style="color: #0fa49b">Our IT Solutions</span>
@@ -1074,7 +1329,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="col-lg-3">
               <div class="icon-box mt-5 mt-5 mt-lg-0">
                 <div class="icon-box-content">
+                  {% if current_theme == 'pongal' %}
+                  <i class="bx bx-receipt pongal_text_theme1" style="color: transparent;"></i>
+                  {% else %}
                   <i class="bx bx-receipt" style="color: #0fa49b"></i>
+                  {% endif %}
                 </div>
 
                 <div class="other-content">
@@ -1092,10 +1351,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="icon-box">
                 <div class="icon-box-content">
                   <!-- <i class="bx bx-shield" style="color: #0fa49b"></i> -->
+                  {% if current_theme == 'pongal' %}
+                  <img draggable="false"style="width: 2.5rem;margin: 0rem 1.7rem 0rem 0rem" src="{% static 'pongal/icons/icon1.png' %}" alt="">
+                  {% else %}
                   <ion-icon
                     name="layers-outline"
                     style="color: #0fa49b"
                   ></ion-icon>
+                  {% endif %}
                 </div>
 
                 <div class="other-content">
@@ -1111,7 +1374,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="col-lg-3">
               <div class="icon-box mt-5 mt-lg-0">
                 <div class="icon-box-content">
+                  {% if current_theme == 'pongal' %}
+                  <i class="bx bx-cube-alt pongal_text_theme1" style="color: transparent;"></i>
+                  {% else %}
                   <i class="bx bx-cube-alt" style="color: #0fa49b"></i>
+                  {% endif %}
                 </div>
 
                 <div class="other-content">
@@ -1129,8 +1396,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="icon-box mt-5 mt-lg-0">
                 <div class="icon-box-content">
                   <!-- <i class="bx bx-cube-alt" style="color: #0fa49b"></i> -->
+                  {% if current_theme == 'pongal' %}
+                  <img draggable="false"style="width: 2.5rem;margin: 0rem 1.7rem 0rem 0rem" src="{% static 'pongal/icons/icon2.png' %}" alt="">
+                  {% else %}
                   <ion-icon name="people-outline" style="color: #0fa49b">
                   </ion-icon>
+                  {% endif %}
                 </div>
 
                 <div class="other-content">
@@ -1152,11 +1423,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="container section-title d-flex justify-content-center mb-1 pb-1">
             <div class="contact-head">
               <h2>Connect</h2>
+              {% if current_theme == 'pongal' %}
+              <p class="pongal_text_theme" style="color: transparent;">With Us</p>
+              {% else %}
               <p style="color: rgb(39, 112, 141);">With Us</p>
+              {% endif %}
             </div>
           </div>
           <div class="contact-form mx-auto">
-            <form
+            <form 
+                  id="pongal_fade_effect"
                   class="form py-4 px-5"
                   method="post"
                   action="{% url 'enquerys' %}"
@@ -1258,6 +1534,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </section>
       <!-- contact us section end -->
 
+      {% if current_theme == 'pongal' %}
+      <div class="position-relative" style="z-index: 10;">
+        <div class="position-absolute end-0 bottom-0" style="margin-right: 5rem;">
+          <img id="fade_effect" draggable="false" src="{% static 'pongal/decor/cow.png' %}" alt="">
+        </div>
+      </div>
+      {% endif %}
+
 
 
       <!-- Services Section -->
@@ -1265,14 +1549,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="container section-title d-flex justify-content-center px-4 py-2">
           <div class="contact-head">
             <h2>CHECK OUR</h2>
+            {% if current_theme == 'pongal' %}
+            <p class="pongal_text_theme" style="color: transparent;">SERVICES</p>
+            {% else %}
             <p style="color: rgb(39, 112, 141);">SERVICES</p>
+            {% endif %}
           </div>
         </div>
       </section>
       <section id="services-items" class="pt-3">
         <div class="items container">
           <div class="row">
-            <div class="col-sm-12 col-md-3 card">
+            <div class="col-sm-12 col-md-3 card" {% if current_theme == 'pongal' %}  style="background: url('/static/pongal/bg/blur_bg.png');"{% endif %}>
               <div class="card-header">
                 <ion-icon name="desktop" style="color: #ffb700"></ion-icon>
               </div>
@@ -1289,7 +1577,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     target="_blank"
                     href="https://altostechnologies.in/Service"
                   >
-                    <span class="circle">
+                    <span {% if current_theme == 'pongal' %} class="circle1" {% else %} class="circle" {% endif %}>
                       <span class="icon arrow"></span>
                     </span>
                     <span class="text-conte">Know More</span>
@@ -1298,7 +1586,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
             </div>
 
-            <div class="col-sm-12 col-md-3 card">
+            <div class="col-sm-12 col-md-3 card" {% if current_theme == 'pongal' %}  style="background: url('/static/pongal/bg/blur_bg.png');"{% endif %}>
               <div class="card-header">
                 <ion-icon name="logo-web-component" style="color:#ffb700"></ion-icon>
               </div>
@@ -1313,7 +1601,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     target="_blank"
                     href="https://altostechnologies.in/Service"
                   >
-                    <span class="circle">
+                   <span {% if current_theme == 'pongal' %} class="circle1" {% else %} class="circle" {% endif %}>
                       <span class="icon arrow"></span>
                     </span>
                     <span class="text-conte">Know More</span>
@@ -1322,7 +1610,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
             </div>
 
-            <div class="col-sm-12 col-md-3 card">
+            <div class="col-sm-12 col-md-3 card" {% if current_theme == 'pongal' %}  style="background: url('/static/pongal/bg/blur_bg.png');"{% endif %}>
               <div class="card-header">
                 <ion-icon name="grid" style="color:#ffb700"></ion-icon>
               </div>
@@ -1337,7 +1625,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     target="_blank"
                     href="https://altostechnologies.in/Service"
                   >
-                    <span class="circle">
+                    <span {% if current_theme == 'pongal' %} class="circle1" {% else %} class="circle" {% endif %}>
                       <span class="icon arrow"></span>
                     </span>
                     <span class="text-conte">Know More</span>
@@ -1346,7 +1634,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
             </div>
 
-            <div class="col-sm-12 col-md-3 card">
+            <div class="col-sm-12 col-md-3 card" {% if current_theme == 'pongal' %}  style="background: url('/static/pongal/bg/blur_bg.png');"{% endif %}>
               <div class="card-header">
                 <ion-icon name="layers-outline" style="color: #ffb700"></ion-icon>
               </div>
@@ -1361,7 +1649,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     target="_blank"
                     href="https://altostechnologies.in/Service"
                   >
-                    <span class="circle">
+                   <span {% if current_theme == 'pongal' %} class="circle1" {% else %} class="circle" {% endif %}>
                       <span class="icon arrow"></span>
                     </span>
                     <span class="text-conte">Know More</span>
@@ -1411,9 +1699,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <section id="technology-mainhead">
         <div class="row">
           <div class="col-md-12 d-flex justify-content-center">
+            {% if current_theme == 'pongal' %}
+            <h1 class="pongal_text_theme1" style="color: transparent;">Our Technologies</h1>
+            {% else %}
             <h1 class="">
               Our<span style="color: rgb(39, 112, 141)"> Technologies</span>
             </h1>
+            {% endif %}
           </div>
         </div>
       </section>
@@ -1469,7 +1761,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div> -->
           <div class="img-box-tech">
             <h4 class="hide-head">ERP</h4>
-            <img src="static/img/team/erp.png" alt="ERP" />
+            {% if current_theme == 'pongal' %}
+              <img src="static/pongal/img/erp.png" alt="ERP" />
+            {% else %}
+              <img src="static/img/team/erp.png" alt="ERP" />
+            {% endif %}
           </div>
         </div>
       </section>
@@ -1478,7 +1774,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="content content-left">
           <div class="img-box-tech">
             <h4 class="hide-head">HRMS</h4>
+            {% if current_theme == 'pongal' %}
+            <img src="static/pongal/img/hrms.png" alt="HRMS" />
+            {% else %}
             <img src="static/img/team/hrms.png" alt="HRMS" />
+            {% endif %}
           </div>
           <div class="content-box-tech">
             <h4 class="visible-head">HRMS</h4>
@@ -1618,7 +1918,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div> -->
           <div class="img-box-tech">
             <h4 class="hide-head">3D Modeling</h4>
-            <img src="static/img/portfolio/3d.png" alt="3D Modeling" />
+            {% if current_theme == 'pongal' %}
+            <img src="static/pongal/img/3D.png" alt="CRM" />
+            {% else %}
+            <img src="static/img/team/3D.png" alt="CRM" />
+            {% endif %}
           </div>
         </div>
       </section>
@@ -1627,7 +1931,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="content content-left">
           <div class="img-box-tech">
             <h4 class="hide-head">VR/AR</h4>
-            <img src="static/img/team/arvr.jpg" alt="VR/AR" />
+            {% if current_theme == 'pongal' %}
+            <img src="static/pongal/img/arvr.png" alt="CRM" />
+            {% else %}
+            <img src="static/img/team/arvr.jpg" alt="CRM" />
+            {% endif %}
           </div>
           <div class="content-box-tech">
             <h4 class="visible-head">VR/AR</h4>
@@ -1658,9 +1966,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <section id="other-branches" class="pb-4">
         <div class="row">
           <div class="col-12 d-flex justify-content-center">
+            {% if current_theme == 'pongal' %}
+            <h1 class="pongal_text_theme" style="color: transparent;">Other Branches</h1>
+            {% else %}
             <h1 class="">
               Other<span style="color: rgb(39, 112, 141)"> Branches</span>
             </h1>
+            {% endif %}
           </div>
         </div>
       </section>
@@ -1703,7 +2015,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="container section-title d-flex justify-content-center mb-1 pb-1">
           <div class="contact-head">
             <h2>Our</h2>
+            {% if current_theme == 'pongal' %}
+            <p class="pongal_text_theme" style="color: transparent;">Locations</p>
+            {% else %}
             <p style="color: rgb(39, 112, 141);">Locations</p>
+            {% endif %}
           </div>
         </div>
       </section>
@@ -1717,7 +2033,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="location-details location-first">
               <div class="info row" style="background: transparent;">
                 <div class="address col-md-6 mt-3">
-                  <i class="bi bi-geo-alt" style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-geo-alt me-2" style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Location:</h4>
                   <!-- <p class="mt-2 pb-2" style="color: #fdfcfb;">Kerala Branch</h6> -->
                   <p style="color: rgb(169, 169, 169);"> 1st Floor - Thapasya Building
@@ -1730,13 +2046,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
     
                 <div class="email col-md-6 mt-3">
-                  <i class="bi bi-envelope"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-envelope me-2"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Email:</h4>
                   <p style="color: rgb(169, 169, 169);">Info@ altostechnologies.com</p>
                 </div>
     
                 <div class="phone col-md-6 mt-3">
-                  <i class="bi bi-phone"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-phone me-2"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Call:</h4>
                   <p style="color: rgb(169, 169, 169);"> +91 90741 56818</p>
                   <!-- <p style="color: rgb(169, 169, 169);">Tamilnadu -  +91 73065 42853</p> -->
@@ -1753,7 +2069,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="location-details">
               <div class="info row d-flex justify-content-end" style="background: transparent;">
                 <div class=" col-md-6 mt-3">
-                  <i class="bi bi-geo-alt" style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-geo-alt me-2" style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Location:</h4>
                   <!-- <p class="mt-2 pb-2" style="color: #fdfcfb;">Kerala Branch</h6>
                   <p style="color: rgb(169, 169, 169);"> 1st Floor - Thapasya Building
@@ -1766,13 +2082,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
     
                 <div class="email col-md-6 mt-3">
-                  <i class="bi bi-envelope"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-envelope me-2"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Email:</h4>
                   <p style="color: rgb(169, 169, 169);">Info@ altostechnologies.com</p>
                 </div>
     
                 <div class="phone col-md-6 mt-3">
-                  <i class="bi bi-phone"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-phone me-2"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Call:</h4>
                   <!-- <p style="color: rgb(169, 169, 169);">Kerala -  +91 90741 56818</p> -->
                   <p style="color: rgb(169, 169, 169);">  +91 73065 42853</p>
@@ -2186,4 +2502,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPX9VQQH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager(noscript)-->
+
+<script>
+  // pongal form image fade effect
+  $(document).ready(function(){
+    $('#pongal_fade_effect').on('mouseenter',function(){
+      $('#fade_effect').css("opacity","0.3")
+    })
+    $('#pongal_fade_effect').on('mouseleave',function(){
+      $('#fade_effect').css("opacity","1")
+    })
+  })
+</script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
 </html>

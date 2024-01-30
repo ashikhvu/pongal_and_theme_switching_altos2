@@ -1040,12 +1040,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       {% if current_theme == 'pongal' %}
       <div class="position-relative" style="z-index: 1;">
-        <div class="position-absolute end-0 top-100 pongal_temple_top">
-          <img draggable="false"id="pongal_temple" src="{% static 'pongal/decor/pongal_home4.png' %}" alt="">
-        </div>
-      </div>
-
-      <div class="position-relative" style="z-index: 1;">
         <div class="position-absolute end-0 top-100 happy_pongal_top" style="margin-top: 10rem;margin-right: 10rem;">
           <img draggable="false"id="happy_pongal" style="width: 15rem;" src="{% static 'pongal/decor/company_suggestion/z-removebg-preview.png' %}" alt="">
         </div>
@@ -1058,7 +1052,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="position-relative" style="z-index: 1;">
             <div class="position-absolute start-50 translate-middle-x top-100 pongal_gif1_top">
               <img draggable="false"id="pongal_gif1" src="{% static 'pongal/decor/pongal_home5.png' %}" alt="">
-            </div>
+            </div>  
           </div>
           {% endif %}
           {% if current_theme == 'pongal' %}
@@ -1128,6 +1122,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }  
         }
        </style>
+
+    {% if current_theme == 'pongal' %}
+    <div class="position-relative" style="z-index: 1;">
+      <div class="position-absolute end-0 top-100 pongal_temple_top">
+        <img draggable="false"id="pongal_temple" src="{% static 'pongal/decor/pongal_home4.png' %}" alt="">
+      </div>
+    </div>
+    {% endif %}
 
        <section id="aboutus-section-2" class="" style="margin-top: -1rem;">
         <div class="row aboutus-content container" style="background-color: transparent;">
