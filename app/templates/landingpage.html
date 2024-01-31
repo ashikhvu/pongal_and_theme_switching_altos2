@@ -173,11 +173,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     margin-top: -17rem;
   }
   #pongal_gif1{
-    width: 10rem;
+    width: 8rem;
   }
   .pongal_gif1_top{
     margin-left: -24rem;
-    margin-top: 0.75rem;
+    margin-top: -0.5rem;
   }
   .pongal_text_theme{
     background-image: url('/static/pongal/bg/bg_fire.png');
@@ -200,9 +200,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     width: 100%;
     height: 2.5rem;
     
-    background: url('/static/pongal/bg/bg_banana.png') ;
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background: url('/static/pongal/bg/bg_banana.png') ; */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+
+    background: transparent;
+    color: black;
+
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.536);
 
     border-radius: 1.625rem;
     transition: all 0.4s ease-in-out;
@@ -212,6 +217,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   
   #container_text .request-box .circle1 .icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  #container_text .request-box .circle2 {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    height: 2.5rem;
+    
+    background: url('/static/pongal/bg/blur_bg1.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.536);
+
+    border-radius: 1.625rem;
+    transition: all 0.4s ease-in-out;
+  }
+  #container_text .request-box .req-btn:hover .circle2 {
+    width: 100%;
+  }
+  
+  #container_text .request-box .circle2 .icon {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -1173,7 +1205,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    }
    .location-details .info i {
     font-size: 20px;
-    background: #ffc451;
+    /* background: #ffc451; */
     color: #151515;
     float: left;
     width: 44px;
@@ -1198,7 +1230,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
       <section id="readmore1">
         <div class="content pt-2">
-          
+          {% if current_theme == 'pongal' %}
+          <div class="position-relative" style="z-index: 1;">
+            <div class="position-absolute start-50 translate-middle-x top-100 pongal_gif1_top">
+              <img draggable="false"id="pongal_gif1" src="{% static 'pongal/decor/pongal_home5.png' %}" alt="">
+            </div>  
+          </div>
+          {% endif %}
           {% if current_theme == 'pongal' %}
           <h3 class="mb-4 head-main pongal_text_theme" style="color: transparent;"><b>ALTOS Technologies</b></h3>
           <h3 class="mb-4 head-sub">
@@ -1728,9 +1766,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-                <span class="circle">
-                  <span class="icon arrow"></span>
-                </span>
+              <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+                <span class="icon arrow"></span>
+              </span>
                 <span class="text-conte">Know More</span>
               </a>
             </div>
@@ -1752,9 +1790,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-                <span class="circle">
-                  <span class="icon arrow"></span>
-                </span>
+                <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+                <span class="icon arrow"></span>
+              </span>
                 <span class="text-conte">Know More</span>
               </a>
             </div>
@@ -1797,9 +1835,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-                <span class="circle">
-                  <span class="icon arrow"></span>
-                </span>
+                <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+                <span class="icon arrow"></span>
+              </span>
                 <span class="text-conte">Know More</span>
               </a>
             </div>
@@ -1827,9 +1865,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-                <span class="circle">
-                  <span class="icon arrow"></span>
-                </span>
+                <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+                <span class="icon arrow"></span>
+              </span>
                 <span class="text-conte">Know More</span>
               </a>
             </div>
@@ -1852,9 +1890,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-                <span class="circle">
-                  <span class="icon arrow"></span>
-                </span>
+                <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+                <span class="icon arrow"></span>
+              </span>
                 <span class="text-conte">Know More</span>
               </a>
             </div>
@@ -1886,9 +1924,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-                <span class="circle">
-                  <span class="icon arrow"></span>
-                </span>
+                <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+                <span class="icon arrow"></span>
+              </span>
                 <span class="text-conte">Know More</span>
               </a>
             </div>
@@ -1909,9 +1947,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-                <span class="circle">
-                  <span class="icon arrow"></span>
-                </span>
+                <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+                <span class="icon arrow"></span>
+              </span>
                 <span class="text-conte">Know More</span>
               </a>
             </div>
@@ -1953,9 +1991,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-                <span class="circle">
-                  <span class="icon arrow"></span>
-                </span>
+                <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+                <span class="icon arrow"></span>
+              </span>
                 <span class="text-conte">Know More</span>
               </a>
             </div>
@@ -1979,7 +2017,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <section class="pt-4 other-branches">
         <div class="row container">
           <div class="col-sm-12 col-md-6">
-            <div class="card">
+            <div class="card" 
+            {% if current_theme == 'pongal' %}
+            style="
+            background: url('/static/pongal/bg/blur_bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.304);"
+            {% endif %}
+            >
             <!-- <div class="card-header">
               <ion-icon name="desktop" style="color: #ffb700"></ion-icon>
             </div> -->
@@ -1994,7 +2040,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
 
           <div class="col-sm-12 col-md-6">
-            <div class="card">
+            <div class="card"
+            {% if current_theme == 'pongal' %}
+            style="
+            background: url('/static/pongal/bg/blur_bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.304);"
+            {% endif %}
+            >
             <!-- <div class="card-header">
               <ion-icon name="desktop" style="color: #ffb700"></ion-icon>
             </div> -->
@@ -2033,7 +2087,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="location-details location-first">
               <div class="info row" style="background: transparent;">
                 <div class="address col-md-6 mt-3">
-                  <i class="bi bi-geo-alt me-2" style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i 
+                  {% if current_theme == 'pongal' %}
+                  class="bi bi-geo-alt me-2 text-light" 
+                  style="background-image: url('static/pongal/bg/blur_bg1.png');
+                  background-size: cover;
+                  background-repeat: no-repeat;"
+                  {% else %}
+                  class="bi bi-geo-alt me-2 text-dark" 
+                  style="background-color:#0fa49b; color:rgb(0, 0, 0)"
+                  {% endif %}
+                  ></i>
                   <h4 style="color: #fdfcfb;">Location:</h4>
                   <!-- <p class="mt-2 pb-2" style="color: #fdfcfb;">Kerala Branch</h6> -->
                   <p style="color: rgb(169, 169, 169);"> 1st Floor - Thapasya Building
@@ -2046,13 +2110,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
     
                 <div class="email col-md-6 mt-3">
-                  <i class="bi bi-envelope me-2"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i 
+                  {% if current_theme == 'pongal' %}
+                  class="bi bi-envelope me-2 text-light" 
+                  style="background-image: url('static/pongal/bg/blur_bg1.png');
+                  background-size: cover;
+                  background-repeat: no-repeat;"
+                  {% else %}
+                  class="bi bi-envelope me-2 text-dark" 
+                  style="background-color:#0fa49b; color:rgb(0, 0, 0)"
+                  {% endif %}
+                  ></i>
                   <h4 style="color: #fdfcfb;">Email:</h4>
                   <p style="color: rgb(169, 169, 169);">Info@ altostechnologies.com</p>
                 </div>
     
                 <div class="phone col-md-6 mt-3">
-                  <i class="bi bi-phone me-2"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i 
+                  {% if current_theme == 'pongal' %}
+                  class="bi bi-phone me-2 text-light" 
+                  style="background-image: url('static/pongal/bg/blur_bg1.png');
+                  background-size: cover;
+                  background-repeat: no-repeat;"
+                  {% else %}
+                  class="bi bi-geo-alt me-2 text-dark" 
+                  style="background-color:#0fa49b; color:rgb(0, 0, 0)"
+                  {% endif %}
+                  ></i>
                   <h4 style="color: #fdfcfb;">Call:</h4>
                   <p style="color: rgb(169, 169, 169);"> +91 90741 56818</p>
                   <!-- <p style="color: rgb(169, 169, 169);">Tamilnadu -  +91 73065 42853</p> -->
@@ -2069,7 +2153,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="location-details">
               <div class="info row d-flex justify-content-end" style="background: transparent;">
                 <div class=" col-md-6 mt-3">
-                  <i class="bi bi-geo-alt me-2" style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i 
+                  {% if current_theme == 'pongal' %}
+                  class="bi bi-geo-alt me-2 text-light" 
+                  style="background-image: url('static/pongal/bg/blur_bg1.png');
+                  background-size: cover;
+                  background-repeat: no-repeat;"
+                  {% else %}
+                  class="bi bi-geo-alt me-2 text-dark" 
+                  style="background-color:#0fa49b; color:rgb(0, 0, 0)"
+                  {% endif %}
+                  ></i>
                   <h4 style="color: #fdfcfb;">Location:</h4>
                   <!-- <p class="mt-2 pb-2" style="color: #fdfcfb;">Kerala Branch</h6>
                   <p style="color: rgb(169, 169, 169);"> 1st Floor - Thapasya Building
@@ -2082,13 +2176,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
     
                 <div class="email col-md-6 mt-3">
-                  <i class="bi bi-envelope me-2"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i 
+                  {% if current_theme == 'pongal' %}
+                  class="bi bi-envelope me-2 text-light" 
+                  style="background-image: url('static/pongal/bg/blur_bg1.png');
+                  background-size: cover;
+                  background-repeat: no-repeat;"
+                  {% else %}
+                  class="bi bi-geo-alt me-2 text-dark" 
+                  style="background-color:#0fa49b; color:rgb(0, 0, 0)"
+                  {% endif %}
+                  ></i>
                   <h4 style="color: #fdfcfb;">Email:</h4>
                   <p style="color: rgb(169, 169, 169);">Info@ altostechnologies.com</p>
                 </div>
     
                 <div class="phone col-md-6 mt-3">
-                  <i class="bi bi-phone me-2"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i 
+                  {% if current_theme == 'pongal' %}
+                  class="bi bi-phone me-2 text-light" 
+                  style="background-image: url('static/pongal/bg/blur_bg1.png');
+                  background-size: cover;
+                  background-repeat: no-repeat;"
+                  {% else %}
+                  class="bi bi-geo-alt me-2 text-dark" 
+                  style="background-color:#0fa49b; color:rgb(0, 0, 0)"
+                  {% endif %}
+                  ></i>
                   <h4 style="color: #fdfcfb;">Call:</h4>
                   <!-- <p style="color: rgb(169, 169, 169);">Kerala -  +91 90741 56818</p> -->
                   <p style="color: rgb(169, 169, 169);">  +91 73065 42853</p>

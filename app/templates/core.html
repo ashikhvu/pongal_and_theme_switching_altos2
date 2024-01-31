@@ -464,10 +464,12 @@ h5 {
       /* background: #29d5e5c9; */
       
 
-      background: url('/static/pongal/bg/bg_banana.png') ;
+      background: url('/static/pongal/bg/blur_bg1.png') ;
       background-size: cover;
       background-repeat: no-repeat;
       color: white;
+
+      text-shadow: 2px 2px 3px black;
 
       font-weight: 600;
       text-transform: uppercase;
@@ -571,6 +573,36 @@ h5 {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+  }
+  #pongal_footer_decor{
+    width: 30rem;
+  }
+  .pongal_footer_decor_top{
+    margin-top: -17rem;
+  }
+  @media screen and (max-width:520px) {
+    #pongal_footer_decor{
+      width: 22rem;
+    }
+    .pongal_footer_decor_top{
+      margin-top: -15rem;
+    }
+  }
+  @media screen and (max-width:400px) {
+    #pongal_footer_decor{
+      width: 17rem;
+    }
+    .pongal_footer_decor_top{
+      margin-top: -15rem;
+    }
+  }
+  @media screen and (max-width:337px) {
+    #pongal_footer_decor{
+      width: 13rem;
+    }
+    .pongal_footer_decor_top{
+      margin-top: -12rem;
+    }
   }
 </style>
 
@@ -1431,6 +1463,14 @@ h5 {
     </div>
   </div>
 </footer><!-- End Footer -->
+
+{% if current_theme == 'pongal' %}
+<div class="position-relative">
+  <div class="position-absolute end-0 pongal_footer_decor_top">
+    <img draggable="false"id="pongal_footer_decor" draggable="false" src="{% static 'pongal/decor/kolam.png' %}" alt="">
+  </div>
+</div>
+{% endif %}
 
 <!-- <div id="preloader"></div> -->
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

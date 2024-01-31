@@ -117,6 +117,36 @@
     .pongal_gang_top{
       margin-top: -7.6rem;
     }
+    @media screen and (max-width:991px)
+    {
+      #pongal_gang{
+        width: 25rem;
+      }
+      .pongal_gang_top{
+        margin-top: -4.8rem;
+        margin-right: -1.5rem;
+      }
+    }
+    @media screen and (max-width:767px)
+    {
+      #pongal_gang{
+        width: 18rem;
+      }
+      .pongal_gang_top{
+        margin-top: -3.5rem;
+        margin-right: -1.5rem;
+      }
+    }
+    @media screen and (max-width:320px)
+    {
+      #pongal_gang{
+        width: 15rem;
+      }
+      .pongal_gang_top{
+        margin-top: -2.8rem;
+        margin-right: -1.5rem;
+      }
+    }
 </style>
 
 {% if current_theme == 'pongal' %}
@@ -213,7 +243,17 @@ font-weight: 800;
           <div class="location-details location-first">
             <div class="info row" style="background: transparent;">
               <div class="address col-md-6 mt-3">
-                <i class="bi bi-geo-alt" style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                <i 
+                {% if current_theme == 'pongal' %}
+                class="bi bi-geo-alt me-2 text-light" 
+                style="background-image: url('static/pongal/bg/blur_bg1.png');
+                background-size: cover;
+                background-repeat: no-repeat;"
+                {% else %}
+                class="bi bi-geo-alt me-2 text-dark" 
+                style="background-color:#0fa49b; color:rgb(0, 0, 0)"
+                {% endif %}
+                ></i>
                 <h4 style="color: #fdfcfb;">Location:</h4>
                 <!-- <p class="mt-2 pb-2" style="color: #fdfcfb;">Kerala Branch</h6> -->
                 <p style="color: rgb(169, 169, 169);"> 1st Floor - Thapasya Building
@@ -226,13 +266,33 @@ font-weight: 800;
               </div>
   
               <div class="email col-md-6 mt-3">
-                <i class="bi bi-envelope"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                <i 
+                {% if current_theme == 'pongal' %}
+                class="bi bi-envelope me-2 text-light" 
+                style="background-image: url('static/pongal/bg/blur_bg1.png');
+                background-size: cover;
+                background-repeat: no-repeat;"
+                {% else %}
+                class="bi bi-envelope me-2 text-dark" 
+                style="background-color:#0fa49b; color:rgb(0, 0, 0)"
+                {% endif %}
+                ></i>
                 <h4 style="color: #fdfcfb;">Email:</h4>
                 <p style="color: rgb(169, 169, 169);">Info@ altostechnologies.com</p>
               </div>
   
               <div class="phone col-md-6 mt-3">
-                <i class="bi bi-phone"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                <i 
+                {% if current_theme == 'pongal' %}
+                class="bi bi-phone me-2 text-light" 
+                style="background-image: url('static/pongal/bg/blur_bg1.png');
+                background-size: cover;
+                background-repeat: no-repeat;"
+                {% else %}
+                class="bi bi-phone me-2 text-dark" 
+                style="background-color:#0fa49b; color:rgb(0, 0, 0)"
+                {% endif %}
+                ></i>
                 <h4 style="color: #fdfcfb;">Call:</h4>
                 <p style="color: rgb(169, 169, 169);"> +91 90741 56818</p>
                 <!-- <p style="color: rgb(169, 169, 169);">Tamilnadu -  +91 73065 42853</p> -->
@@ -249,7 +309,15 @@ font-weight: 800;
           <div class="location-details">
             <div class="info row d-flex justify-content-end" style="background: transparent;">
               <div class=" col-md-6 mt-3">
-                <i class="bi bi-geo-alt" style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                <i {% if current_theme == 'pongal' %}
+                class="bi bi-geo-alt me-2 text-light" 
+                style="background-image: url('static/pongal/bg/blur_bg1.png');
+                background-size: cover;
+                background-repeat: no-repeat;"
+                {% else %}
+                class="bi bi-geo-alt me-2 text-dark" 
+                style="background-color:#0fa49b; color:rgb(0, 0, 0)"
+                {% endif %}></i>
                 <h4 style="color: #fdfcfb;">Location:</h4>
                 <!-- <p class="mt-2 pb-2" style="color: #fdfcfb;">Kerala Branch</h6>
                 <p style="color: rgb(169, 169, 169);"> 1st Floor - Thapasya Building
@@ -262,13 +330,29 @@ font-weight: 800;
               </div>
   
               <div class="email col-md-6 mt-3">
-                <i class="bi bi-envelope"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                <i {% if current_theme == 'pongal' %}
+                class="bi bi-envelope me-2 text-light" 
+                style="background-image: url('static/pongal/bg/blur_bg1.png');
+                background-size: cover;
+                background-repeat: no-repeat;"
+                {% else %}
+                class="bi bi-envelope me-2 text-dark" 
+                style="background-color:#0fa49b; color:rgb(0, 0, 0)"
+                {% endif %}></i>
                 <h4 style="color: #fdfcfb;">Email:</h4>
                 <p style="color: rgb(169, 169, 169);">Info@ altostechnologies.com</p>
               </div>
   
               <div class="phone col-md-6 mt-3">
-                <i class="bi bi-phone"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                <i {% if current_theme == 'pongal' %}
+                class="bi bi-phone me-2 text-light" 
+                style="background-image: url('static/pongal/bg/blur_bg1.png');
+                background-size: cover;
+                background-repeat: no-repeat;"
+                {% else %}
+                class="bi bi-phone me-2 text-dark" 
+                style="background-color:#0fa49b; color:rgb(0, 0, 0)"
+                {% endif %}></i>
                 <h4 style="color: #fdfcfb;">Call:</h4>
                 <!-- <p style="color: rgb(169, 169, 169);">Kerala -  +91 90741 56818</p> -->
                 <p style="color: rgb(169, 169, 169);">  +91 73065 42853</p>

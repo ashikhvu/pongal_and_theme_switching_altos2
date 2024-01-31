@@ -290,28 +290,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     @media screen and (max-width:1399px) {
       #pongal_home2{
-        width: 20rem;
+        width: 12rem;
       }
       .pongal_home2_top{
-        margin-top: -7.2rem;
+        margin-top: -10.2rem;
         margin-right: 4.8rem;
       }
     }
     @media screen and (max-width:1199px) {
       #pongal_home2{
-        width: 15rem;
+        width: 12rem;
       }
       .pongal_home2_top{
-        margin-top: -5.8rem;
+        margin-top: -9.8rem;
         margin-right: 15rem;
       }
     }
     @media screen and (max-width:991px) {
       #pongal_home2{
-        width: 15rem;
+        width: 10rem;
       }
       .pongal_home2_top{
-        margin-top: -5.8rem;
+        margin-top: -7.8rem;
         margin-right: 6.8rem;
       }
     }
@@ -320,7 +320,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         width: 10rem;
       }
       .pongal_home2_top{
-        margin-top: -3.8rem;
+        margin-top: -7.8rem;
         margin-right: 1.5rem;
       }
     }
@@ -329,8 +329,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         width: 7rem;
       }
       .pongal_home2_top{
-        margin-top: -2.5rem;
+        margin-top: -4.5rem;
         margin-right: 1.5rem;
+      }
+    }
+    #frame_decor{
+      width: 10rem;
+    }
+    .frame_decor_top{
+      margin-top: -0.2rem;
+      margin-left: -0.2rem;
+    }
+    @media screen and (max-width:512px) {
+      #frame_decor{
+        width: 7rem;
+      }
+      .frame_decor_top{
+        margin-top: -0.2rem;
+        margin-left: -0.2rem;
+      }
+    }
+    @media screen and (max-width:378px) {
+      #frame_decor{
+        width: 5rem;
+      }
+      .frame_decor_top{
+        margin-top: -0.2rem;
+        margin-left: -0.2rem;
+      }
+    }
+    @media screen and (max-width:280px) {
+      #frame_decor{
+        width: 3rem;
+      }
+      .frame_decor_top{
+        margin-top: -0.2rem;
+        margin-left: -0.2rem;
       }
     }
     .navbar a:hover,
@@ -350,6 +384,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     -webkit-background-clip: text;
     color: transparent;
   }
+  #pongal_footer_decor{
+    width: 30rem;
+  }
+  .pongal_footer_decor_top{
+    margin-top: -17rem;
+  }
+  @media screen and (max-width:520px) {
+      #pongal_footer_decor{
+        width: 22rem;
+      }
+      .pongal_footer_decor_top{
+        margin-top: -15rem;
+      }
+    }
+    @media screen and (max-width:400px) {
+      #pongal_footer_decor{
+        width: 17rem;
+      }
+      .pongal_footer_decor_top{
+        margin-top: -15rem;
+      }
+    }
+    @media screen and (max-width:337px) {
+      #pongal_footer_decor{
+        width: 13rem;
+      }
+      .pongal_footer_decor_top{
+        margin-top: -12rem;
+      }
+    }
   </style>
       
     </head>
@@ -694,9 +758,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <section>
       {% if pos %}
       <div class="container" id="poster-box">
-      
-         
-       
             
           {% for i in pos %}
            
@@ -705,8 +766,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   {% if i.ps_img %}
 
                   <div class="position-relative" style="z-index: 10;">
-                    <div class="position-absolute top-0" style="margin-top: -0.2rem;margin-left: -0.2rem;">
-                      <img style="width: 10rem;" src="{% static 'pongal/frame/top_left_corner_decor.png' %}" alt="">
+                    <div class="position-absolute top-0 frame_decor_top">
+                      <img id="frame_decor" src="{% static 'pongal/frame/top_left_corner_decor.png' %}" alt="">
                     </div>
                   </div>
 
@@ -889,6 +950,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
   </div>
 </footer><!-- End Footer -->
+
+{% if current_theme == 'pongal' %}
+    <div class="position-relative">
+      <div class="position-absolute end-0 pongal_footer_decor_top">
+        <img draggable="false"id="pongal_footer_decor" draggable="false" src="{% static 'pongal/decor/kolam.png' %}" alt="">
+      </div>
+    </div>
+    {% endif %}
 
 <!-- <div id="preloader"></div> -->
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
