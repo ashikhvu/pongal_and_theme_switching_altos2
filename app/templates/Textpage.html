@@ -177,6 +177,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         margin-left: -24rem;
         margin-top: 0.75rem;
       }
+      @media screen and (max-width:1059px) {
+        #pongal_gif1{
+          width: 9rem;
+        }
+        .pongal_gif1_top{
+          margin-left: -22rem;
+          margin-top: 1rem;
+        }
+      }
+      @media screen and (max-width:834px) {
+        #pongal_gif1{
+          width: 7rem;
+        }
+        .pongal_gif1_top{
+          margin-left: -20.5rem;
+          margin-top: 2rem;
+        }
+      }
+      @media screen and (max-width:750px) {
+        #pongal_gif1{
+          width: 5rem;
+        }
+        .pongal_gif1_top{
+          margin-left: -14.8rem;
+          margin-top: 1rem;
+        }
+      }
+      @media screen and (max-width:550px) {
+        #pongal_gif1{
+          width: 4rem;
+        }
+        .pongal_gif1_top{
+          margin-left: -11.8rem;
+          margin-top: 0.85rem;
+        }
+      }
+      @media screen and (max-width:431px) {
+        #pongal_gif1{
+          width: 4rem;
+        }
+        .pongal_gif1_top{
+          margin-left: -8.2rem;
+          margin-top: -1.2rem;
+        }
+      }
+      @media screen and (max-width:359px) {
+        #pongal_gif1{
+          width: 4rem;
+        }
+        .pongal_gif1_top{
+          margin-left: -5rem;
+          margin-top: 1rem;
+        }
+      }
       .pongal_text_theme{
         background-image: url('/static/pongal/bg/bg_fire.png');
         background-size: contain;
@@ -255,6 +309,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
         .pongal_footer_decor_top{
           margin-top: -12rem;
+        }
+      }
+      #happy_pongal{
+        width: 15rem;
+      }
+      .happy_pongal_top{
+        margin-top: 10rem;
+        margin-right: 10rem;
+      }
+      @media screen and (max-width:1340px) {
+        #happy_pongal{
+          width: 12rem;
+        }
+        .happy_pongal_top{
+          margin-top: 8rem;
+          margin-right: 7rem;
+        }
+      }
+      @media screen and (max-width:1100px) {
+        #happy_pongal{
+          width: 8rem;
+        }
+        .happy_pongal_top{
+          margin-top: 6rem;
+          margin-right: 5rem;
+        }
+      }
+      @media screen and (max-width:400px) {
+        #happy_pongal{
+          width: 5rem;
+        }
+        .happy_pongal_top{
+          margin-top: 5rem;
+          margin-right: 2rem;
         }
       }
     </style>
@@ -1064,8 +1152,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       {% if current_theme == 'pongal' %}
       <div class="position-relative" style="z-index: 1;">
-        <div class="position-absolute end-0 top-100 happy_pongal_top" style="margin-top: 10rem;margin-right: 10rem;">
-          <img draggable="false"id="happy_pongal" style="width: 15rem;" src="{% static 'pongal/decor/company_suggestion/z-removebg-preview.png' %}" alt="">
+        <div class="position-absolute end-0 top-100 happy_pongal_top" >
+          <img draggable="false"id="happy_pongal" src="{% static 'pongal/decor/company_suggestion/z-removebg-preview.png' %}" alt="">
         </div>
       </div>
       {% endif %}
