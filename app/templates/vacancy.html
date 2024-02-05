@@ -659,13 +659,15 @@ font-size: 0.91.5em;
           </div>
         </div>
 
-        <div class="display_pong1">
-          <img class="happy_pongal" draggable="false" src="{% static 'pongal/decor/pongal_about1.png' %}" alt="">
-        </div>
+        {% if current_theme == 'pongal' %}
+          <div class="display_pong1">
+            <img class="happy_pongal" draggable="false" src="{% static 'pongal/decor/pongal_about1.png' %}" alt="">
+          </div>
 
-        <div class="text-center display_pong2">
-          <img class="happy_pongal2" draggable="false" src="{% static 'pongal/decor/pongal_about1.png' %}" alt="">
-        </div>
+          <div class="text-center display_pong2">
+            <img class="happy_pongal2" draggable="false" src="{% static 'pongal/decor/pongal_about1.png' %}" alt="">
+          </div>
+        {% endif %}
         
       </div>
   

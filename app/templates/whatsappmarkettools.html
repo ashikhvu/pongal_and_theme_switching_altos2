@@ -115,7 +115,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .color-button1{
     font-size: 1em;
     
-    background: url('/static/pongal/bg/bg_banana.png') ;
+    /* background: url('/static/pongal/bg/bg_banana1.png') ;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+    background: url('/static/pongal/bg/blur_bg1.png') ;
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -872,11 +876,13 @@ window.addEventListener('resize', handleResize);
           
           <div class="box-service" style="margin-bottom: 3vh; padding: 1em 1.7em; width: 270px;" >
 
+            {% if current_theme == 'pongal' %}
             <div class="position-relative">
               <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
                 <img style="width: 21.6rem;height: 25.5rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
               </div>
             </div>
+            {% endif %}
             
             <div class="box-contents" style="height: 50%;">
               <h4 style="color:rgb(62, 199, 206)">1</span> </h4>
@@ -888,11 +894,13 @@ window.addEventListener('resize', handleResize);
 
           <div class="box-service" style="margin-bottom: 3vh; padding: 1em 1.7em; width: 270px;">
 
+            {% if current_theme == 'pongal' %}
             <div class="position-relative">
               <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
                 <img style="width: 21.6rem;height: 25.5rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
               </div>
             </div>
+            {% endif %}
 
             <div class="box-contents" style="height: 50%;">
               <h4 style="color:rgb(62, 199, 206)">2 </span> </h4>
@@ -905,11 +913,13 @@ window.addEventListener('resize', handleResize);
 
           <div class="box-service" style="margin-bottom: 3vh; padding: 1em 1.7em; width: 270px;" >
 
+            {% if current_theme == 'pongal' %}
             <div class="position-relative">
               <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
                 <img style="width: 21.6rem;height: 25.5rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
               </div>
             </div>
+            {% endif %}
 
             <div class="box-contents" style="height: 50%;" >
               <h4 style="color:rgb(62, 199, 206)">3</span> </h4>

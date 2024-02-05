@@ -732,11 +732,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {% endif %}
         </div>
 
+        {% if current_theme == 'pongal' %}
         <div class="position-relative">
           <div class="position-absolute end-0 pongal_home2_top">
             <img id="pongal_home2" src="{% static 'pongal/decor/pongal_home2.png' %}" alt="">
           </div>
         </div>
+        {% endif %}
 
         <div class="container events-box">
           {% for i in allevents %}
@@ -765,11 +767,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                
                   {% if i.ps_img %}
 
+                  {% if current_theme == 'pongal' %}
                   <div class="position-relative" style="z-index: 10;">
                     <div class="position-absolute top-0 frame_decor_top">
                       <img id="frame_decor" src="{% static 'pongal/frame/top_left_corner_decor.png' %}" alt="">
                     </div>
                   </div>
+                  {% endif %}
 
                   <div class="poster-img">
                     <a href="{{i.ps_img.url}}" download="{{i.ps_img.url}}">
@@ -850,11 +854,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             {% if imgs.gallery_img%}
             <img src="{{imgs.gallery_img.url}}" alt="Best software company in kerala">
 
+            {% if current_theme == 'pongal' %}
             <div class="position-relative">
               <div class="position-absolute bottom-0 start-0" style="margin-left: 1.2rem;">
                 <img draggable="false" style="width: 15rem;" src="{% static 'pongal/frame/frame2.png' %}" alt="">
               </div>
             </div>
+            {% endif %}
             
             {% endif %}
           </div>
