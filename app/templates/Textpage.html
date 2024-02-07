@@ -532,6 +532,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           margin-left: -4.2rem;
         }
       }
+      #pongal_gif2{
+        width: 10rem;
+      }
+      .pongal_gif2_top{
+
+      }
+      @media screen and (max-width:455px) {
+        #pongal_gif2{
+          width: 5rem;
+        }
+        .pongal_gif2_top{
+
+        }
+      }
     </style>
 
   </head>
@@ -1504,9 +1518,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <i class="bx bx-receipt" style="color: #0fa49b"></i>
                   {% endif %}
                 </div>
-
+                <style>
+                  @media screen and (max-width:932px) {
+                    .align_center_932{
+                      text-align: center;
+                    }
+                  }
+                  @media screen and (min-width:933px) {
+                    .align_center_932{
+                      text-align: start;
+                    }
+                  }
+                </style>
                 <div class="other-content">
-                  <h5>User Experience</h5>
+                  <h5 class="align_center_932">User Experience</h5>
                   <p>
                     Our Team of Experienced Professionals is Committed to
                     Delivering Dependable Services to Meet the Needs of Our
@@ -2015,8 +2040,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             {% if testimo %}
                  {% if current_theme == 'pongal' %}
                   <div class="position-relative">
-                    <div class="position-absolute bottom-0">
-                      <img style="width: 10rem;" src="{% static 'pongal/gifs/pongal1.gif' %}" alt="">
+                    <div class="position-absolute bottom-0 pongal_gif2_top">
+                      <img id="pongal_gif2" src="{% static 'pongal/gifs/pongal1.gif' %}" alt="">
                     </div>
                   </div>
                   {% endif %}
@@ -2547,7 +2572,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {% if current_theme == 'pongal' %}
     <div class="position-relative">
       <div class="position-absolute end-0 pongal_footer_decor_top">
-        <img draggable="false"id="pongal_footer_decor" draggable="false" src="{% static 'pongal/decor/kolam.png' %}" alt="">
+        <img draggable="false"id="pongal_footer_decor" draggable="false" src="{% static 'pongal/decor/happy_pongal2.png' %}" alt="">
       </div>
     </div>
     {% endif %}

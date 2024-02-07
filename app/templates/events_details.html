@@ -128,8 +128,19 @@
     }
  </style>
 
-
-
+{% if current_theme == 'pongal' %}
+<style>
+  #navbar .event{
+    background-image: url('/static/pongal/bg/bg_fire.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 800;
+  }
+</style>
+{% endif %}
     <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 

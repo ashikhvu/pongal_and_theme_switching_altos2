@@ -100,7 +100,11 @@ def events(request):
 
 def event_details(request,pk):
     allevents=Event.objects.get(id=pk)
-    return render(request, 'events_details.html',{'allevents':allevents})
+    if ThemeModel.objects.filter().exists():
+        current_theme = ThemeModel.objects.last().theme_name
+    else:
+        current_theme = ''
+    return render(request, 'events_details.html',{'allevents':allevents,"current_theme":current_theme})
     
 
 def meeasges_send(request):

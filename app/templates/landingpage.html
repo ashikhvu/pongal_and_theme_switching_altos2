@@ -261,19 +261,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     margin-top: -17rem;
   }
   #pongal_gif1{
-    width: 8rem;
+    width: 10rem;
   }
   .pongal_gif1_top{
     margin-left: -24rem;
-    margin-top: -0.5rem;
+    margin-top: 0.75rem;
   }
-  @media screen and (max-width:1050PX) {
+  @media screen and (max-width:1059px) {
     #pongal_gif1{
-      width: 7rem;
+      width: 9rem;
     }
     .pongal_gif1_top{
-      margin-left: -22.5rem;
-      margin-top: 0rem;
+      margin-left: -22rem;
+      margin-top: 1rem;
     }
   }
   @media screen and (max-width:834px) {
@@ -281,26 +281,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       width: 7rem;
     }
     .pongal_gif1_top{
-      margin-left: -17rem;
-      margin-top: -3.8rem;
+      margin-left: -20.5rem;
+      margin-top: 2rem;
     }
   }
-  @media screen and (max-width:656PX) {
+  @media screen and (max-width:750px) {
     #pongal_gif1{
-      width: 7rem;
+      width: 5rem;
     }
     .pongal_gif1_top{
-      margin-left: -9.5rem;
-      margin-top: 0rem;
+      margin-left: -14.8rem;
+      margin-top: 1rem;
     }
   }
-  @media screen and (max-width:400PX) {
+  @media screen and (max-width:550px) {
     #pongal_gif1{
-      width: 6rem;
+      width: 4rem;
     }
     .pongal_gif1_top{
-      margin-left: -4rem;
-      margin-top: -3rem;
+      margin-left: -11.8rem;
+      margin-top: 0.85rem;
+    }
+  }
+  @media screen and (max-width:431px) {
+    #pongal_gif1{
+      width: 4rem;
+    }
+    .pongal_gif1_top{
+      margin-left: -8.2rem;
+      margin-top: -1.2rem;
+    }
+  }
+  @media screen and (max-width:359px) {
+    #pongal_gif1{
+      width: 4rem;
+    }
+    .pongal_gif1_top{
+      margin-left: -5rem;
+      margin-top: 1rem;
     }
   }
   .pongal_text_theme{
@@ -447,22 +465,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   #rice_grass{
     width: 13rem;
   }
-  @media screen and (max-width:485px){
+  @media screen and (max-width:750px){
     .rice_grass_top{
-      margin-top: -7.2rem;
-      margin-left: -8.8rem;
+      margin-top: -4rem;
+      margin-left: -6.2rem;
     }
     #rice_grass{
-      width: 13rem;
+      width: 7rem;
     }
   }
-  @media screen and (max-width:414px){
+  @media screen and (max-width:500px){
     .rice_grass_top{
-      margin-top: -7.2rem;
-      margin-left: -3rem;
+      margin-top: -3.6rem;
+      margin-left: -5.6rem;
     }
     #rice_grass{
-      width: 13rem;
+      width: 7rem;
+    }
+  }
+  @media screen and (max-width:300px){
+    .rice_grass_top{
+      margin-top: -3.6rem;
+      margin-left: -5.2rem;
+    }
+    #rice_grass{
+      width: 7rem;
     }
   }
   #fade_effect{
@@ -611,7 +638,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               {% if current_theme == 'pongal' %} 
               class="nav-link scrollto hom hover_anchor_pongal"
               {% else %} 
-              class="nav-link scrollto hom" 
+              class="nav-link scrollto hom hover_anchor" 
               {% endif %} 
               href="{% url 'text_page' %}">
               Home
@@ -1355,9 +1382,103 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
       /* Chat box end */
       /* Heading */
-      .head-main{
-        font-size: 4em;
+      #readmore1 .main-head{
+        font-size: 3.6em;
         text-align: center;
+        margin-top: 1em;
+        margin-bottom: 0.65em;
+      }
+      #readmore1 .sub-head{
+        font-size: 2.4em;
+        text-align: center;
+        margin-bottom: 0.8em;
+      }
+      @media (max-width:800px){
+                  #readmore1 .main-head{
+                  font-size: 3.6em;
+                  margin-top: 0.85em;
+                  margin-bottom: 0.65em;
+                }
+                #readmore1 .sub-head{
+                  font-size: 2.4em;
+                  margin-bottom: 0.8em;
+                }
+                #container_text .fst-normal {
+                    font-size: 0.88em;
+                }
+                }
+                @media (max-width:750px){
+                  #readmore1 .main-head{
+                    margin-top: 0.8em;
+                  font-size: 2.5em;
+                  margin-bottom: 0.65em;
+                }
+                #readmore1 .sub-head{
+                  font-size: 1.4em;
+                  margin-bottom: 0.8em;
+                }
+                #container_text .fst-normal {
+                    font-size: 0.86em;
+                }
+                #why-choose-us h4 {
+                  font-size: 1.7em !important;
+                }
+                #why-choose-us h3 {
+                  font-size: 0.9em !important;
+                }
+                #why-choose-us .sub-head{
+                  margin-top: 2em !important;
+                  font-size: 0.8em !important;
+                }
+                }
+                @media (max-width:550px){
+                  #readmore1 .main-head{
+                    margin-top: 0.75em;
+                  font-size: 2.1em;
+                  margin-bottom: 0.65em;
+                }
+                #readmore1 .sub-head{
+                  font-size: 1.1em;
+                  margin-bottom: 0.8em;
+                }
+                #container_text .fst-normal {
+                    font-size: 0.85em;
+                }
+                #why-choose-us h4 {
+                  margin-top: 1em;
+                  font-size: 1.55em !important;
+                }
+                #why-choose-us h3 {
+                  font-size: 0.85em !important;
+                }
+                #why-choose-us .sub-head{
+                  margin-top: 2em !important;
+                  font-size: 0.7em !important;
+                }
+                }
+                @media (max-width:300px){
+                  #readmore1 .main-head{
+                  font-size: 2em;
+                  margin-bottom: 0.65em;
+                }
+                #readmore1 .sub-head{
+                  font-size: 1em;
+                  margin-bottom: 0.8em;
+                }
+                #container_text .fst-normal {
+                    font-size: 0.8em !important;
+                }
+                #why-choose-us h4 {
+                  margin-top: 1em;
+                  font-size: 1.4em !important;
+                }
+                #why-choose-us h3 {
+                  font-size: 0.8em !important;
+                }
+                #why-choose-us .sub-head{
+                  margin-top: 2em !important;
+                  font-size: 0.7em !important;
+                }
       }
       .head-sub{
         font-size: 2.5em;
@@ -1486,15 +1607,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           {% endif %}
           {% if current_theme == 'pongal' %}
-          <h3 class="mb-4 head-main pongal_text_theme" style="color: transparent;"><b>ALTOS Technologies</b></h3>
-          <h3 class="mb-4 head-sub">
+          <h3 class="mb-4 main-head pongal_text_theme" style="color: transparent;"><b>ALTOS Technologies</b></h3>
+          <h3 class="mb-4 sub-head">
             We Deal With The Aspects Of
             <span class="pongal_text_theme" style="color: transparent;"
               >Professional IT</span><span class="pongal_text_theme" style="color: transparent;"> Solutions</span>
           </h3>
           {% else %}
-          <h1 class="mb-4 head-main" style="color: rgb(22, 125, 165)"><b>ALTOS TECHNOLOGIES</b></h1>
-          <h3 class="mb-4 head-sub">
+          <h1 class="mb-4 main-head" style="color: rgb(22, 125, 165)"><b>ALTOS TECHNOLOGIES</b></h1>
+          <h3 class="mb-4 sub-head">
             We Deal With The Aspects Of
             <span style="color: rgb(22, 125, 165)"
               >Professional IT Solutions</span

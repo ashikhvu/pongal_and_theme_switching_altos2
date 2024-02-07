@@ -196,14 +196,84 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto hom " href="{% url 'text_page' %}">Home</a></li>
-          <li><a class="nav-link scrollto abot" href="{% url 'aboutus' %}">About us</a></li>
-          <li><a class="nav-link scrollto serv" href="{% url 'service' %}">Services</a></li>
-          <li><a class="nav-link scrollto  cor " href="{% url 'core' %}">Product</a></li>
-          <li><a class="nav-link scrollto  cors " href="{% url 'vacancy' %}">Career</a></li>
-          
-          <li><a class="nav-link scrollto event" href="{% url 'events' %}">Events</a></li>
-          <li><a class="nav-link scrollto cont" href="{% url 'contact' %}">Contact</a></li>
+          <li>
+            <a 
+            {% if current_theme == 'pongal' %} 
+            class="nav-link scrollto hom hover_anchor_pongal" 
+            {% else %} 
+            class="nav-link scrollto hom hover_anchor" 
+            {% endif %} 
+            href="{% url 'text_page' %}">
+            Home
+          </a>
+          </li>
+          <li>
+            <a 
+                {% if current_theme == 'pongal' %} 
+                  class="nav-link scrollto abot hover_anchor_pongal" 
+                {% else %} 
+                  class="nav-link scrollto abot hover_anchor" 
+                {% endif %} 
+                href="{% url 'aboutus' %}">
+                About us
+            </a>
+          </li>
+          <li>
+            <a 
+            {% if current_theme == 'pongal' %}
+            class="nav-link scrollto serv hover_anchor_pongal"
+            {% else %}
+            class="nav-link scrollto serv hover_anchor" 
+            {% endif %}
+            href="{% url 'service' %}">
+            Services
+          </a>
+          </li>
+          <li>
+            <a 
+            {% if current_theme == 'pongal' %}
+            class="nav-link scrollto cor hover_anchor_pongal" 
+            {% else %}
+            class="nav-link scrollto cor hover_anchor" 
+            {% endif %}
+            href="{% url 'core' %}"
+              >Product</a
+            >
+          </li>
+          <li>
+            <a 
+            {% if current_theme == 'pongal' %}
+            class="nav-link scrollto cors hover_anchor_pongal"
+            {% else %}
+            class="nav-link scrollto cors hover_anchor" 
+            {% endif %}
+            href="{% url 'vacancy' %}">
+            Career
+            </a>
+          </li>
+
+          <li>
+            <a 
+            {% if current_theme == 'pongal' %}
+            class="nav-link scrollto event hover_anchor_pongal" 
+            {% else %}
+            class="nav-link scrollto event hover_anchor" 
+            {% endif %}
+            href="{% url 'events' %}">
+              Events
+            </a>
+          </li>
+          <li>
+            <a 
+            {% if current_theme == 'pongal' %}
+            class="nav-link scrollto cont hover_anchor_pongal" 
+            {% else %}
+            class="nav-link scrollto cont hover_anchor" 
+            {% endif %}
+            href="{% url 'contact' %}">
+              Contact
+            </a>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -298,7 +368,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {% if current_theme == 'pongal' %}
   <div class="position-relative">
     <div class="position-absolute end-0 pongal_footer_decor_top">
-      <img draggable="false"id="pongal_footer_decor" draggable="false" src="{% static 'pongal/decor/kolam.png' %}" alt="">
+      <img draggable="false"id="pongal_footer_decor" draggable="false" src="{% static 'pongal/decor/happy_pongal2.png' %}" alt="">
     </div>
   </div>
   {% endif %}
