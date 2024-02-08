@@ -1017,6 +1017,10 @@ def change_theme(request,theme):
             new_theme = ThemeModel.objects.first()
             new_theme.theme_name = 'pongal'
             new_theme.save()
+        elif(theme == 'vishu'):
+            new_theme = ThemeModel.objects.first()
+            new_theme.theme_name = 'vishu'
+            new_theme.save()
     else:
         if(theme == 'default'):
             new_theme = ThemeModel(theme_name='default')
@@ -1032,6 +1036,9 @@ def change_theme(request,theme):
             new_theme.save()
         elif(theme == 'pongal'):
             new_theme = ThemeModel(theme_name='pongal')
+            new_theme.save()
+        elif(theme == 'vishu'):
+            new_theme = ThemeModel(theme_name='vishu')
             new_theme.save()
     return redirect('dashboard')
 

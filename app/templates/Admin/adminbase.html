@@ -149,6 +149,12 @@
                                 <span hidden id="theme5span" class="fa fa-check"></span>
                             </div>
                         </a>
+                        <a id="theme6" class="collapse-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="d-flex justify-content-between">
+                                <span>Vishu</span>
+                                <span hidden id="theme6span" class="fa fa-check"></span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </li>
@@ -687,6 +693,10 @@
             $('#modal_h1_text').text('Are you sure you want to change the theme  to "Pongal" ?')
             $('#yes_button_onclick_change').attr('onclick','change_theme("pongal")')
         })
+        $('#theme6').on('click',function(){
+            $('#modal_h1_text').text('Are you sure you want to change the theme  to "Vishu" ?')
+            $('#yes_button_onclick_change').attr('onclick','change_theme("vishu")')
+        })
     })
     $(document).ready(function(){
         $.ajax({
@@ -712,6 +722,10 @@
                 else if(response.current_theme === "pongal" )
                 {
                     $('#theme5span').attr('hidden',false)
+                }
+                else if(response.current_theme === "vishu" )
+                {
+                    $('#theme6span').attr('hidden',false)
                 }
             },
             error: function(error){
