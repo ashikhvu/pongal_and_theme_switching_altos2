@@ -232,6 +232,13 @@
 font-weight: 800;
 }
 </style>
+{% elif current_theme == 'vishu' %}
+<style>
+  #navbar .abot{
+ color: yellow;
+ text-shadow: 0px 0px 10px black;
+}
+</style>
 {% else %}
 <style>
 
@@ -242,6 +249,32 @@ font-weight: 800;
 </style>
 {% endif %}
 
+<!-- vishu -->
+<style>
+  .vishu_frame_top{
+    width: 0rem;
+  }
+  .vishu_frame_top_top{
+    margin-left: -1rem;
+    margin-top: -3rem;
+  }
+  .vishu_frame_bottom{
+    width: 12rem;
+  }
+  .vishu_frame_bottom_top{
+    margin-left: -1rem;
+    margin-bottom: -3rem;
+  }
+  .vishu_text_bg1{
+    background-image: url('/static/vishu/bg/text_bg1.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .
+</style>
+
   <main id="main">
    
     <div class="container-fluid" id="about-us">
@@ -251,6 +284,8 @@ font-weight: 800;
               <div class="col-lg-5 col-sm-12 col-md-8">
                 {% if current_theme == 'pongal' %}
                 <h4 class="pongal_text_theme" style="color: transparent;">About Us</h4>
+                {% elif current_theme == 'vishu' %}
+                <h4 class="vishu_text_bg1" style="color: transparent;">About Us</h4>
                 {% else %}
                 <h4 style="color: white;">About Us</h4>
                 {% endif %}
@@ -284,6 +319,11 @@ font-weight: 800;
                  </div>
                  {% elif current_theme == 'vishu' %}
                  <div class="position-relative">
+
+                  <!-- <div class="position-absolute start-50 top-0 translate-middle-x vishu_frame_top_top">
+                    <img draggable="false" class="vishu_frame_top" src="{% static 'vishu/decor/frame_decor/top_decor.png' %}" alt="">
+                  </div> -->
+
                   <p class="fst-normal mob_margin_top" data-aos="fade-left"
                   data-aos-duration="2000">
                   As a leading web development company in Kochi, ALTOS Technologies 
@@ -291,15 +331,12 @@ font-weight: 800;
                   digital transformation of enterprises of all sizes, both internally 
                   and in terms of customer experience.
                   </p>
-                  
-                  
-                  <div class="position-absolute top-0 end-0 top_right_top">
-                    <img draggable="false" class="corner_width" src="{% static 'pongal/frame/bamboo_frame/pongal_bamboo_frame_top_right.png' %}" alt="">
-                  </div>
 
-                  <div class="position-absolute top-0 start-0 top_left_top">
-                    <img draggable="false" class="corner_width" src="{% static 'pongal/frame/bamboo_frame/pongal_bamboo_frame_top_left.png' %}" alt="">
+                  <div class="position-absolute start-50 bottom-0 translate-middle-x vishu_frame_bottom_top">
+                    <img draggable="false" class="vishu_frame_bottom" src="{% static 'vishu/decor/frame_decor/bottom_decor.png' %}" alt="">
                   </div>
+                  
+                </div>
                   
                  {% else %}
                  <p class="fst-normal mob_margin_top" data-aos="fade-left"
@@ -349,6 +386,27 @@ font-weight: 800;
             
                
               </div>
+              {% elif current_theme == 'vishu' %}
+                 <div class="position-relative">
+
+                  <!-- <div class="position-absolute start-50 top-0 translate-middle-x vishu_frame_top_top">
+                    <img draggable="false" class="vishu_frame_top" src="{% static 'vishu/decor/frame_decor/top_decor.png' %}" alt="">
+                  </div> -->
+
+                  <p class="fst-normal mob_margin_top" data-aos="fade-left"
+                  data-aos-duration="2000">
+                  As a leading web development company in Kochi, ALTOS Technologies 
+                  provides top-notch consulting and strategy services to enhance the 
+                  digital transformation of enterprises of all sizes, both internally 
+                  and in terms of customer experience.
+                  </p>
+
+                  <div class="position-absolute start-50 bottom-0 translate-middle-x vishu_frame_bottom_top">
+                    <img draggable="false" class="vishu_frame_bottom" src="{% static 'vishu/decor/frame_decor/bottom_decor.png' %}" alt="">
+                  </div>
+                  
+                </div>
+                  
               {% else %}
               <p class="fst-normal mob_margin_top" data-aos="fade-up"
               data-aos-duration="2000">
@@ -396,6 +454,27 @@ font-weight: 800;
                  
 
             </div>
+            {% elif current_theme == 'vishu' %}
+                 <div class="position-relative">
+
+                  <!-- <div class="position-absolute start-50 top-0 translate-middle-x vishu_frame_top_top">
+                    <img draggable="false" class="vishu_frame_top" src="{% static 'vishu/decor/frame_decor/top_decor.png' %}" alt="">
+                  </div> -->
+
+                  <p class="fst-normal mob_margin_top" data-aos="fade-left"
+                  data-aos-duration="2000">
+                  As a leading web development company in Kochi, ALTOS Technologies 
+                  provides top-notch consulting and strategy services to enhance the 
+                  digital transformation of enterprises of all sizes, both internally 
+                  and in terms of customer experience.
+                  </p>
+
+                  <div class="position-absolute start-50 bottom-0 translate-middle-x vishu_frame_bottom_top">
+                    <img draggable="false" class="vishu_frame_bottom" src="{% static 'vishu/decor/frame_decor/bottom_decor.png' %}" alt="">
+                  </div>
+                  
+                </div>
+                  
             {% else %}
             <p class="fst-normal mob_margin_top" data-aos="fade-right"
               data-aos-duration="2000">
@@ -412,7 +491,7 @@ font-weight: 800;
               </div>
             </div>
                    
-         
+         <br>
           </div>
         </section>
       </div>

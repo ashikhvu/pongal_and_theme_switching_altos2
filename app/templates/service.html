@@ -75,6 +75,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       position: relative;
 
     }
+
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>.hover_anchor {
+    color: #189aa6;
+  }
   </style>
 
 <style>
@@ -98,12 +105,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     background-repeat: repeat;
     background-clip: text;
     -webkit-background-clip: text;
-  }
-  .navbar a:hover,
-  .navbar .active,
-  .navbar .active:focus,
-  .navbar li:hover>.hover_anchor {
-    color: #189aa6;
   }
   .navbar a:hover,
   .navbar .active,
@@ -147,6 +148,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
 </style>
+
+<!-- vishu -->
+<style>
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>.hover_anchor_vishu {
+    /* background-image: url('/static/pongal/bg/bg_fire.png');
+    background-size: contain;
+    background-repeat: repeat; */
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: yellow;
+    text-shadow: 0px 0px 10px black;
+  }
+  .vishu_text_bg1{
+    background-image: url('/static/vishu/bg/text_bg1.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+</style>
+
 
 </head>
 <!-- Google tag (gtag.js) -->
@@ -208,6 +234,53 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
     </div>
   </div>
+  {% elif current_theme == 'vishu' %}
+      <div class="position-relative" style="z-index: -1;">
+        <div class="position-absolute start-0 top-0 top_decor_top">
+          <div class="d-flex">
+            <img draggable="false"style="width: 30rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+          </div>
+        </div>
+      </div>
   {% endif %}
   <div class="container d-flex align-items-center justify-content-lg-between">
 
@@ -228,6 +301,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <a 
           {% if current_theme == 'pongal' %} 
           class="nav-link scrollto hom hover_anchor_pongal" 
+          {% elif current_theme == 'vishu' %}
+            class="nav-link scrollto hom hover_anchor_vishu"
           {% else %} 
           class="nav-link scrollto hom hover_anchor" 
           {% endif %} 
@@ -239,6 +314,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <a 
               {% if current_theme == 'pongal' %} 
                 class="nav-link scrollto abot hover_anchor_pongal" 
+              {% elif current_theme == 'vishu' %}
+                class="nav-link scrollto abot hover_anchor_vishu"
               {% else %} 
                 class="nav-link scrollto abot hover_anchor" 
               {% endif %} 
@@ -250,6 +327,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <a 
           {% if current_theme == 'pongal' %}
           class="nav-link scrollto serv pongal_text_theme1" style="color: transparent;"
+          {% elif current_theme == 'vishu' %}
+            class="nav-link scrollto serv " style="color: yellow;text-shadow: 0px 0px 10px black;"
           {% else %}
           class="nav-link scrollto serv hover_anchor" 
           {% endif %}
@@ -261,6 +340,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <a 
           {% if current_theme == 'pongal' %}
           class="nav-link scrollto cor hover_anchor_pongal" 
+          {% elif current_theme == 'vishu' %}
+            class="nav-link scrollto cor hover_anchor_vishu"
           {% else %}
           class="nav-link scrollto cor hover_anchor" 
           {% endif %}
@@ -272,6 +353,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <a 
           {% if current_theme == 'pongal' %}
           class="nav-link scrollto cors hover_anchor_pongal" 
+          {% elif current_theme == 'vishu' %}
+            class="nav-link scrollto cors hover_anchor_vishu"
           {% else %}
           class="nav-link scrollto cors hover_anchor" 
           {% endif %}
@@ -284,6 +367,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <a 
           {% if current_theme == 'pongal' %}
           class="nav-link scrollto event hover_anchor_pongal"
+          {% elif current_theme == 'vishu' %}
+            class="nav-link scrollto event hover_anchor_vishu"
           {% else %}
           class="nav-link scrollto event hover_anchor" 
           {% endif %}
@@ -295,6 +380,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <a 
           {% if current_theme == 'pongal' %}
           class="nav-link scrollto cont hover_anchor_pongal" 
+          {% elif current_theme == 'vishu' %}
+            class="nav-link scrollto cont hover_anchor_vishu"
           {% else %}
           class="nav-link scrollto cont hover_anchor" 
           {% endif %}
@@ -484,6 +571,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="section-title">
         {% if current_theme == 'pongal' %}
         <p class="pongal_text_theme" style="color: transparent;">Check our Services</p>
+        {% elif current_theme == 'vishu' %}
+        <p class="vishu_text_bg1" style="color: transparent;">Check our Services</p>
         {% else %}
         <p>Check our <span style="color: rgb(39, 112, 141);">Services</span></p>
         {% endif %}
@@ -517,6 +606,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
                 </div>
               </div> -->
+              {% elif current_theme == 'vishu' %}
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
+                </div>
+              </div>
               {% endif %}
   
               <div class="icon"> <ion-icon name="search" style="color: #ffb700"></ion-icon></div>
@@ -545,6 +640,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
                 </div>
               </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
+                </div>
+              </div>
               {% endif %}
               
               <div class="icon"> <i class="bx bx-tachometer" style="color: #ffb700"></i></div>
@@ -569,6 +670,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="position-relative">
                 <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
                 </div>
               </div>
               {% endif %}
@@ -597,6 +704,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
                 </div>
               </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
+                </div>
+              </div>
               {% endif %}
               <div class="icon"> <ion-icon name="archive" style="color: #ffb700"></ion-icon></div>
   
@@ -621,6 +734,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="position-relative">
                 <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
                 </div>
               </div>
               {% endif %}
@@ -648,6 +767,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
                 </div>
               </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
+                </div>
+              </div>
               {% endif %}
               <div class="icon"> <ion-icon name="chatbubbles-outline" style="color: #ffb700"></ion-icon></div>
               <h4 style="color: #ffb700">WhatsApp Marketing</h4>
@@ -671,6 +796,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="position-relative">
                 <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
                 </div>
               </div>
               {% endif %}
@@ -701,6 +832,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
                 </div>
               </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
+                </div>
+              </div>
               {% endif %}
               <div class="icon">
                 <ion-icon name="logo-linkedin" style="color: #ffb700"></ion-icon>
@@ -726,6 +863,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="position-relative">
                 <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
                 </div>
               </div>
               {% endif %}
@@ -756,6 +899,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
                 </div>
               </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
+                </div>
+              </div>
               {% endif %}
               <div class="icon">
                 <ion-icon name="archive" style="color: #ffb700"></ion-icon>
@@ -784,6 +933,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="position-relative">
                 <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
                 </div>
               </div>
               {% endif %}
@@ -824,6 +979,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
                 </div>
               </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
+                </div>
+              </div>
               {% endif %}
 
             <div class="icon"> <ion-icon name="search" style="color: #ffb700"></ion-icon></div>
@@ -847,6 +1008,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
                 </div>
               </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
+                </div>
+              </div>
               {% endif %}
             <div class="icon"> <i class="bx bx-tachometer" style="color: #ffb700"></i></div>
             <h4 style="color: #ffb700">Content Marketing</span> </h4>
@@ -868,6 +1035,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
                 </div>
               </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
+                </div>
+              </div>
               {% endif %}
             <div class="icon"> <ion-icon name="desktop" style="color: #ffb700"></ion-icon></div>
             <h4 style="color: #ffb700">Digital Marketing</h4>
@@ -887,6 +1060,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="position-relative">
                 <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
                 </div>
               </div>
               {% endif %}
@@ -911,6 +1090,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
                 </div>
               </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
+                </div>
+              </div>
               {% endif %}
             <div class="icon"> <ion-icon name="archive" style="color: #ffb700"></ion-icon></div>
 
@@ -931,6 +1116,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="position-relative">
                 <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
                 </div>
               </div>
               {% endif %}
@@ -954,6 +1145,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
                 </div>
               </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
+                </div>
+              </div>
               {% endif %}
             <div class="icon"> <ion-icon name="chatbubbles-outline" style="color: #ffb700"></ion-icon></div>
             <h4 style="color: #ffb700">WhatsApp Marketing</h4>
@@ -973,6 +1170,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="position-relative">
                 <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
                 </div>
               </div>
               {% endif %}
@@ -1030,6 +1233,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
                 </div>
               </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
+                </div>
+              </div>
               {% endif %}
             <div class="icon">
               <ion-icon name="grid" style="color:#ffb700"></ion-icon>
@@ -1058,6 +1267,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
               </div>
             </div>
+            {% elif current_theme == 'vishu' %}
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
+                </div>
+              </div>
             {% endif %}
 
             <div class="icon">
@@ -1087,6 +1302,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="position-relative">
                 <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
                 </div>
               </div>
               {% endif %}
@@ -1119,6 +1340,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
               </div>
             </div>
+            {% elif current_theme == 'vishu' %}
+              <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
+                </div>
+              </div>
             {% endif %}
 
             <div class="icon">
@@ -1152,6 +1379,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
                 </div>
               </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
+                </div>
+              </div>
               {% endif %}
             <div class="icon">
               <ion-icon name="analytics-outline" style="color:#ffb700"></ion-icon>
@@ -1182,6 +1415,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="position-relative">
                 <div class="position-absolute start-0 top-0" style="margin-top: -3rem;margin-left: -4rem;">
                   <img style="width: 22.6rem;" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+                </div>
+              </div>
+           {% elif current_theme == 'vishu' %}
+               <div class="position-relative">
+                <div class="position-absolute start-0 top-0" style="margin-top: 1.8rem;margin-left: 0.5rem;">
+                  <img style="width: 18.6rem;" src="{% static 'vishu/decor/frame_decor/peacock_feather_frame.png' %}" alt="">
                 </div>
               </div>
               {% endif %}

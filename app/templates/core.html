@@ -448,6 +448,13 @@ h5 {
       border: none;
       border-radius: 4px;
     }
+
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>.hover_anchor {
+    color: #189aa6;
+  }
 </style>
 
 <style>
@@ -560,12 +567,6 @@ h5 {
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>.hover_anchor {
-    color: #189aa6;
-  }
-  .navbar a:hover,
-  .navbar .active,
-  .navbar .active:focus,
   .navbar li:hover>.hover_anchor_pongal {
     background-image: url('/static/pongal/bg/bg_fire.png');
     background-size: contain;
@@ -603,6 +604,49 @@ h5 {
     .pongal_footer_decor_top{
       margin-top: -12rem;
     }
+  }
+</style>
+
+<!-- vishu -->
+<style>
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>.hover_anchor_vishu {
+    /* background-image: url('/static/pongal/bg/bg_fire.png');
+    background-size: contain;
+    background-repeat: repeat; */
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: yellow;
+    text-shadow: 0px 0px 10px black;
+  }
+  .vishu_text_bg1{
+    background-image: url('/static/vishu/bg/text_bg1.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .knowmore-button2{
+    font-size: 1em;
+    padding: 1em;
+    /* background: #29d5e5c9; */
+    
+
+    /* background: linear-gradient(to right,gray,rgb(255, 255, 121)); */
+    background: url('/static/vishu/bg/button_bg.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+    text-shadow: 2px 2px 3px black;
+
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
   }
 </style>
 
@@ -656,6 +700,53 @@ h5 {
       </div>
     </div>
   </div>
+  {% elif current_theme == 'vishu' %}
+      <div class="position-relative" style="z-index: -1;">
+        <div class="position-absolute start-0 top-0 top_decor_top">
+          <div class="d-flex">
+            <img draggable="false"style="width: 30rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+          </div>
+        </div>
+      </div>
   {% endif %}
   <div class="container d-flex align-items-center justify-content-lg-between">
 
@@ -674,6 +765,8 @@ h5 {
           <a 
           {% if current_theme == 'pongal' %} 
           class="nav-link scrollto hom hover_anchor_pongal " 
+          {% elif current_theme == 'vishu' %}
+          class="nav-link scrollto hom hover_anchor_vishu"
           {% else %} 
           class="nav-link scrollto hom hover_anchor" 
           {% endif %} 
@@ -685,6 +778,8 @@ h5 {
           <a 
               {% if current_theme == 'pongal' %} 
                 class="nav-link scrollto abot hover_anchor_pongal" 
+                {% elif current_theme == 'vishu' %}
+                class="nav-link scrollto abot hover_anchor_vishu"
               {% else %} 
                 class="nav-link scrollto abot hover_anchor" 
               {% endif %} 
@@ -696,6 +791,8 @@ h5 {
           <a 
           {% if current_theme == 'pongal' %}
           class="nav-link scrollto serv hover_anchor_pongal"
+          {% elif current_theme == 'vishu' %}
+          class="nav-link scrollto serv hover_anchor_vishu"
           {% else %}
           class="nav-link scrollto serv hover_anchor" 
           {% endif %}
@@ -707,6 +804,8 @@ h5 {
           <a 
           {% if current_theme == 'pongal' %}
           class="nav-link scrollto cor pongal_text_theme1" style="color: transparent;"
+          {% elif current_theme == 'vishu' %}
+            class="nav-link scrollto cor " style="color: yellow;text-shadow: 0px 0px 10px black;"
           {% else %}
           class="nav-link scrollto cor hover_anchor" 
           {% endif %}
@@ -718,6 +817,8 @@ h5 {
           <a 
           {% if current_theme == 'pongal' %}
           class="nav-link scrollto cors hover_anchor_pongal" 
+          {% elif current_theme == 'vishu' %}
+          class="nav-link scrollto cors hover_anchor_vishu"
           {% else %}
           class="nav-link scrollto cors hover_anchor" 
           {% endif %}
@@ -730,6 +831,8 @@ h5 {
           <a 
           {% if current_theme == 'pongal' %}
           class="nav-link scrollto event hover_anchor_pongal" 
+          {% elif current_theme == 'vishu' %}
+          class="nav-link scrollto event hover_anchor_vishu"
           {% else %}
           class="nav-link scrollto event hover_anchor" 
           {% endif %}
@@ -741,6 +844,8 @@ h5 {
           <a 
           {% if current_theme == 'pongal' %}
           class="nav-link scrollto cont hover_anchor_pongal" 
+          {% elif current_theme == 'vishu' %}
+          class="nav-link scrollto cont hover_anchor_vishu"
           {% else %}
           class="nav-link scrollto cont hover_anchor" 
           {% endif %}
@@ -767,12 +872,16 @@ h5 {
           <div class="content-boxs border-0 rounded-4">
             {% if current_theme == 'pongal' %}
             <h2 class="pongal_text_theme" style="color: transparent;">ERP </h2>
+            {% elif current_theme == 'vishu' %}
+            <h2 class="vishu_text_bg1" style="color: transparent;">ERP </h2>
             {% else %}
             <h2>ERP </h2>
             {% endif %}
             <div class="img-box-tech image-hidden">
             {% if current_theme == 'pongal' %}
               <img src="static/pongal/img/erp.png" alt="ERP" />
+            {% elif current_theme == 'vishu' %}
+              <img src="static/vishu/img/erp.png" alt="ERP" /> 
             {% else %}
               <img src="static/img/team/erp.png" alt="ERP" />
             {% endif %}
@@ -782,13 +891,24 @@ h5 {
             <p>Moreover, your staff will have no trouble using and navigating our ERP software because of its user-friendly design. With the help of our software, you may automate routine processes, lower error rates, and boost productivity.
           </p>
           </div>
-          <div class="km-button my-5"><a role="button" href="/contact" {% if current_theme == 'pongal' %} class="knowmore-button1" {% else %} class="knowmore-button text-white" {% endif %} >Know More</a></div>
+          <div class="km-button my-5"><a role="button" href="/contact" 
+            {% if current_theme == 'pongal' %}
+             class="knowmore-button1" 
+            {% elif current_theme == 'vishu' %}
+              class="knowmore-button2"
+            {% else %}
+              class="knowmore-button text-white" 
+            {% endif %} >
+            Know More</a>
+          </div>
         </div>
         <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center">
           <div class="img-box-tech image-visible">
             <!-- <h4 class="hide-head">ERP</h4> -->
             {% if current_theme == 'pongal' %}
             <img src="static/pongal/img/erp.png" alt="ERP"/>
+            {% elif current_theme == 'vishu' %}
+              <img src="static/vishu/img/erp.png" alt="ERP" /> 
             {% else %}
             <img src="static/img/team/erp.png" alt="ERP"/>
             {% endif %}
@@ -834,6 +954,8 @@ h5 {
             <!-- <h4 class="hide-head">CRM</h4> -->
             {% if current_theme == 'pongal' %}
             <img src="static/pongal/img/crm.png" alt="CRM" />
+            {% elif current_theme == 'vishu' %}
+              <img src="static/vishu/img/crm.png" alt="CRM" /> 
             {% else %}
             <img src="static/img/team/crm.png" alt="CRM" />
             {% endif %}
@@ -843,12 +965,16 @@ h5 {
           <div class="content-boxs border-0 rounded-4">
           {% if current_theme == 'pongal' %}
           <h2 class="pongal_text_theme" style="color: transparent;">CRM </h2>
+          {% elif current_theme == 'vishu' %}
+          <h2 class="vishu_text_bg1" style="color: transparent;">CRM </h2>
           {% else %}
           <h2>CRM </h2>
           {% endif %}
           <div class="img-box-tech image-hidden">
             {% if current_theme == 'pongal' %}
             <img src="static/pongal/img/crm.png" alt="CRM" />
+            {% elif current_theme == 'vishu' %}
+              <img src="static/vishu/img/crm.png" alt="CRM" /> 
             {% else %}
             <img src="static/img/team/crm.png" alt="CRM" />
             {% endif %}
@@ -867,7 +993,16 @@ h5 {
             
           </p>
           </div>
-          <div class="km-button my-4"><a role="button" href="/contact" {% if current_theme == 'pongal' %} class="knowmore-button1" {% else %} class="knowmore-button text-white" {% endif %}>Know More</a></div>
+          <div class="km-button my-4"><a role="button" href="/contact" 
+            {% if current_theme == 'pongal' %}
+             class="knowmore-button1" 
+             {% elif current_theme == 'vishu' %}
+               class="knowmore-button2"
+             {% else %} 
+             class="knowmore-button text-white" 
+             {% endif %}>
+             Know More</a>
+            </div>
         </div>
       </div>
     </div>
@@ -879,6 +1014,8 @@ h5 {
       <div class="content" >
         {% if current_theme == 'pongal' %}
         <h4 class="pongal_text_theme mb-5" style="color: transparent;">//Smart CORE Software for Businesses</h4>
+        {% elif current_theme == 'vishu' %}
+        <h4 class="vishu_text_bg1 mb-5" style="color: transparent;">//Smart CORE Software for Businesses</h4>
         {% else %}
         <h4 class="mb-5" style="color: #df0559;">//Smart CORE Software for Businesses</h4>
         {% endif %}
@@ -932,6 +1069,8 @@ h5 {
           </div>
           {% if current_theme == 'pongal' %}
           <h4 class="pongal_text_theme" style="color: transparent;">//Ease of Work, Easy Work</h4>
+          {% elif current_theme == 'vishu' %}
+          <h4 class="vishu_text_bg1" style="color: transparent;">//Ease of Work, Easy Work</h4>
           {% else %}
           <h4 style="color: #df0559;">//Ease of Work, Easy Work</h4>
           {% endif %}
@@ -963,6 +1102,8 @@ h5 {
     <div class="container1 container ">
       {% if current_theme == 'pongal' %}
       <h4 class="pongal_text_theme mt-3 text-start" style="color: transparent;"><b>//What is a CORE Software ..?</b></h4>
+      {% elif current_theme == 'vishu' %}
+      <h4 class="vishu_text_bg1 mt-3 text-start" style="color: transparent;"><b>//What is a CORE Software ..?</b></h4>
       {% else %}
       <h4 class="text-start mt-3" style=" color: #e3e3e3;"><b>//What is a CORE Software ..?</b></h4>
       {% endif %}
@@ -1102,12 +1243,16 @@ h5 {
         <div class="content-boxs border-0 rounded-4">
           {% if current_theme == 'pongal' %}
           <h2 class="pongal_text_theme" style="color: transparent;">HRMS  </h2>
+          {% elif current_theme == 'vishu' %}
+          <h2 class="vishu_text_bg1" style="color: transparent;">HRMS  </h2>
           {% else %}
           <h2>HRMS  </h2>
           {% endif %}
           <div class="img-box-tech image-hidden">
             {% if current_theme == 'pongal' %}
             <img src="static/pongal/img/hrms.png" alt="HRMS" />
+            {% elif current_theme == 'vishu' %}
+              <img src="static/vishu/img/hrms.png" alt="HRMS" /> 
             {% else %}
             <img src="static/img/team/hrms.png" alt="HRMS" />
             {% endif %}
@@ -1131,13 +1276,24 @@ h5 {
           their employment information.
         </p>
         </div>
-        <div class="km-button my-4"><a role="button" href="/contact" {% if current_theme == 'pongal' %} class="knowmore-button1" {% else %} class="knowmore-button text-white" {% endif %}>Know More</a></div>
+        <div class="km-button my-4"><a role="button" href="/contact" 
+          {% if current_theme == 'pongal' %}
+           class="knowmore-button1" 
+           {% elif current_theme == 'vishu' %}
+             class="knowmore-button2"
+           {% else %}
+            class="knowmore-button text-white"
+             {% endif %}>
+             Know More</a>
+            </div>
       </div>
       <div class="col-lg-5 col-sm-12 col-md-5 px-4 d-flex align-items-center">
         <div class="img-box-tech image-visible">
           <!-- <h4 class="hide-head">ERP</h4> -->
           {% if current_theme == 'pongal' %}
           <img src="static/pongal/img/hrms.png" alt="HRMS" />
+          {% elif current_theme == 'vishu' %}
+            <img src="static/vishu/img/hrms.png" alt="HRMS" /> 
           {% else %}
           <img src="static/img/team/hrms.png" alt="HRMS" />
           {% endif %}
@@ -1227,6 +1383,8 @@ h5 {
           <!-- <h4 class="hide-head">ERP</h4> -->
           {% if current_theme == 'pongal' %}
           <img src="static/pongal/img/account.png" alt="ACCOUNTING" />
+          {% elif current_theme == 'vishu' %}
+            <img src="static/vishu/img/account.png" alt="ACCOUNTING" /> 
           {% else %}
           <img src="static/img/team/account.png" alt="ACCOUNTING" />
           {% endif %}
@@ -1236,12 +1394,16 @@ h5 {
         <div class="content-boxs border-0 rounded-4">
         {% if current_theme == 'pongal' %}
         <h2 class="pongal_text_theme" style="color: transparent;">Accounting software  </h2>
+        {% elif current_theme == 'vishu' %}
+        <h2 class="vishu_text_bg1" style="color: transparent;">Accounting software  </h2>
         {% else %}
         <h2>Accounting software  </h2>
         {% endif %}
         <div class="img-box-tech image-hidden">
           {% if current_theme == 'pongal' %}
           <img src="static/pongal/img/account.png" alt="ACCOUNTING" />
+          {% elif current_theme == 'vishu' %}
+            <img src="static/vishu/img/account.png" alt="ACCOUNTING" /> 
           {% else %}
           <img src="static/img/team/account.png" alt="ACCOUNTING" />
           {% endif %}
@@ -1265,7 +1427,16 @@ h5 {
 
         </p>
         </div>
-        <div class="km-button my-4"><a role="button" href="/contact" {% if current_theme == 'pongal' %} class="knowmore-button1" {% else %} class="knowmore-button text-white" {% endif %}>Know More</a></div>
+        <div class="km-button my-4"><a role="button" href="/contact" 
+          {% if current_theme == 'pongal' %}
+           class="knowmore-button1" 
+           {% elif current_theme == 'vishu' %}
+             class="knowmore-button2"
+           {% else %}
+            class="knowmore-button text-white" 
+            {% endif %}>
+            Know More</a>
+          </div>
       </div>
       <!-- <div class="col-lg-6 col-sm-12 col-md-6">
         <div class="content-boxs">
