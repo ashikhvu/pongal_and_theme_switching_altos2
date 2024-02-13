@@ -430,6 +430,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: yellow;
       text-shadow: 0px 0px 10px black;
     }
+    .vishu_text_bg1{
+      background-image: url('/static/vishu/bg/text_bg1.jpg');
+      background-size: contain;
+      background-repeat: repeat;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    #vishu_peacock{
+      width: 38rem;
+    }
+    .vishu_peacock_top{
+      margin-right: -5rem;
+    }
+    #happy_vishu1{
+      width: 18rem;
+    }
+    .happy_vishu_top1{
+      margin-top: -18rem;
+    }
+    #gallery_frame2{
+      width: 15rem;
+    }
+    .gallery_frame2_top{
+      margin-right: -0rem;
+      margin-bottom: -5rem;
+    }
   </style>
       
     </head>
@@ -804,6 +830,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <!--  -->
           {% if current_theme == 'pongal' %}
           <p class="pongal_text_theme" style="color: transparent;">Check our Events</p>
+          {% elif current_theme == 'vishu' %}
+          <p class="vishu_text_bg1" style="color: transparent;">Check our Events</p>
           {% else %}
           <p>Check our Events</p>
           {% endif %}
@@ -813,6 +841,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="position-relative">
           <div class="position-absolute end-0 pongal_home2_top">
             <img id="pongal_home2" src="{% static 'pongal/decor/pongal_home2.png' %}" alt="">
+          </div>
+        </div>
+        {% elif current_theme == 'vishu' %}
+        <div class="position-relative">
+          <div class="position-absolute end-0 vishu_peacock_top">
+            <img id="vishu_peacock" src="{% static 'vishu/decor/peacock.png' %}" alt="">
           </div>
         </div>
         {% endif %}
@@ -848,6 +882,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <div class="position-relative" style="z-index: 10;">
                     <div class="position-absolute top-0 frame_decor_top">
                       <img id="frame_decor" src="{% static 'pongal/frame/top_left_corner_decor.png' %}" alt="">
+                    </div>
+                  </div>
+                  {% elif current_theme == 'vishu' %} 
+                  <div class="position-relative" style="z-index: 10;">
+                    <div class="position-absolute top-0 end-0 gallery_frame2_top">
+                      <img id="gallery_frame2" src="{% static 'vishu/decor/frame_decor/gallery_frame2.png' %}" alt="">
                     </div>
                   </div>
                   {% endif %}
@@ -920,6 +960,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <h2>Gallery</h2>
           {% if current_theme == 'pongal' %}
           <p class="pongal_text_theme" style="color: transparent;">Check our Gallery</p>
+          {% elif current_theme == 'vishu' %} 
+          <p class="vishu_text_bg1" style="color: transparent;">Check our Gallery</p>
           {% else %}
           <p>Check our Gallery</p>
           {% endif %}
@@ -935,6 +977,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="position-relative">
               <div class="position-absolute bottom-0 start-0" style="margin-left: 1.2rem;">
                 <img draggable="false" style="width: 15rem;" src="{% static 'pongal/frame/frame2.png' %}" alt="">
+              </div>
+            </div>
+            {% elif current_theme == 'vishu' %}
+            <div class="position-relative">
+              <div class="position-absolute bottom-0 start-0" style="margin-left: 0.5rem;">
+                <img draggable="false" style="width: 16rem;" src="{% static 'vishu/decor/frame_decor/gallery_frame.png' %}" alt="">
               </div>
             </div>
             {% endif %}
@@ -1040,7 +1088,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <img draggable="false"id="pongal_footer_decor" draggable="false" src="{% static 'pongal/decor/happy_pongal2.png' %}" alt="">
       </div>
     </div>
-    {% endif %}
+{% elif current_theme == "vishu" %}
+    <div class="position-relative" style="z-index: 1;">
+      <div class="position-absolute end-0 top-100 happy_vishu_top1">
+        <img draggable="false"id="happy_vishu1" src="{% static 'vishu/decor/happy_vishu1.png' %}" alt="">
+      </div>  
+    </div>
+{% endif %}
 
 <!-- <div id="preloader"></div> -->
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

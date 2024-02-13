@@ -648,6 +648,79 @@ h5 {
     border: none;
     border-radius: 4px;
   }
+  .card3 {
+    display: block;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+   
+  }
+  
+    .card3 :before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      background-image: url('/static/vishu/bg/card_bg.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 32px;
+      width: 32px;
+      transform: scale(1);
+      transform-origin: 50% 50%;
+      transition: transform 0.25s ease-out;
+    }
+  
+    .card3 :hover:before {
+      transform: scale(21);
+    }
+  
+  
+    .card3:hover p {
+      transition: all 0.3s ease-out;
+      color: black;
+    }
+    .card3:hover h5 {
+      transition: all 0.3s ease-out;
+      color: black;
+    }
+    .go-corner3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    
+    background-image: url('/static/vishu/bg/card_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 3px 3px black;
+
+    border-radius: 0 4px 0 32px;
+  }
+  .go-arrow3 {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: black;
+    font-family: courier, sans;
+  }
+  #happy_vishu1{
+    width: 18rem;
+  }
+  .happy_vishu_top1{
+    margin-top: -18rem;
+  }
 </style>
 
  <!-- ======= Header ======= -->
@@ -1113,120 +1186,351 @@ h5 {
               reliable basis and let your organization reach its full potential.</p>
       
         </div>
-        <a {% if current_theme == 'pongal' %} class="card2" style="color: transparent;" {% else %} class="card1" {% endif %} >
+        <a 
+        {% if current_theme == 'pongal' %} 
+        class="card2" style="color: transparent;" 
+        {% elif current_theme == 'vishu' %} 
+        class="card3" style="color: transparent;" 
+        {% else %} 
+        class="card1" 
+        {% endif %} >
           <h5>Task/Project Management</h5>
           <p class="small">With our BPM tool, Tasks can be created for you or a member of your team, and you can use notifications as reminders if needed. 
             By using the CORE tasks functionality, you can set calendar-synchronized reminders for your customers. Keeps you organized and ensures 
             that you never miss a sale or unfinished task.</p>
-          <div {% if current_theme == 'pongal' %} class="go-corner2" style="color: transparent;" {% else %} class="go-corner" {% endif %}  href="#">
-            <div {% if current_theme == 'pongal' %} class="go-arrow2" {% else %} class="go-arrow" {% endif %}>
-              →
+            <div 
+            {% if current_theme == 'pongal' %} 
+            class="go-corner2" style="color: transparent;" 
+            {% elif current_theme == 'vishu' %} 
+            class="go-corner3" style="color: transparent;" 
+            {% else %} 
+            class="go-corner" 
+            {% endif %}  href="#">
+              <div 
+              {% if current_theme == 'pongal' %} 
+              class="go-arrow2" 
+              {% elif current_theme == 'vishu' %} 
+              class="go-arrow3" 
+              {% else %} 
+              class="go-arrow" 
+              {% endif %}>
+                →
+              </div>
             </div>
-          </div>
         </a>
-        <a {% if current_theme == 'pongal' %} class="card2" style="color: transparent;" {% else %} class="card1" {% endif %}>
+        <a 
+        {% if current_theme == 'pongal' %} 
+        class="card2" style="color: transparent;" 
+        {% elif current_theme == 'vishu' %} 
+        class="card3" style="color: transparent;" 
+        {% else %} 
+        class="card1" 
+        {% endif %}>
             <h5>Collaboration</h5>
             <p class="small">The goal of the collaboration module in CORE is to streamline workflows and processes by utilizing organizational 
                 structures and hierarchies. It also facilitates communication between managers,
                  supervisors, and employees with respect to concepts, ideas, workloads, and tasks.</p>
-            <div {% if current_theme == 'pongal' %} class="go-corner2" style="color: transparent;" {% else %} class="go-corner" {% endif %}  href="#">
-              <div {% if current_theme == 'pongal' %} class="go-arrow2" {% else %} class="go-arrow" {% endif %}>
+            <div 
+            {% if current_theme == 'pongal' %} 
+            class="go-corner2" style="color: transparent;" 
+            {% elif current_theme == 'vishu' %} 
+            class="go-corner3" style="color: transparent;" 
+            {% else %} 
+            class="go-corner" 
+            {% endif %}  href="#">
+              <div 
+              {% if current_theme == 'pongal' %} 
+              class="go-arrow2" 
+              {% elif current_theme == 'vishu' %} 
+              class="go-arrow3" 
+              {% else %} 
+              class="go-arrow" 
+              {% endif %}>
                 →
               </div>
             </div>
         </a>
-        <a {% if current_theme == 'pongal' %} class="card2" style="color: transparent;" {% else %} class="card1" {% endif %}>
+        <a 
+        {% if current_theme == 'pongal' %} 
+        class="card2" style="color: transparent;" 
+        {% elif current_theme == 'vishu' %} 
+        class="card3" style="color: transparent;" 
+        {% else %} 
+        class="card1" 
+        {% endif %}>
             <h5>Time Management</h5>
             <p class="small">It is crucial that you manage your time effectively to succeed in your business journey and 
                 increase the number of customers that you are satisfied with. By enabling it, Tasks are completed faster and more efficiently, 
                 which allows you to devote more time and efforts to other activities.</p>
-            <div {% if current_theme == 'pongal' %} class="go-corner2" style="color: transparent;" {% else %} class="go-corner" {% endif %}  href="#">
-              <div {% if current_theme == 'pongal' %} class="go-arrow2" {% else %} class="go-arrow" {% endif %}>
+            <div 
+            {% if current_theme == 'pongal' %} 
+            class="go-corner2" style="color: transparent;" 
+            {% elif current_theme == 'vishu' %} 
+            class="go-corner3" style="color: transparent;" 
+            {% else %} 
+            class="go-corner" 
+            {% endif %}  href="#">
+              <div 
+              {% if current_theme == 'pongal' %} 
+              class="go-arrow2" 
+              {% elif current_theme == 'vishu' %} 
+              class="go-arrow3" 
+              {% else %} 
+              class="go-arrow" 
+              {% endif %}>
                 →
               </div>
             </div>
         </a>
-        <a {% if current_theme == 'pongal' %} class="card2" style="color: transparent;" {% else %} class="card1" {% endif %}>
+        <a 
+        {% if current_theme == 'pongal' %} 
+        class="card2" style="color: transparent;" 
+        {% elif current_theme == 'vishu' %} 
+        class="card3" style="color: transparent;" 
+        {% else %} 
+        class="card1" 
+        {% endif %}>
             <h5>File Management</h5>
             <p class="small">The business will be able to get rid of all their paperwork and have everything in one location, which may be very advantageous. 
                 You can attach and store any documents using the facility. PNG, PDF, JPEG, and CSV are just a few of the supported file types.</p>
-            <div {% if current_theme == 'pongal' %} class="go-corner2" style="color: transparent;" {% else %} class="go-corner" {% endif %}  href="#">
-              <div {% if current_theme == 'pongal' %} class="go-arrow2" {% else %} class="go-arrow" {% endif %}>
+            <div 
+            {% if current_theme == 'pongal' %} 
+            class="go-corner2" style="color: transparent;" 
+            {% elif current_theme == 'vishu' %} 
+            class="go-corner3" style="color: transparent;" 
+            {% else %} 
+            class="go-corner" 
+            {% endif %}  href="#">
+              <div 
+              {% if current_theme == 'pongal' %} 
+              class="go-arrow2" 
+              {% elif current_theme == 'vishu' %} 
+              class="go-arrow3" 
+              {% else %} 
+              class="go-arrow" 
+              {% endif %}>
                 →
               </div>
             </div>
         </a>
 
-        <a {% if current_theme == 'pongal' %} class="card2" style="color: transparent;" {% else %} class="card1" {% endif %}>
+        <a 
+        {% if current_theme == 'pongal' %} 
+        class="card2" style="color: transparent;" 
+        {% elif current_theme == 'vishu' %} 
+        class="card3" style="color: transparent;" 
+        {% else %} 
+        class="card1" 
+        {% endif %}>
             <h5>Employee Management</h5>
             <p class="small">By using this system, the company and employees' professional and personal details are protected. HRs and business managers undergo less pressure and workload thanks to the employee management system. 
                 A BPM tool such as this will provide you with a wide range of solutions that will simplify and expedite your work.</p>
-            <div {% if current_theme == 'pongal' %} class="go-corner2" style="color: transparent;" {% else %} class="go-corner" {% endif %}  href="#">
-              <div {% if current_theme == 'pongal' %} class="go-arrow2" {% else %} class="go-arrow" {% endif %}>
+            <div 
+            {% if current_theme == 'pongal' %} 
+            class="go-corner2" style="color: transparent;" 
+            {% elif current_theme == 'vishu' %} 
+            class="go-corner3" style="color: transparent;" 
+            {% else %} 
+            class="go-corner" 
+            {% endif %}  href="#">
+              <div 
+              {% if current_theme == 'pongal' %} 
+              class="go-arrow2" 
+              {% elif current_theme == 'vishu' %} 
+              class="go-arrow3" 
+              {% else %} 
+              class="go-arrow" 
+              {% endif %}>
                 →
               </div>
             </div>
         </a>
 
-        <a {% if current_theme == 'pongal' %} class="card2" style="color: transparent;" {% else %} class="card1" {% endif %}>
+        <a 
+        {% if current_theme == 'pongal' %} 
+        class="card2" style="color: transparent;" 
+        {% elif current_theme == 'vishu' %} 
+        class="card3" style="color: transparent;" 
+        {% else %} 
+        class="card1" 
+        {% endif %}>
             <h5>Finance Auditing </h5>
             <p class="small">By reducing gaps in data and removing processes that waste time and resources, a comprehensive CRM audit will enable you to take full advantage of your CRM. 
                 This analysis helps you identify the flaws and issues in order to create a sound business plan for the future.</p>
-            <div {% if current_theme == 'pongal' %} class="go-corner2" style="color: transparent;" {% else %} class="go-corner" {% endif %}  href="#">
-              <div {% if current_theme == 'pongal' %} class="go-arrow2" {% else %} class="go-arrow" {% endif %}>
+            <div 
+            {% if current_theme == 'pongal' %} 
+            class="go-corner2" style="color: transparent;" 
+            {% elif current_theme == 'vishu' %} 
+            class="go-corner3" style="color: transparent;" 
+            {% else %} 
+            class="go-corner" 
+            {% endif %}  href="#">
+              <div 
+              {% if current_theme == 'pongal' %} 
+              class="go-arrow2" 
+              {% elif current_theme == 'vishu' %} 
+              class="go-arrow3" 
+              {% else %} 
+              class="go-arrow" 
+              {% endif %}>
                 →
               </div>
             </div>
         </a>
 
-        <a {% if current_theme == 'pongal' %} class="card2" style="color: transparent;" {% else %} class="card1" {% endif %}>
+        <a 
+        {% if current_theme == 'pongal' %} 
+        class="card2" style="color: transparent;" 
+        {% elif current_theme == 'vishu' %} 
+        class="card3" style="color: transparent;" 
+        {% else %} 
+        class="card1" 
+        {% endif %}>
             <h5>Payroll Management </h5>
             <p class="small">Payroll is also a crucial system to the operation of your company. Although it might be your largest expense, it is an essential process that must be completed accurately and on time. Besides disburses employees' 
                 salaries, this software aids in office administration and manages payroll for your business.</p>
-            <div {% if current_theme == 'pongal' %} class="go-corner2" style="color: transparent;" {% else %} class="go-corner" {% endif %}  href="#">
-              <div {% if current_theme == 'pongal' %} class="go-arrow2" {% else %} class="go-arrow" {% endif %}>
+            <div 
+            {% if current_theme == 'pongal' %} 
+            class="go-corner2" style="color: transparent;" 
+            {% elif current_theme == 'vishu' %} 
+            class="go-corner3" style="color: transparent;" 
+            {% else %} 
+            class="go-corner" 
+            {% endif %}  href="#">
+              <div 
+              {% if current_theme == 'pongal' %} 
+              class="go-arrow2" 
+              {% elif current_theme == 'vishu' %} 
+              class="go-arrow3" 
+              {% else %} 
+              class="go-arrow" 
+              {% endif %}>
                 →
               </div>
             </div>
         </a>
 
-        <a {% if current_theme == 'pongal' %} class="card2" style="color: transparent;" {% else %} class="card1" {% endif %}>
+        <a 
+        {% if current_theme == 'pongal' %} 
+        class="card2" style="color: transparent;" 
+        {% elif current_theme == 'vishu' %} 
+        class="card3" style="color: transparent;" 
+        {% else %} 
+        class="card1" 
+        {% endif %}>
             <h5>Client Management </h5>
             <p class="small">The goal of every business is to develop a long-term relationship with its clients. It allows you to define time intervals, set a scale for transactions based on the quality 
                 and quantity of the products, increase productivity, and facilitate data collection and analysis in real time.</p>
-            <div {% if current_theme == 'pongal' %} class="go-corner2" style="color: transparent;" {% else %} class="go-corner" {% endif %}  href="#">
-              <div {% if current_theme == 'pongal' %} class="go-arrow2" {% else %} class="go-arrow" {% endif %}>
+            <div 
+            {% if current_theme == 'pongal' %} 
+            class="go-corner2" style="color: transparent;" 
+            {% elif current_theme == 'vishu' %} 
+            class="go-corner3" style="color: transparent;" 
+            {% else %} 
+            class="go-corner" 
+            {% endif %}  href="#">
+              <div 
+              {% if current_theme == 'pongal' %} 
+              class="go-arrow2" 
+              {% elif current_theme == 'vishu' %} 
+              class="go-arrow3" 
+              {% else %} 
+              class="go-arrow" 
+              {% endif %}>
                 →
               </div>
             </div>
         </a>
 
-        <a {% if current_theme == 'pongal' %} class="card2" style="color: transparent;" {% else %} class="card1" {% endif %}>
+        <a 
+        {% if current_theme == 'pongal' %} 
+        class="card2" style="color: transparent;" 
+        {% elif current_theme == 'vishu' %} 
+        class="card3" style="color: transparent;" 
+        {% else %} 
+        class="card1" 
+        {% endif %}>
             <h5>Progress Tracking </h5>
             <p class="small">CRM software simplifies tracking and taking actions to solve any issues by integrating project details, product reports, and contacts for prospects and customers. It allows you to track progress of your employees, thereby identifying their 
                 efficiency and assigning work to them accordingly. Result in improving the overall performance of your team.</p>
-            <div {% if current_theme == 'pongal' %} class="go-corner2" style="color: transparent;" {% else %} class="go-corner" {% endif %}  href="#">
-              <div {% if current_theme == 'pongal' %} class="go-arrow2" {% else %} class="go-arrow" {% endif %}>
+            <div 
+            {% if current_theme == 'pongal' %} 
+            class="go-corner2" style="color: transparent;" 
+            {% elif current_theme == 'vishu' %} 
+            class="go-corner3" style="color: transparent;" 
+            {% else %} 
+            class="go-corner" 
+            {% endif %}  href="#">
+              <div 
+              {% if current_theme == 'pongal' %} 
+              class="go-arrow2" 
+              {% elif current_theme == 'vishu' %} 
+              class="go-arrow3" 
+              {% else %} 
+              class="go-arrow" 
+              {% endif %}>
                 →
               </div>
             </div>
         </a>
-        <a {% if current_theme == 'pongal' %} class="card2" style="color: transparent;" {% else %} class="card1" {% endif %}>
+        <a 
+        {% if current_theme == 'pongal' %} 
+        class="card2" style="color: transparent;" 
+        {% elif current_theme == 'vishu' %} 
+        class="card3" style="color: transparent;" 
+        {% else %} 
+        class="card1" 
+        {% endif %}>
             <h5>Reports and Analytics</h5>
             <p class="small">Providing in-depth details about sales, customer service, and marketing processes is the primary advantage of the Report and Analysis module. Using the CORE, you will be able to generate a custom report that shows profitability, 
                 sales forecasts according to the budget, and sales conversion, helping you surpass your competitors.</p>
-            <div {% if current_theme == 'pongal' %} class="go-corner2" style="color: transparent;" {% else %} class="go-corner" {% endif %}  href="#">
-              <div {% if current_theme == 'pongal' %} class="go-arrow2" {% else %} class="go-arrow" {% endif %}>
+            <div 
+            {% if current_theme == 'pongal' %} 
+            class="go-corner2" style="color: transparent;" 
+            {% elif current_theme == 'vishu' %} 
+            class="go-corner3" style="color: transparent;" 
+            {% else %} 
+            class="go-corner" 
+            {% endif %}  href="#">
+              <div 
+              {% if current_theme == 'pongal' %} 
+              class="go-arrow2" 
+              {% elif current_theme == 'vishu' %} 
+              class="go-arrow3" 
+              {% else %} 
+              class="go-arrow" 
+              {% endif %}>
                 →
               </div>
             </div>
         </a>
-        <a {% if current_theme == 'pongal' %} class="card2" style="color: transparent;" {% else %} class="card1" {% endif %}>
+        <a 
+        {% if current_theme == 'pongal' %} 
+        class="card2" style="color: transparent;" 
+        {% elif current_theme == 'vishu' %} 
+        class="card3" style="color: transparent;" 
+        {% else %} 
+        class="card1" 
+        {% endif %}>
             <h5>Easy Documentation </h5>
             <p class="small">Having access to the business data from anywhere within seconds transforms a business into a major player. The documentation of each transaction and 
                 project information will allow you to review past transactions and create new strategies in line with them.</p>
-            <div {% if current_theme == 'pongal' %} class="go-corner2" style="color: transparent;" {% else %} class="go-corner" {% endif %}  href="#">
-              <div {% if current_theme == 'pongal' %} class="go-arrow2" {% else %} class="go-arrow" {% endif %}>
+            <div 
+            {% if current_theme == 'pongal' %} 
+            class="go-corner2" style="color: transparent;" 
+            {% elif current_theme == 'vishu' %} 
+            class="go-corner3" style="color: transparent;" 
+            {% else %} 
+            class="go-corner" 
+            {% endif %}  href="#">
+              <div 
+              {% if current_theme == 'pongal' %} 
+              class="go-arrow2" 
+              {% elif current_theme == 'vishu' %} 
+              class="go-arrow3" 
+              {% else %} 
+              class="go-arrow" 
+              {% endif %}>
                 →
               </div>
             </div>
@@ -1640,6 +1944,12 @@ h5 {
   <div class="position-absolute end-0 pongal_footer_decor_top">
     <img draggable="false"id="pongal_footer_decor" draggable="false" src="{% static 'pongal/decor/happy_pongal2.png' %}" alt="">
   </div>
+</div>
+{% elif current_theme == "vishu" %}
+<div class="position-relative" style="z-index: 1;">
+  <div class="position-absolute end-0 top-100 happy_vishu_top1">
+    <img draggable="false"id="happy_vishu1" src="{% static 'vishu/decor/happy_vishu1.png' %}" alt="">
+  </div>  
 </div>
 {% endif %}
 

@@ -168,6 +168,19 @@
  color: yellow;
  text-shadow: 0px 0px 10px black;
 }
+.vishu_text_bg1{
+  background-image: url('/static/vishu/bg/text_bg1.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+#vishu_little_krishna{
+  width: 16.5rem;
+}
+.vishu_little_krishna_top{
+  margin-top: -9.2rem;
+}
 </style>
 {% else %}
 <style>
@@ -200,6 +213,8 @@
           <h2>Contact</h2>
           {% if current_theme == 'pongal' %}
           <p class="pongal_text_theme" style="color: transparent;">Contact Us</p>
+          {% elif current_theme == 'vishu' %} 
+          <p class="vishu_text_bg1" style="color: transparent;">Contact Us</p>
           {% else %}
           <p style="color: rgb(39, 112, 141);">Contact Us</p>
           {% endif %}
@@ -210,6 +225,12 @@
       <div class="position-relative">
         <div class="position-absolute top-0 end-0 pongal_gang_top">
           <img id="pongal_gang" src="{% static 'pongal/decor/company_suggestion/as-removebg-preview.png' %}" alt="">
+        </div>
+      </div>
+      {% elif current_theme == 'vishu' %} 
+      <div class="position-relative">
+        <div class="position-absolute top-0 end-0 vishu_little_krishna_top">
+          <img id="vishu_little_krishna" src="{% static 'vishu/decor/little_krishna.png' %}" alt="">
         </div>
       </div>
       {% endif %}
@@ -258,6 +279,11 @@
                 style="background-image: url('static/pongal/bg/blur_bg1.png');
                 background-size: cover;
                 background-repeat: no-repeat;"
+                {% elif current_theme == 'vishu' %} 
+                class="bi bi-geo-alt me-2 text-light" 
+                style="background-image: url('static/vishu/bg/sm_button_bg.png');
+                background-size: cover;
+                background-repeat: no-repeat;"
                 {% else %}
                 class="bi bi-geo-alt me-2 text-dark" 
                 style="background-color:#0fa49b; color:rgb(0, 0, 0)"
@@ -281,6 +307,11 @@
                 style="background-image: url('static/pongal/bg/blur_bg1.png');
                 background-size: cover;
                 background-repeat: no-repeat;"
+                {% elif current_theme == 'vishu' %} 
+                class="bi bi-envelope me-2 text-light" 
+                style="background-image: url('static/vishu/bg/sm_button_bg.png');
+                background-size: cover;
+                background-repeat: no-repeat;"
                 {% else %}
                 class="bi bi-envelope me-2 text-dark" 
                 style="background-color:#0fa49b; color:rgb(0, 0, 0)"
@@ -295,6 +326,11 @@
                 {% if current_theme == 'pongal' %}
                 class="bi bi-phone me-2 text-light" 
                 style="background-image: url('static/pongal/bg/blur_bg1.png');
+                background-size: cover;
+                background-repeat: no-repeat;"
+                {% elif current_theme == 'vishu' %} 
+                class="bi bi-phone me-2 text-light" 
+                style="background-image: url('static/vishu/bg/sm_button_bg.png');
                 background-size: cover;
                 background-repeat: no-repeat;"
                 {% else %}
@@ -323,6 +359,11 @@
                 style="background-image: url('static/pongal/bg/blur_bg1.png');
                 background-size: cover;
                 background-repeat: no-repeat;"
+                {% elif current_theme == 'vishu' %} 
+                class="bi bi-geo-alt me-2 text-light" 
+                style="background-image: url('static/vishu/bg/sm_button_bg.png');
+                background-size: cover;
+                background-repeat: no-repeat;"
                 {% else %}
                 class="bi bi-geo-alt me-2 text-dark" 
                 style="background-color:#0fa49b; color:rgb(0, 0, 0)"
@@ -344,6 +385,11 @@
                 style="background-image: url('static/pongal/bg/blur_bg1.png');
                 background-size: cover;
                 background-repeat: no-repeat;"
+                {% elif current_theme == 'vishu' %} 
+                class="bi bi-envelope me-2 text-light" 
+                style="background-image: url('static/vishu/bg/sm_button_bg.png');
+                background-size: cover;
+                background-repeat: no-repeat;"
                 {% else %}
                 class="bi bi-envelope me-2 text-dark" 
                 style="background-color:#0fa49b; color:rgb(0, 0, 0)"
@@ -356,6 +402,11 @@
                 <i {% if current_theme == 'pongal' %}
                 class="bi bi-phone me-2 text-light" 
                 style="background-image: url('static/pongal/bg/blur_bg1.png');
+                background-size: cover;
+                background-repeat: no-repeat;"
+                {% elif current_theme == 'vishu' %} 
+                class="bi bi-phone me-2 text-light" 
+                style="background-image: url('static/vishu/bg/sm_button_bg.png');
                 background-size: cover;
                 background-repeat: no-repeat;"
                 {% else %}

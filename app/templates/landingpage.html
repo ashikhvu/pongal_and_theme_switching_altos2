@@ -134,6 +134,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         background-size: 100%;
         position: relative;
       }
+    .navbar a:hover,
+    .navbar .active,
+    .navbar .active:focus,
+    .navbar li:hover>.hover_anchor {
+      color: #189aa6;
+    }
     </style>
 
 <style>
@@ -395,12 +401,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>.hover_anchor {
-    color: #189aa6;
-  }
-  .navbar a:hover,
-  .navbar .active,
-  .navbar .active:focus,
   .navbar li:hover>.hover_anchor_pongal {
     background-image: url('/static/pongal/bg/bg_fire.png');
     background-size: contain;
@@ -560,6 +560,101 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 </style>
 
+<!-- vishu -->
+<style>
+  #happy_vishu{
+    width: 16rem;
+  }
+  .happy_vishu_top{
+    margin-top: -7rem;
+  }
+  #vishu_flute{
+    width: 32rem;
+  }
+  .vishu_flute_top{
+    margin-top: -13.7rem;
+  }
+  #kp1{
+    width: 5.5rem;
+  }
+  .kp1_top{
+    margin-top: -1.5rem;
+    margin-left: 1.7rem;
+  }
+  #container_text .request-box .circle2 {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    height: 2.5rem;
+    
+    /* background: linear-gradient(to right,gray,rgb(255, 255, 121)); */
+    background: url('/static/vishu/bg/button_bg.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 1.625rem;
+    transition: all 0.4s ease-in-out;
+  }
+  #container_text .request-box .req-btn:hover .circle2 {
+    width: 100%;
+  }
+  
+  #container_text .request-box .circle2 .icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>.hover_anchor_vishu {
+    /* background-image: url('/static/pongal/bg/bg_fire.png');
+    background-size: contain;
+    background-repeat: repeat; */
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: yellow;
+    text-shadow: 0px 0px 10px black;
+  }
+  #lord_krishna{
+    
+  }
+  .lord_krishna_top{
+    margin-left: -0.75rem;
+  }
+  #fire_cracker_vishu{
+    width: 18rem;
+  }
+  .fire_cracker_vishu_top{
+    margin-top: -4rem;
+  }
+  .vishu_text_bg1{
+    background-image: url('/static/vishu/bg/text_bg1.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  #happy_vishu1{
+    width: 18rem;
+  }
+  .happy_vishu_top1{
+    margin-top: -18rem;
+  }
+  #peacock_feather{
+    width: 18rem;
+    transform: rotate(-30deg);
+  }
+  .peacock_feather_top{
+    margin-top: -8rem;
+    margin-left: -2.3rem;
+  }
+</style>
+
   </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RLTXDEGMP"></script>
@@ -621,6 +716,53 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
       </div>
+      {% elif current_theme == 'vishu' %}
+      <div class="position-relative" style="z-index: -1;">
+        <div class="position-absolute start-0 top-0 top_decor_top">
+          <div class="d-flex">
+            <img draggable="false"style="width: 30rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+            <img draggable="false"style="width: 30rem;margin-left: -1rem;" draggable="false" src="{% static 'vishu/decor/footer_vishu.png' %}" alt="">
+          </div>
+        </div>
+      </div>
       {% endif %}
 
       <div class="container d-flex align-items-center justify-content-lg-between">
@@ -636,9 +778,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <li>
               <a 
               {% if current_theme == 'pongal' %} 
-              class="nav-link scrollto hom hover_anchor_pongal"
+              class="nav-link scrollto hom pongal_text_theme1" style="color: transparent;" 
+              {% elif current_theme == 'vishu' %}
+                class="nav-link scrollto hom " 
               {% else %} 
-              class="nav-link scrollto hom hover_anchor" 
+              class="nav-link scrollto hom" 
               {% endif %} 
               href="{% url 'text_page' %}">
               Home
@@ -646,19 +790,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </li>
             <li>
               <a 
-              {% if current_theme == 'pongal' %} 
-                class="nav-link scrollto abot hover_anchor_pongal" 
-              {% else %} 
-                class="nav-link scrollto abot hover_anchor" 
-              {% endif %} 
-              href="{% url 'aboutus' %}">
-              About us
+                  {% if current_theme == 'pongal' %} 
+                    class="nav-link scrollto abot hover_anchor_pongal" 
+                  {% elif current_theme == 'vishu' %}
+                    class="nav-link scrollto abot hover_anchor_vishu"
+                  {% else %} 
+                    class="nav-link scrollto abot hover_anchor" 
+                  {% endif %} 
+                  href="{% url 'aboutus' %}">
+                  About us
               </a>
             </li>
             <li>
               <a 
               {% if current_theme == 'pongal' %}
               class="nav-link scrollto serv hover_anchor_pongal"
+              {% elif current_theme == 'vishu' %}
+              class="nav-link scrollto serv hover_anchor_vishu"
               {% else %}
               class="nav-link scrollto serv hover_anchor" 
               {% endif %}
@@ -670,6 +818,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <a 
               {% if current_theme == 'pongal' %}
               class="nav-link scrollto cor hover_anchor_pongal" 
+              {% elif current_theme == 'vishu' %}
+              class="nav-link scrollto cor hover_anchor_vishu"
               {% else %}
               class="nav-link scrollto cor hover_anchor" 
               {% endif %}
@@ -681,6 +831,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <a 
               {% if current_theme == 'pongal' %}
               class="nav-link scrollto cors hover_anchor_pongal" 
+              {% elif current_theme == 'vishu' %}
+              class="nav-link scrollto cors hover_anchor_vishu"
               {% else %}
               class="nav-link scrollto cors hover_anchor" 
               {% endif %}
@@ -693,6 +845,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <a 
               {% if current_theme == 'pongal' %}
               class="nav-link scrollto event hover_anchor_pongal" 
+              {% elif current_theme == 'vishu' %}
+              class="nav-link scrollto events hover_anchor_vishu"
               {% else %}
               class="nav-link scrollto event hover_anchor" 
               {% endif %}
@@ -704,6 +858,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <a 
               {% if current_theme == 'pongal' %}
               class="nav-link scrollto cont hover_anchor_pongal" 
+              {% elif current_theme == 'vishu' %}
+              class="nav-link scrollto cont hover_anchor_vishu"
               {% else %}
               class="nav-link scrollto cont hover_anchor" 
               {% endif %}
@@ -1605,6 +1761,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <img draggable="false"id="pongal_gif1" src="{% static 'pongal/decor/pongal_home5.png' %}" alt="">
             </div>  
           </div>
+          {% elif current_theme == "vishu" %}
+          <div class="position-relative" style="z-index: 1;">
+            <div class="position-absolute start-0 top-100 fire_cracker_vishu_top">
+              <img draggable="false"id="fire_cracker_vishu" src="{% static 'vishu/gif/fire_cracker.gif' %}" alt="">
+            </div>  
+          </div>
+          <div class="position-relative" style="z-index: 1;">
+            <div class="position-absolute end-0 top-100 happy_vishu_top">
+              <img draggable="false"id="happy_vishu" src="{% static 'vishu/decor/happy_vishu.png' %}" alt="">
+            </div>  
+          </div>
           {% endif %}
           {% if current_theme == 'pongal' %}
           <h3 class="mb-4 main-head pongal_text_theme" style="color: transparent;"><b>ALTOS Technologies</b></h3>
@@ -1612,6 +1779,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             We Deal With The Aspects Of
             <span class="pongal_text_theme" style="color: transparent;"
               >Professional IT</span><span class="pongal_text_theme" style="color: transparent;"> Solutions</span>
+          </h3>
+          {% elif current_theme == "vishu" %}
+          <h3 class="mb-4 main-head vishu_text_bg1" style="color: transparent;"><b>ALTOS Technologies</b></h3>
+          <h3 class="mb-4 sub-head">
+            We Deal With The Aspects Of
+            <span class="vishu_text_bg1" style="color: transparent;"
+              >Professional IT</span><span class="vishu_text_bg1" style="color: transparent;"> Solutions</span>
           </h3>
           {% else %}
           <h1 class="mb-4 main-head" style="color: rgb(22, 125, 165)"><b>ALTOS TECHNOLOGIES</b></h1>
@@ -1726,6 +1900,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
             </div>
             <h4 class="section-head pongal_text_theme" style="color: transparent;">//Why Choose Us</h4>
+            {% elif current_theme == 'vishu' %}
+            <div class="position-relative" style="z-index: 10;">
+              <div class="position-absolute start-50 translate-middle-x vishu_flute_top"> 
+                <img draggable="false"id="vishu_flute" src="{% static 'vishu/gif/flute1.gif' %}" alt="">
+              </div>
+            </div>
+            <h4 class="section-head" style="color: rgb(243, 243, 243);padding-left: 3.5rem;">Why Choose Us</h4>
             {% else %}
             <h4 class="section-head" style="color: rgb(243, 243, 243)">//Why Choose Us</h4>
             {% endif %}
@@ -1749,6 +1930,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="icon-box-content">
                   {% if current_theme == 'pongal' %}
                   <i class="bx bx-receipt pongal_text_theme1" style="color: transparent;"></i>
+                  {% elif current_theme == 'vishu' %} 
+                  <div class="position-relative" style="z-index: 10;">
+                    <div class="position-absolute start-50 translate-middle-x kp1_top"> 
+                      <img draggable="false"id="kp1" src="{% static 'vishu/decor/krishna_poses/krishna_poses1.png' %}" alt="">
+                    </div>
+                  </div>
+                  <i class="bx bx-support" style="color: #0fa49b;visibility: hidden;"></i>
                   {% else %}
                   <i class="bx bx-receipt" style="color: #0fa49b"></i>
                   {% endif %}
@@ -1771,6 +1959,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <!-- <i class="bx bx-shield" style="color: #0fa49b"></i> -->
                   {% if current_theme == 'pongal' %}
                   <img draggable="false"style="width: 2.5rem;margin: 0rem 1.7rem 0rem 0rem" src="{% static 'pongal/icons/icon1.png' %}" alt="">
+                  {% elif current_theme == 'vishu' %}
+                  <div class="position-relative" style="z-index: 10;">
+                    <div class="position-absolute start-50 translate-middle-x kp1_top"> 
+                      <img draggable="false"id="kp1" src="{% static 'vishu/decor/krishna_poses/krishna_poses3.png' %}" alt="">
+                    </div>
+                  </div>
+                  <i class="bx bx-shield" style="color: #0fa49b;visibility: hidden;"></i>
                   {% else %}
                   <ion-icon
                     name="layers-outline"
@@ -1794,6 +1989,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="icon-box-content">
                   {% if current_theme == 'pongal' %}
                   <i class="bx bx-cube-alt pongal_text_theme1" style="color: transparent;"></i>
+                  {% elif current_theme == 'vishu' %}
+                  <div class="position-relative" style="z-index: 10;">
+                    <div class="position-absolute start-50 translate-middle-x kp1_top"> 
+                      <img draggable="false"id="kp1" src="{% static 'vishu/decor/krishna_poses/krishna_poses5.png' %}" alt="">
+                    </div>
+                  </div>
+                  <i class="bx bx-shield" style="color: #0fa49b;visibility: hidden;"></i>
                   {% else %}
                   <i class="bx bx-cube-alt" style="color: #0fa49b"></i>
                   {% endif %}
@@ -1816,6 +2018,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <!-- <i class="bx bx-cube-alt" style="color: #0fa49b"></i> -->
                   {% if current_theme == 'pongal' %}
                   <img draggable="false"style="width: 2.5rem;margin: 0rem 1.7rem 0rem 0rem" src="{% static 'pongal/icons/icon2.png' %}" alt="">
+                  {% elif current_theme == 'vishu' %}
+                  <div class="position-relative" style="z-index: 10;">
+                    <div class="position-absolute start-50 translate-middle-x kp1_top"> 
+                      <img draggable="false"id="kp1" src="{% static 'vishu/decor/krishna_poses/krishna_poses4.png' %}" alt="">
+                    </div>
+                  </div>
+                  <i class="bx bx-shield" style="color: #0fa49b;visibility: hidden;"></i>
                   {% else %}
                   <ion-icon name="people-outline" style="color: #0fa49b">
                   </ion-icon>

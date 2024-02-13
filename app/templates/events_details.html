@@ -140,6 +140,12 @@
     font-weight: 800;
   }
 </style>
+{% elif current_theme == 'vishu' %} 
+<style>
+  #navbar .event{
+    color: yellow;
+  }
+</style>
 {% endif %}
     <section id="team" class="team">
       <div class="container" data-aos="fade-up">
@@ -158,7 +164,6 @@
                 <h6 class="otherdetails">{{allevents.ev_des2}}</h6>
                 <p>{{allevents.ev_des3}}</p>
             </div>
-           
         </div>
         {% endif %}
 

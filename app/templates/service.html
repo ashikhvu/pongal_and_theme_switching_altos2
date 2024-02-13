@@ -171,6 +171,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     background-clip: text;
     -webkit-background-clip: text;
   }
+  #happy_vishu1{
+    width: 18rem;
+  }
+  .happy_vishu_top1{
+    margin-top: -18rem;
+  }
 </style>
 
 
@@ -1808,6 +1814,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="position-absolute end-0 pongal_footer_decor_top">
     <img draggable="false"id="pongal_footer_decor" draggable="false" src="{% static 'pongal/decor/happy_pongal2.png' %}" alt="">
   </div>
+</div>
+{% elif current_theme == "vishu" %}
+<div class="position-relative" style="z-index: 1;">
+  <div class="position-absolute end-0 top-100 happy_vishu_top1">
+    <img draggable="false"id="happy_vishu1" src="{% static 'vishu/decor/happy_vishu1.png' %}" alt="">
+  </div>  
 </div>
 {% endif %}
 
