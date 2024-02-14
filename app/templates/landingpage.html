@@ -581,7 +581,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     margin-top: -1.5rem;
     margin-left: 1.7rem;
   }
-  #container_text .request-box .circle2 {
+  #container_text .request-box .circle3 {
     position: relative;
     display: inline-block;
     margin: 0;
@@ -589,18 +589,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     height: 2.5rem;
     
     /* background: linear-gradient(to right,gray,rgb(255, 255, 121)); */
-    background: url('/static/vishu/bg/button_bg.png') ;
+    background: url('/static/vishu/bg/sm_button_bg.png') ;
     background-size: cover;
     background-repeat: no-repeat;
 
     border-radius: 1.625rem;
     transition: all 0.4s ease-in-out;
   }
-  #container_text .request-box .req-btn:hover .circle2 {
+  #container_text .request-box .req-btn:hover .circle3 {
     width: 100%;
   }
   
-  #container_text .request-box .circle2 .icon {
+  #container_text .request-box .circle3 .icon {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -652,6 +652,110 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .peacock_feather_top{
     margin-top: -8rem;
     margin-left: -2.3rem;
+  }
+  #fade_effect1{
+    transition: all 0.2s linear;
+  }
+  .fade_effect_top1{
+    margin-right: 5rem;
+  }
+  @media screen and (max-width:1199px)
+  {
+    #fade_effect1{
+      width: 30rem;
+    }
+    .fade_effect_top1{
+      margin-right: 5rem;
+      margin-bottom: 2rem;
+    }
+  }
+  @media screen and (max-width:932px)
+  {
+    #fade_effect1{
+      width: 22rem;
+    }
+    .fade_effect_top1{
+      margin-right: 5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  @media screen and (max-width:768px)
+  {
+    #fade_effect1{
+      width: 22rem;
+    }
+    .fade_effect_top1{
+      margin-right: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  @media screen and (max-width:628px)
+  {
+    #fade_effect1{
+      width: 18rem;
+    }
+    .fade_effect_top1{
+      margin-right: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  @media screen and (max-width:526px)
+  {
+    #fade_effect1{
+      width: 12rem;
+    }
+    .fade_effect_top1{
+      margin-right: 3rem;
+      margin-bottom: 2rem;
+    }
+  }
+  @media screen and (max-width:420px)
+  {
+    #fade_effect1{
+      width: 10rem;
+    }
+    .fade_effect_top1{
+      margin-right: 2rem;
+      margin-bottom: -2rem;
+    }
+  }
+  @media screen and (max-width:1400px)
+  {
+    #happy_vishu{
+      width: 12rem;
+    }
+    .happy_vishu_top{
+      margin-top: -8rem;
+    }
+  }
+  @media screen and (max-width:800px)
+  {
+    #happy_vishu{
+      width: 7rem;
+    }
+    .happy_vishu_top{
+      margin-top: -5rem;
+    }
+  }
+  @media screen and (max-width:750px)
+  {
+    #vishu_flute{
+      width: 18rem;
+    }
+    .vishu_flute_top{
+      margin-top: -7.5rem;
+      margin-left: 0.75rem;
+    }
+  }
+  @media screen and (max-width:321px)
+  {
+    #vishu_flute{
+      width: 18rem;
+    }
+    .vishu_flute_top{
+      margin-top: -5.8rem;
+      margin-left: 0.75rem;
+    }
   }
 </style>
 
@@ -1861,7 +1965,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 Altos Technologies Success Story of 2023 
             </h5>
             <div class='ResponsiveYTPlayer'>
-              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/d_QhmWvn-E0?si=3MDfmDdNzWTp3jw3&amp;controls=1&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/d_QhmWvn-E0?si=3MDfmDdNzWTp3jw3&amp;controls=1&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               
             </div>
 
@@ -2052,6 +2156,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <h2>Connect</h2>
               {% if current_theme == 'pongal' %}
               <p class="pongal_text_theme" style="color: transparent;">With Us</p>
+              {% elif current_theme == 'vishu' %} 
+              <p class="vishu_text_bg1" style="color: transparent;">With Us</p>
               {% else %}
               <p style="color: rgb(39, 112, 141);">With Us</p>
               {% endif %}
@@ -2166,6 +2272,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <img id="fade_effect" draggable="false" src="{% static 'pongal/decor/cow.png' %}" alt="">
         </div>
       </div>
+      {% elif current_theme == 'vishu' %}
+      <div class="position-relative" style="z-index: 10;">
+        <div class="position-absolute end-0 bottom-0 fade_effect_top1">
+          <img id="fade_effect1" draggable="false" src="{% static 'vishu/decor/peacock_feather_big.png' %}" alt="">
+        </div>
+      </div>
       {% endif %}
 
 
@@ -2177,6 +2289,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h2>CHECK OUR</h2>
             {% if current_theme == 'pongal' %}
             <p class="pongal_text_theme" style="color: transparent;">SERVICES</p>
+            {% elif current_theme == 'vishu' %} 
+            <p class="vishu_text_bg1" style="color: transparent;">SERVICES</p>
             {% else %}
             <p style="color: rgb(39, 112, 141);">SERVICES</p>
             {% endif %}
@@ -2203,7 +2317,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     target="_blank"
                     href="https://altostechnologies.in/Service"
                   >
-                    <span {% if current_theme == 'pongal' %} class="circle1" {% else %} class="circle" {% endif %}>
+                    <span 
+                    {% if current_theme == 'pongal' %} 
+                    class="circle2"
+                    {% elif current_theme == 'vishu' %} 
+                    class="circle3"
+                    {% else %} 
+                    class="circle" 
+                    {% endif %}>
                       <span class="icon arrow"></span>
                     </span>
                     <span class="text-conte">Know More</span>
@@ -2227,7 +2348,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     target="_blank"
                     href="https://altostechnologies.in/Service"
                   >
-                   <span {% if current_theme == 'pongal' %} class="circle1" {% else %} class="circle" {% endif %}>
+                   <span 
+                   {% if current_theme == 'pongal' %} 
+                   class="circle2"
+                   {% elif current_theme == 'vishu' %} 
+                   class="circle3"
+                   {% else %} 
+                   class="circle" 
+                   {% endif %}>
                       <span class="icon arrow"></span>
                     </span>
                     <span class="text-conte">Know More</span>
@@ -2251,7 +2379,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     target="_blank"
                     href="https://altostechnologies.in/Service"
                   >
-                    <span {% if current_theme == 'pongal' %} class="circle1" {% else %} class="circle" {% endif %}>
+                    <span 
+                    {% if current_theme == 'pongal' %} 
+                    class="circle2"
+                    {% elif current_theme == 'vishu' %} 
+                    class="circle3"
+                    {% else %} 
+                    class="circle" 
+                    {% endif %}>
                       <span class="icon arrow"></span>
                     </span>
                     <span class="text-conte">Know More</span>
@@ -2275,7 +2410,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     target="_blank"
                     href="https://altostechnologies.in/Service"
                   >
-                   <span {% if current_theme == 'pongal' %} class="circle1" {% else %} class="circle" {% endif %}>
+                   <span 
+                   {% if current_theme == 'pongal' %} 
+                   class="circle2"
+                   {% elif current_theme == 'vishu' %} 
+                   class="circle3"
+                   {% else %} 
+                   class="circle" 
+                   {% endif %}>
                       <span class="icon arrow"></span>
                     </span>
                     <span class="text-conte">Know More</span>
@@ -2327,6 +2469,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="col-md-12 d-flex justify-content-center">
             {% if current_theme == 'pongal' %}
             <h1 class="pongal_text_theme1" style="color: transparent;">Our Technologies</h1>
+            {% elif current_theme == 'vishu' %} 
+            <h1 class="vishu_text_bg1" style="color: transparent;">Our Technologies</h1>
             {% else %}
             <h1 class="">
               Our<span style="color: rgb(39, 112, 141)"> Technologies</span>
@@ -2354,7 +2498,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-              <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+              <span 
+                {% if current_theme == 'pongal' %} 
+                class="circle2"
+                {% elif current_theme == 'vishu' %} 
+                class="circle3"
+                {% else %} 
+                class="circle" 
+                {% endif %}>
                 <span class="icon arrow"></span>
               </span>
                 <span class="text-conte">Know More</span>
@@ -2378,7 +2529,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-                <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+                <span 
+                {% if current_theme == 'pongal' %} 
+                class="circle2"
+                {% elif current_theme == 'vishu' %} 
+                class="circle3"
+                {% else %} 
+                class="circle" 
+                {% endif %}>
                 <span class="icon arrow"></span>
               </span>
                 <span class="text-conte">Know More</span>
@@ -2389,6 +2547,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h4 class="hide-head">ERP</h4>
             {% if current_theme == 'pongal' %}
               <img src="static/pongal/img/erp.png" alt="ERP" />
+            {% elif current_theme == 'vishu' %}
+              <img src="static/vishu/img/erp.png" alt="ERP" /> 
             {% else %}
               <img src="static/img/team/erp.png" alt="ERP" />
             {% endif %}
@@ -2402,6 +2562,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h4 class="hide-head">HRMS</h4>
             {% if current_theme == 'pongal' %}
             <img src="static/pongal/img/hrms.png" alt="HRMS" />
+            {% elif current_theme == 'vishu' %}
+              <img src="static/vishu/img/hrms.png" alt="HRMS" /> 
             {% else %}
             <img src="static/img/team/hrms.png" alt="HRMS" />
             {% endif %}
@@ -2423,7 +2585,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-                <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+                <span 
+                {% if current_theme == 'pongal' %} 
+                class="circle2"
+                {% elif current_theme == 'vishu' %} 
+                class="circle3"
+                {% else %} 
+                class="circle" 
+                {% endif %}>
                 <span class="icon arrow"></span>
               </span>
                 <span class="text-conte">Know More</span>
@@ -2453,7 +2622,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-                <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+                <span 
+                {% if current_theme == 'pongal' %} 
+                class="circle2"
+                {% elif current_theme == 'vishu' %} 
+                class="circle3"
+                {% else %} 
+                class="circle" 
+                {% endif %}>
                 <span class="icon arrow"></span>
               </span>
                 <span class="text-conte">Know More</span>
@@ -2478,7 +2654,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-                <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+                <span 
+                {% if current_theme == 'pongal' %} 
+                class="circle2"
+                {% elif current_theme == 'vishu' %} 
+                class="circle3"
+                {% else %} 
+                class="circle" 
+                {% endif %}>
                 <span class="icon arrow"></span>
               </span>
                 <span class="text-conte">Know More</span>
@@ -2512,7 +2695,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-                <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+                <span 
+                {% if current_theme == 'pongal' %} 
+                class="circle2"
+                {% elif current_theme == 'vishu' %} 
+                class="circle3"
+                {% else %} 
+                class="circle" 
+                {% endif %}>
                 <span class="icon arrow"></span>
               </span>
                 <span class="text-conte">Know More</span>
@@ -2535,7 +2725,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-                <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+                <span 
+                {% if current_theme == 'pongal' %} 
+                class="circle2"
+                {% elif current_theme == 'vishu' %} 
+                class="circle3"
+                {% else %} 
+                class="circle" 
+                {% endif %}>
                 <span class="icon arrow"></span>
               </span>
                 <span class="text-conte">Know More</span>
@@ -2545,9 +2742,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="img-box-tech">
             <h4 class="hide-head">3D Modeling</h4>
             {% if current_theme == 'pongal' %}
-            <img src="static/pongal/img/3D.png" alt="CRM" />
+            <img src="static/pongal/img/3D.png" alt="3D" />
+            {% elif current_theme == 'vishu' %}
+            <img src="static/vishu/img/3D.png" alt="3D" />
             {% else %}
-            <img src="static/img/team/3D.png" alt="CRM" />
+            <img src="static/img/team/3d.png" alt="3D" />
             {% endif %}
           </div>
         </div>
@@ -2558,9 +2757,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="img-box-tech">
             <h4 class="hide-head">VR/AR</h4>
             {% if current_theme == 'pongal' %}
-            <img src="static/pongal/img/arvr.png" alt="CRM" />
+            <img src="static/pongal/img/arvr.png" alt="ARVR" />
+            {% elif current_theme == 'vishu' %} 
+            <img src="static/vishu/img/arvr.png" alt="ARVR" />
             {% else %}
-            <img src="static/img/team/arvr.jpg" alt="CRM" />
+            <img src="static/img/team/arvr.jpg" alt="ARVR" />
             {% endif %}
           </div>
           <div class="content-box-tech">
@@ -2579,7 +2780,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 target="_blank"
                 href="https://altostechnologies.in/Core"
               >
-                <span {% if current_theme == 'pongal' %} class="circle2" {% else %} class="circle" {% endif %}>
+                <span 
+                {% if current_theme == 'pongal' %} 
+                class="circle2"
+                {% elif current_theme == 'vishu' %} 
+                class="circle3"
+                {% else %} 
+                class="circle" 
+                {% endif %}>
                 <span class="icon arrow"></span>
               </span>
                 <span class="text-conte">Know More</span>
@@ -2594,6 +2802,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="col-12 d-flex justify-content-center">
             {% if current_theme == 'pongal' %}
             <h1 class="pongal_text_theme" style="color: transparent;">Other Branches</h1>
+            {% elif current_theme == 'vishu' %} 
+            <h1 class="vishu_text_bg1" style="color: transparent;">Other Branches</h1>
             {% else %}
             <h1 class="">
               Other<span style="color: rgb(39, 112, 141)"> Branches</span>
@@ -2659,6 +2869,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h2>Our</h2>
             {% if current_theme == 'pongal' %}
             <p class="pongal_text_theme" style="color: transparent;">Locations</p>
+            {% elif current_theme == 'vishu' %} 
+            <p class="vishu_text_bg1" style="color: transparent;">Locations</p>
             {% else %}
             <p style="color: rgb(39, 112, 141);">Locations</p>
             {% endif %}
@@ -2681,6 +2893,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   style="background-image: url('static/pongal/bg/blur_bg1.png');
                   background-size: cover;
                   background-repeat: no-repeat;"
+                   {% elif current_theme == 'vishu' %} 
+                   class="bi bi-geo-alt me-2 text-light" 
+                   style="background-image: url('static/vishu/bg/sm_button_bg.png');
+                   background-size: cover;
+                   background-repeat: no-repeat;"
                   {% else %}
                   class="bi bi-geo-alt me-2 text-dark" 
                   style="background-color:#0fa49b; color:rgb(0, 0, 0)"
@@ -2704,6 +2921,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   style="background-image: url('static/pongal/bg/blur_bg1.png');
                   background-size: cover;
                   background-repeat: no-repeat;"
+                  {% elif current_theme == 'vishu' %} 
+                  class="bi bi-envelope me-2 text-light" 
+                  style="background-image: url('static/vishu/bg/sm_button_bg.png');
+                  background-size: cover;
+                  background-repeat: no-repeat;"
                   {% else %}
                   class="bi bi-envelope me-2 text-dark" 
                   style="background-color:#0fa49b; color:rgb(0, 0, 0)"
@@ -2718,6 +2940,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   {% if current_theme == 'pongal' %}
                   class="bi bi-phone me-2 text-light" 
                   style="background-image: url('static/pongal/bg/blur_bg1.png');
+                  background-size: cover;
+                  background-repeat: no-repeat;"
+                  {% elif current_theme == 'vishu' %} 
+                  class="bi bi-phone me-2 text-light" 
+                  style="background-image: url('static/vishu/bg/sm_button_bg.png');
                   background-size: cover;
                   background-repeat: no-repeat;"
                   {% else %}
@@ -2747,6 +2974,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   style="background-image: url('static/pongal/bg/blur_bg1.png');
                   background-size: cover;
                   background-repeat: no-repeat;"
+                  {% elif current_theme == 'vishu' %} 
+                  class="bi bi-geo-alt me-2 text-light" 
+                  style="background-image: url('static/vishu/bg/sm_button_bg.png');
+                  background-size: cover;
+                  background-repeat: no-repeat;"
                   {% else %}
                   class="bi bi-geo-alt me-2 text-dark" 
                   style="background-color:#0fa49b; color:rgb(0, 0, 0)"
@@ -2770,6 +3002,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   style="background-image: url('static/pongal/bg/blur_bg1.png');
                   background-size: cover;
                   background-repeat: no-repeat;"
+                  {% elif current_theme == 'vishu' %} 
+                  class="bi bi-envelope me-2 text-light" 
+                  style="background-image: url('static/vishu/bg/sm_button_bg.png');
+                  background-size: cover;
+                  background-repeat: no-repeat;"
                   {% else %}
                   class="bi bi-geo-alt me-2 text-dark" 
                   style="background-color:#0fa49b; color:rgb(0, 0, 0)"
@@ -2784,6 +3021,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   {% if current_theme == 'pongal' %}
                   class="bi bi-phone me-2 text-light" 
                   style="background-image: url('static/pongal/bg/blur_bg1.png');
+                  background-size: cover;
+                  background-repeat: no-repeat;"
+                  {% elif current_theme == 'vishu' %} 
+                  class="bi bi-phone me-2 text-light" 
+                  style="background-image: url('static/vishu/bg/sm_button_bg.png');
                   background-size: cover;
                   background-repeat: no-repeat;"
                   {% else %}
@@ -3213,6 +3455,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     })
     $('#pongal_fade_effect').on('mouseleave',function(){
       $('#fade_effect').css("opacity","1")
+    })
+  })
+</script>
+<script>
+  // vishu form image fade effect
+  $(document).ready(function(){
+    $('#pongal_fade_effect').on('mouseenter',function(){
+      $('#fade_effect1').css("opacity","0.3")
+    })
+    $('#pongal_fade_effect').on('mouseleave',function(){
+      $('#fade_effect1').css("opacity","1")
     })
   })
 </script>
